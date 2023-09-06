@@ -326,7 +326,8 @@ Stay connected with us for updates, announcements, and discussions:
 
 <td><h3 id="machine-learning"><a href="Machine-Learning-Readme.md">Machine Learning</h3></td>
 
-<td>Supervised Learning:
+<td>
+<b>Supervised Learning:</b>
 
 *   Regression and Classification Problems
 *   Simple Linear Regression
@@ -342,10 +343,13 @@ Stay connected with us for updates, announcements, and discussions:
 *   Cross-validation Methods: Leave-One-Out (LOO) Cross-validation, k-Folds Cross-validation
 *   Multi-layer Perceptron
 *   Feed-forward Neural Network
-*   Unsupervised Learning:
+
+<b>Unsupervised Learning:</b>
+
 *   Clustering Algorithms
 *   k-Means and k-Medoid Clustering
 *   Hierarchical Clustering
+*   top-down, boom-up: single-linkage, mulplelinkage
 *   Dimensionality Reduction
 *   Principal Component Analysis (PCA)
 
