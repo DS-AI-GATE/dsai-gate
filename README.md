@@ -327,6 +327,7 @@ Stay connected with us for updates, announcements, and discussions:
 <td><h3 id="machine-learning"><a href="Machine-Learning-Readme.md">Machine Learning</h3></td>
 
 <td>
+
 <b>Supervised Learning:</b>
 
 *   Regression and Classification Problems
