@@ -28,7 +28,7 @@ Comments and Notes:
 
 🚀 **About the Repository**
  
-**Disover the ultimate GATE (Graduate Aptitude Test in Engineering) Resource: All-in-One curated for Data Science and Artificial Intelligence (DSAI)** 🌟 🌟 🌟 🌟 🌟 \
+**Discover the ultimate GATE (Graduate Aptitude Test in Engineering) Resource: All-in-One curated for Data Science and Artificial Intelligence (DSAI)** 🌟 🌟 🌟 🌟 🌟 \
 This repository is designed to collaborate and share resoucers for preparation including study materials, online courses, and code examples that cover the DSAI Gate syllabus.
 
 📚 **Syllabus Coverage**
