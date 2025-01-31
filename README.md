@@ -50,7 +50,7 @@ To ensure a smooth and efficient learning experience, we've structured the repos
   <tr>
     <th class="tg-yw4l"><b>Topic</b></th>
     <th class="tg-yw4l"><b>Description</b></th>
-    <th class="tg-yw4l"><b>Resouces</b></th>
+    <th class="tg-yw4l"><b>Resources</b></th>
   </tr>
   <tr>
     <td class="tg-yw4l"><a href="#probability-and-statistics">Probability and Statistics</td>
