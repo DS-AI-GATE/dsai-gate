@@ -58,6 +58,8 @@ Read insightful articles to gain additional insights:
 
 -[Algorithms and Data Structure Cheatsheet](https://cs.wmich.edu/gupta/teaching/cs4310/lectureNotes_cs4310/Algorithms%20and%20Data%20Structures%20Cheatsheet%20-%20Algorithms%20part.pdf) 
 
+-[Data Structures and Algorithms Cheat Sheet](https://zerotomastery.io/cheatsheets/data-structures-and-algorithms-cheat-sheet/)
+
 -[Algorithms and Data Structures Cheatsheet](https://algs4.cs.princeton.edu/cheatsheet/) - Princeton
 
 -[Algo and DS Cheatsheet with Python](https://buildwithmalik.medium.com/i-made-a-python-cheat-sheet-for-data-structures-and-algorithms-useful-for-leetcode-b304754fad9c)
