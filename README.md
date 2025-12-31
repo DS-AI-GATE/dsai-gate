@@ -493,8 +493,21 @@ Check out the complete GATE DA Exam Pattern in the table outlined below.
 - [Recent AI Questions](https://gateoverflow.in/tag/gate-ds-ai-2024)
 ---
 
-### Sample Paper
+### Previous Year Papers
 
+Access previous year GATE Data Science and AI question papers and answer keys:
+
+**2025:**
+- [GATE DA 2025 Question Paper](PYQ/DA.PYQ.2025.pdf)
+- [GATE DA 2025 Answer Key](PYQ/DA.PYQ.Keys.2025.pdf)
+
+**2024:**
+- [GATE DA 2024 Question Paper](PYQ/DA.PYQ.2024.pdf)
+- [GATE DA 2024 Answer Key](PYQ/DA.PYQ.Keys.2024.pdf)
+
+---
+
+### Sample Paper
 IISC released a DS/AI sample paper on their website. It's expected the questions in the main exams would be on similar lines [Sample Paper](https://gate2024.iisc.ac.in/wp-content/uploads/2023/11/GATE2024DASampleQuestionPaperFinal.pdf)
 
 
