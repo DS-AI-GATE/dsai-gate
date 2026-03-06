@@ -534,3 +534,5 @@ IISC released a DS/AI sample paper on their website. It's expected the questions
  -->
   
 Start your DSAI-GATE preparation journey today with the DSAI-GATE repository. Let's ace the GATE exam together🌟
+
+Modified the folder
