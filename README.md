@@ -494,10 +494,10 @@ Check out the complete GATE DA Exam Pattern in the table outlined below.
 </table>
 
 ---
-### Useful collections:
+### Useful Collections
 
 - [Achint Chaudhary's concise gist of resouces](https://gist.github.com/chaudharyachint08/481a4fbb5e699340fb8849d1cacdcdf9)
-- [2025 DS AI GATE Question Paper](PYQ/DA.PYQ.2025.pdf)
+- [Official previous-year papers and answer keys](PYQ/README.md)
 - [Recent AI Questions](https://gateoverflow.in/tag/gate-ds-ai-2024)
 ---
 
@@ -514,8 +514,8 @@ Access previous year GATE Data Science and AI question papers and their answer k
 - [GATE DA 2025 Answer Key](PYQ/DA.PYQ.Keys.2025.pdf)
 
 **2026:**
-- [Official GATE DA 2026 Question Paper](https://gate2026.iitg.ac.in/doc/download/2026/QPs/DA.pdf)
-- [Official GATE DA 2026 Answer Key](https://gate2026.iitg.ac.in/doc/download/2026/Keys/DA_Keys.pdf)
+- [GATE DA 2026 Question Paper](PYQ/DA.PYQ.2026.pdf)
+- [GATE DA 2026 Answer Key](PYQ/DA.PYQ.Keys.2026.pdf)
 
 ---
 

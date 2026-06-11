@@ -37,6 +37,9 @@ Before changing educational content:
 5. Run notebooks from a clean kernel and remove accidental output or secrets.
 6. Run the available repository checks before opening a pull request.
 
+When adding an official previous-year paper, update `PYQ/README.md` and
+`PYQ/SHA256SUMS`.
+
 ## Notebook Standards
 
 Every notebook should:

@@ -14,7 +14,7 @@ focused, executable learning material.
 - [Official GATE 2026 paper pattern](https://gate2026.iitg.ac.in/question-paper-pattern.html)
 - [Official GATE 2026 DA master paper](https://gate2026.iitg.ac.in/doc/download/2026/QPs/DA.pdf)
 - [Official GATE 2026 DA answer key](https://gate2026.iitg.ac.in/doc/download/2026/Keys/DA_Keys.pdf)
-- Local official papers and keys in `PYQ/` for 2024 and 2025
+- Local official papers and keys in `PYQ/` for 2024-2026
 
 The syllabus remains organized into seven subject areas: probability and
 statistics, linear algebra, calculus and optimization, programming/data

@@ -45,7 +45,7 @@ guarantee.
 - [GATE 2026 DA master paper and answer key index](https://gate2026.iitg.ac.in/QPs-answer-keys.html)
 - [GATE 2026 DA mock-test interface](https://gate2026.iitg.ac.in/mock-test-links.html)
 - [GATE 2024 DA sample paper](https://gate2024.iisc.ac.in/wp-content/uploads/2023/11/GATE2024DASampleQuestionPaperFinal.pdf)
-- Repository copies of official 2024 and 2025 papers and keys in `PYQ/`
+- [Repository copies of official 2024-2026 papers and keys](../PYQ/README.md)
 
 The mock interface is for becoming familiar with the test UI. The official site
 explicitly states that it does not indicate topic selection or question-type
