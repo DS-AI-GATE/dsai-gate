@@ -1,5 +1,10 @@
-# Welcome to the DSAI-GATE Repository [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) :robot: [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+# DSAI-GATE
 
+[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/DS-AI-GATE/dsai-gate/pulls)
+
+A community-maintained collection of syllabus-aligned resources and practice
+material for the GATE Data Science and Artificial Intelligence paper.
 
 > ## We are still in work in progress phase, Stay tuned !!
 > Looking for solid-contributors checkout : [contributors-guide](https://github.com/DS-AI-GATE/dsai-gate/wiki/CONTRIBUTORS-GUIDE)
@@ -180,9 +185,12 @@ Let's make DSAI preparation an enriching and collaborative journey together! ðŸš
 
 ðŸ”— **Connect with Us**
 
-Stay connected with us for updates, announcements, and discussions:
+Stay connected with us for updates, announcements, and discussions
 
-- Join our [Discord server](https://discord.com/invite/N5Wgn9ygDF) for real-time discussions.
+**Maintainer documentation:** [implementation plan](docs/implementation_plan.md)
+| [official resources and paper analysis](docs/official-resources.md)
+| [agent guide](docs/agent.md)
+| [stale-link audit](docs/stale-links.md)
 
 
 <!---
@@ -489,7 +497,7 @@ Check out the complete GATE DA Exam Pattern in the table outlined below.
 ### Useful collections:
 
 - [Achint Chaudhary's concise gist of resouces](https://gist.github.com/chaudharyachint08/481a4fbb5e699340fb8849d1cacdcdf9)
-- [2025 DS AI GATE Question Paper](https://gate2025.iitr.ac.in/doc/2025/2025_QP/DA.pdf)
+- [2025 DS AI GATE Question Paper](PYQ/DA.PYQ.2025.pdf)
 - [Recent AI Questions](https://gateoverflow.in/tag/gate-ds-ai-2024)
 ---
 
@@ -504,6 +512,10 @@ Access previous year GATE Data Science and AI question papers and their answer k
 **2025:**
 - [GATE DA 2025 Question Paper](PYQ/DA.PYQ.2025.pdf)
 - [GATE DA 2025 Answer Key](PYQ/DA.PYQ.Keys.2025.pdf)
+
+**2026:**
+- [Official GATE DA 2026 Question Paper](https://gate2026.iitg.ac.in/doc/download/2026/QPs/DA.pdf)
+- [Official GATE DA 2026 Answer Key](https://gate2026.iitg.ac.in/doc/download/2026/Keys/DA_Keys.pdf)
 
 ---
 

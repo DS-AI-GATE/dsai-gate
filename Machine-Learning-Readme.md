@@ -14,6 +14,31 @@
  
 Credits : [Stanford Cheatsheets: Machine Learning, AI, Probability Statistics, Deep Learning](https://stanford.edu/~shervine/teaching/) - Afshine Amidi and Shervine Amidi published on September 8, 2019
 
+<!-- subject-diagram:start -->
+## Interactive Concept Map
+
+Open the Mermaid diagram viewer on GitHub to pan and zoom through this original
+subject map.
+
+```mermaid
+flowchart LR
+    A[Data and features] --> B{Learning task}
+    B -->|Supervised| C[Regression]
+    B -->|Supervised| D[Classification]
+    B -->|Unsupervised| E[Clustering]
+    B -->|Unsupervised| F[Dimensionality reduction]
+    C --> G[Loss and regularization]
+    D --> G
+    G --> H[Bias-variance and validation]
+    E --> I[k-means and hierarchical methods]
+    F --> J[PCA]
+    classDef default fill:#172033,stroke:#58c4dd,color:#ffffff,stroke-width:2px
+    linkStyle default stroke:#f2cc8f,stroke-width:2px
+```
+
+Diagram style follows a visual-first progression inspired by [3Blue1Brown](https://www.3blue1brown.com/).
+<!-- subject-diagram:end -->
+
 ---
 
 ## <a name="books"></a>Books
@@ -25,8 +50,8 @@ Explore these recommended books to enhance your understanding:
   A comprehensive resource for statistical theory and its applications.
 -->
 
-- [**Machine Learning: A Probabilistic Perspective**](http://noiselab.ucsd.edu/ECE228/Murphy_Machine_Learning.pdf) by Kevin P. Murphy\
-  A comprehensive resource for ML theory and its applications. Perfect for GATE and Interviews
+- [**Probabilistic Machine Learning: An Introduction**](https://probml.github.io/pml-book/book1.html) by Kevin P. Murphy\
+  The author's official page includes the licensed draft, exercises, and code.
 
  - [**Learning from Data**](https://openeclass.panteion.gr/modules/document/file.php/PMS152/LEARNING/Abu-Mostafa%20Yaser%20S.%2C%20Malik%20Magdon-Ismail%2C%20Hsuan-Tien%20Lin%20%282012%29%20--%20Learning%20From%20Data_%20A%20short%20course.pdf) course book for IIT D undergraduate level ML course
 
@@ -67,6 +92,16 @@ Read insightful articles to gain additional insights:
 **Coding Examples** : [**Kevin Murphy : A Probabilistic Perspective Book Coding Examples**](https://github.com/probml/pyprobml/tree/master)\
 Python 3 code to reproduce the figures in the books [Probabilistic Machine Learning: An Introduction](https://probml.github.io/pml-book/book1.html) (aka "book 1") and [Probabilistic Machine Learning: Advanced Topics](https://probml.github.io/pml-book/book2.html) (aka "book 2"). The code uses the standard Python libraries, such as numpy, scipy, matplotlib, sklearn, etc.
 
+**Repository Examples**
+
+- [Linear regression from scratch](notebooks/machine_learning/linear_regression_from_scratch.ipynb)
+- [Logistic classification](notebooks/machine_learning/logistic_classification.ipynb)
+- [K-means from scratch](notebooks/machine_learning/kmeans_from_scratch.ipynb)
+
+The example sequence is informed by collaborator
+[Swakath's PRML assignment repository](https://github.com/swakath/PRML), with
+original GATE-focused explanations, code, and data.
+
 ---
 
 ## <a name="practice-problems"></a>Practice Problems
@@ -80,7 +115,7 @@ Test your knowledge and skills with these practice problems:
 - [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2017 Final](/Data/Machine-Learning/final2017_solutions.pdf)
 - [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2018 Final](/Data/Machine-Learning/final2018_solutions.pdf)
 - [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2019 Final](/Data/Machine-Learning/final2019_solutions.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2022 Final](/Data/Machine-Learning/final2022_solutions.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2022 Final](/Data/Machine-Learning/final2022.pdf)
 - [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2018 MidTerm](/Data/Machine-Learning/midterm2018_solutions.pdf)
 - [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2019 MidTerm](/Data/Machine-Learning/midterm2019_solutions.pdf)
 - [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2022 MidTerm](/Data/Machine-Learning/midterm2022_solutions.pdf)
@@ -106,4 +141,3 @@ Course Syllabus : Motivation and Linear Regression, Binary Classification, Multi
 * [Notes](#notes)  
 * [Articles](#articles)  
 * [Practice Problems](#practice-problems)
-

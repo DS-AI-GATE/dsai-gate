@@ -8,6 +8,29 @@
 * [Articles](#articles)  
 * [Practice Problems](#practice-problems)
 
+<!-- subject-diagram:start -->
+## Interactive Concept Map
+
+Open the Mermaid diagram viewer on GitHub to pan and zoom through this original
+subject map.
+
+```mermaid
+flowchart LR
+    A[Python semantics] --> B[Data structures]
+    B --> C[Stacks, queues, and lists]
+    B --> D[Trees and hash tables]
+    C --> E[Searching and sorting]
+    D --> F[Graph traversal]
+    E --> G[Divide and conquer]
+    F --> H[Shortest paths]
+    G --> I[Complexity analysis]
+    H --> I
+    classDef default fill:#172033,stroke:#58c4dd,color:#ffffff,stroke-width:2px
+    linkStyle default stroke:#f2cc8f,stroke-width:2px
+```
+
+Diagram style follows a visual-first progression inspired by [3Blue1Brown](https://www.3blue1brown.com/).
+<!-- subject-diagram:end -->
 
 ---
 
@@ -35,7 +58,7 @@ Course to deepen your knowledge:
 - **[Harvard CS50 Algorithms python course](https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V)** \
 An introduction to programming using a language called Python. Learn how to read and write code as well as how to test and "debug" it. Designed for students with or without prior programming experience who want to learn Python specifically. \
 Learn about functions, arguments, and return values; variables and types; conditionals and Boolean expressions; and loops. Learn how to handle exceptions, find and fix bugs, and write unit tests; use third-party libraries; validate and extract data with regular expressions; model real-world entities with classes, objects, methods, and properties; and read and write files. Hands-on opportunities for lots of practice. Exercises inspired by real-world programming problems. [Course Website](https://cs50.harvard.edu/python/2022/)
-- **[Programming, Data Structure AND Algorithms using Python](https://archive.nptel.ac.in/courses/106/106/106106145/)**: A Fantastic Course by Madhav Mukund Sir, which covers the sectional syllabus in its entirety. The *Assignments for this course* can be accessed by clicking on the assignment tab after following this link
+- **[Programming, Data Structures and Algorithms using Python](https://nptel.ac.in/courses/106106145)**: An NPTEL course by Prof. Madhavan Mukund that covers the programming and algorithms section comprehensively. Assignments are available from the course page.
   
 ---
 
@@ -87,4 +110,3 @@ Test your knowledge and skills with these practice problems:
 * [Notes](#notes)  
 * [Articles](#articles)  
 * [Practice Problems](#practice-problems)
-

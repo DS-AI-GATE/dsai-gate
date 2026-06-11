@@ -96,10 +96,10 @@ Reference : https://github.com/khangich/machine-learning-interview/tree/master
 | ------------- | ------------- |
 | [Understanding the Difficulty of Training Deep Feedforward Neural Networks](http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf) | Classic paper (2010) about initialization, sigmoid etc |
 | [Delving Deep into Rectifiers - Surpassing Human-Level Performance on ImageNet Classification](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/He_Delving_Deep_into_ICCV_2015_paper.pdf) | Classic paper (2015) about ReLU, PReLU|
-| [Batch Normalization - Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/pdf/1502.03167.pdf%20http://arxiv.org/abs/1502.03167.pdf) | Classic paper about BatchNorm |
+| [Batch Normalization - Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167) | Classic paper about BatchNorm |
 | [Dropout - A Simple Way to Prevent Neural Networks from Overfitting](https://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf) | Classic paper about Dropout |
 | [Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf) | Classic ResNet |
-| [On Large-Batch Training for Deep Learning - Generalization Gap and Sharp Minima](https://arxiv.org/pdf/1609.04836.pdf,) | Practical technique for large batch training |
+| [On Large-Batch Training for Deep Learning - Generalization Gap and Sharp Minima](https://arxiv.org/abs/1609.04836) | Practical technique for large batch training |
 
 
 ## DL advance topics
