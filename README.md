@@ -1,17 +1,17 @@
 # DSAI-GATE
 
 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/DS-AI-GATE/dsai-gate/pulls)
-[![Deploy syllabus explorer](https://github.com/DS-AI-GATE/dsai-gate/actions/workflows/pages.yml/badge.svg)](https://github.com/DS-AI-GATE/dsai-gate/actions/workflows/pages.yml)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Kunaldargan/dsai-gate/pulls)
+[![Deploy syllabus explorer](https://github.com/Kunaldargan/dsai-gate/actions/workflows/pages.yml/badge.svg)](https://github.com/Kunaldargan/dsai-gate/actions/workflows/pages.yml)
 
 A community-maintained collection of syllabus-aligned resources and practice
 material for the GATE Data Science and Artificial Intelligence paper.
 
-**Explore the syllabus:** [Interactive explorer](https://ds-ai-gate.github.io/dsai-gate/)
-· [Overall memory map](https://ds-ai-gate.github.io/dsai-gate/#map)
+**Explore the syllabus:** [Interactive explorer](https://kunaldargan.github.io/dsai-gate/)
+· [Overall memory map](https://kunaldargan.github.io/dsai-gate/#map)
 
 > ## We are still in work in progress phase, Stay tuned !!
-> Looking for solid-contributors checkout : [contributors-guide](https://github.com/DS-AI-GATE/dsai-gate/wiki/CONTRIBUTORS-GUIDE)
+> Looking for solid-contributors checkout : [contributors-guide](https://github.com/Kunaldargan/dsai-gate/wiki/CONTRIBUTORS-GUIDE)
 
 <!---
 Comments and Notes:
@@ -58,8 +58,8 @@ Created the GitHub Pages deployment workflow at [.github/workflows/pages.yml](.g
 - Deploys automatically after merging to `main`.
 - Rebuilds when topics, notebooks, resources, PYQs, or webapp files change.
 - Uses current GitHub Actions versions.
-- Publishes to: https://ds-ai-gate.github.io/dsai-gate/
-- Provides the map directly at: https://ds-ai-gate.github.io/dsai-gate/#map
+- Publishes to: https://kunaldargan.github.io/dsai-gate/
+- Provides the map directly at: https://kunaldargan.github.io/dsai-gate/#map
 - Adds deployment status and app links to README.
 
 Verified workflow YAML, tests, and static export. In repository Settings → Pages, set **Source** to **GitHub Actions** once.
@@ -164,7 +164,7 @@ All repository changes, including maintainer changes, must be submitted and
 merged through a pull request. See the [repository agent guide](docs/agent.md)
 for the required workflow.
 
-For any questions or clarifications, feel free to [reach out](https://github.com/DS-AI-GATE/dsai-gate/issues/3)!
+For any questions or clarifications, feel free to [reach out](https://github.com/Kunaldargan/dsai-gate/issues/3)!
 
 Join our [Discord Server](https://discord.com/invite/N5Wgn9ygDF) for real-time interactions with fellow contributors.
 ---
