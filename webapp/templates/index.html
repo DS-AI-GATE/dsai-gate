@@ -38,6 +38,9 @@
         <span aria-hidden="true">⛶</span>
         <span class="button-label">Fullscreen</span>
       </button>
+      <button class="button quiet" id="open-memory-map">
+        Memory map <span aria-hidden="true">◎</span>
+      </button>
       <button class="button primary" id="present-all">
         Present <span aria-hidden="true">▶</span>
       </button>
@@ -252,15 +255,38 @@
           <div>
             <span class="eyebrow">Complete syllabus</span>
             <h2>Overall memory map</h2>
-            <p>Seven subjects and all {{ total_topics }} concepts in one connected view.</p>
+            <p>Seven subjects and all {{ total_topics }} concepts in one connected view. Select any node to open it.</p>
           </div>
           <div class="map-legend">
             <span><i class="root-key"></i> GATE DA</span>
-            <span><i class="subject-key"></i> Subject</span>
-            <span><i class="topic-key"></i> Topic</span>
+            <span><i class="subject-key"></i> Subject branch</span>
+            <span><i class="topic-key"></i> Related topics</span>
+          </div>
+          <div class="map-tools" role="group" aria-label="Memory map controls">
+            <button class="button quiet" id="map-add-node">Add node</button>
+            <button class="icon-button" id="map-zoom-out" aria-label="Zoom out">−</button>
+            <button class="icon-button" id="map-reset" aria-label="Reset map view">Reset</button>
+            <button class="icon-button" id="map-zoom-in" aria-label="Zoom in">+</button>
           </div>
         </div>
-        <div class="overall-map" id="overall-map"></div>
+        <form class="map-node-form" id="map-node-form" hidden>
+          <label>
+            <span>Parent node</span>
+            <select id="map-node-parent" required></select>
+          </label>
+          <label>
+            <span>Node title</span>
+            <input id="map-node-title" maxlength="80" required placeholder="My study note">
+          </label>
+          <label>
+            <span>Optional URL</span>
+            <input id="map-node-url" type="url" placeholder="https://...">
+          </label>
+          <button class="button primary" type="submit">Add and save</button>
+          <button class="button quiet" id="map-node-cancel" type="button">Cancel</button>
+          <span class="map-save-status" id="map-save-status">Saved locally. Select a custom node to add sub-nodes or press Delete to remove it.</span>
+        </form>
+        <div class="overall-map" id="overall-map" aria-label="Interactive memory map. Drag nodes to move them, drag the canvas to pan, and use the mouse wheel to zoom."></div>
       </article>
       <button class="slide-arrow next" id="slide-next" aria-label="Next slide">→</button>
     </div>
@@ -282,8 +308,8 @@
 
     <footer class="presentation-footer">
       <span>← → navigate</span>
-      <span>N notes</span>
-      <span>F fullscreen</span>
+      <span>Shift + N notes</span>
+      <span>Shift + F fullscreen</span>
       <span>Esc exit</span>
     </footer>
   </section>
