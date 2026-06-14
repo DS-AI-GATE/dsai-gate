@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="docs/assets/dsai-gate-hero.svg" alt="DSAI-GATE: learn, practice, revise" width="100%">
+  <img src="../assets/dsai-gate-hero.svg" alt="DSAI-GATE: learn, practice, revise" width="100%">
 
   <br>
 
   <a href="https://gate2026.iitg.ac.in/doc/GATE2026_Syllabus/DA_2026_Syllabus.pdf"><img src="https://img.shields.io/badge/Syllabus-GATE_2026-4F46E5?style=for-the-badge" alt="GATE 2026 syllabus"></a>
-  <a href="PYQ/README.md"><img src="https://img.shields.io/badge/Papers-2024--2026-0891B2?style=for-the-badge" alt="Official previous-year papers"></a>
-  <a href="notebooks/README.md"><img src="https://img.shields.io/badge/Notebooks-Executable-0F766E?style=for-the-badge" alt="Example notebooks"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Unlicense-475569?style=for-the-badge" alt="Unlicense"></a>
+  <a href="../../PYQ/README.md"><img src="https://img.shields.io/badge/Papers-2024--2026-0891B2?style=for-the-badge" alt="Official previous-year papers"></a>
+  <a href="../../notebooks/README.md"><img src="https://img.shields.io/badge/Notebooks-Executable-0F766E?style=for-the-badge" alt="Example notebooks"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/badge/License-Unlicense-475569?style=for-the-badge" alt="Unlicense"></a>
 
   <p><strong>A focused, community-maintained study path for the GATE Data Science and Artificial Intelligence paper.</strong></p>
 
@@ -28,27 +28,27 @@
   <tr>
     <td width="50%" valign="top">
       <h3>Foundations</h3>
-      <p><a href="Probability-Statistics-Readme.md"><strong>Probability &amp; Statistics</strong></a><br>Distributions, inference, probability, and hypothesis tests.</p>
-      <p><a href="Linear-Algebra-Readme.md"><strong>Linear Algebra</strong></a><br>Matrices, systems, eigenvalues, projections, SVD, and PCA.</p>
-      <p><a href="Calculus-and-Optimization-Readme.md"><strong>Calculus &amp; Optimization</strong></a><br>Limits, derivatives, Taylor series, extrema, and optimization.</p>
+      <p><a href="../../Probability-Statistics-Readme.md"><strong>Probability &amp; Statistics</strong></a><br>Distributions, inference, probability, and hypothesis tests.</p>
+      <p><a href="../../Linear-Algebra-Readme.md"><strong>Linear Algebra</strong></a><br>Matrices, systems, eigenvalues, projections, SVD, and PCA.</p>
+      <p><a href="../../Calculus-and-Optimization-Readme.md"><strong>Calculus &amp; Optimization</strong></a><br>Limits, derivatives, Taylor series, extrema, and optimization.</p>
     </td>
     <td width="50%" valign="top">
       <h3>Computing</h3>
-      <p><a href="Programming-and-Algorithms-Readme.md"><strong>Programming &amp; Algorithms</strong></a><br>Python, data structures, searching, sorting, trees, and graphs.</p>
-      <p><a href="Database-Management-Readme.md"><strong>Database Management</strong></a><br>Relational models, SQL, normalization, indexing, and warehousing.</p>
+      <p><a href="../../Programming-and-Algorithms-Readme.md"><strong>Programming &amp; Algorithms</strong></a><br>Python, data structures, searching, sorting, trees, and graphs.</p>
+      <p><a href="../../Database-Management-Readme.md"><strong>Database Management</strong></a><br>Relational models, SQL, normalization, indexing, and warehousing.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>Intelligence</h3>
-      <p><a href="Machine-Learning-Readme.md"><strong>Machine Learning</strong></a><br>Regression, classification, validation, clustering, and dimensionality reduction.</p>
-      <p><a href="Artificial-Intelligence-Readme.md"><strong>Artificial Intelligence</strong></a><br>Search, logic, reasoning under uncertainty, and inference.</p>
+      <p><a href="../../Machine-Learning-Readme.md"><strong>Machine Learning</strong></a><br>Regression, classification, validation, clustering, and dimensionality reduction.</p>
+      <p><a href="../../Artificial-Intelligence-Readme.md"><strong>Artificial Intelligence</strong></a><br>Search, logic, reasoning under uncertainty, and inference.</p>
     </td>
     <td width="50%" valign="top">
       <h3>Practice</h3>
-      <p><a href="notebooks/README.md"><strong>Focused Notebooks</strong></a><br>Small examples that connect theory, implementation, and GATE-style questions.</p>
-      <p><a href="PYQ/README.md"><strong>Official Papers &amp; Keys</strong></a><br>Verified repository copies of the 2024-2026 DA papers.</p>
-      <p><a href="docs/official-resources.md"><strong>Primary Resources</strong></a><br>Official and university-hosted courses, references, and exam research.</p>
+      <p><a href="../../notebooks/README.md"><strong>Focused Notebooks</strong></a><br>Small examples that connect theory, implementation, and GATE-style questions.</p>
+      <p><a href="../../PYQ/README.md"><strong>Official Papers &amp; Keys</strong></a><br>Verified repository copies of the 2024-2026 DA papers.</p>
+      <p><a href="../../docs/official-resources.md"><strong>Primary Resources</strong></a><br>Official and university-hosted courses, references, and exam research.</p>
     </td>
   </tr>
 </table>
@@ -125,11 +125,11 @@ dsai-gate/
 ```
 
 <div align="center">
-  <a href="notebooks/README.md"><strong>Explore notebooks</strong></a>
+  <a href="../../notebooks/README.md"><strong>Explore notebooks</strong></a>
   ·
-  <a href="PYQ/README.md"><strong>Open official papers</strong></a>
+  <a href="../../PYQ/README.md"><strong>Open official papers</strong></a>
   ·
-  <a href="docs/official-resources.md"><strong>Browse primary resources</strong></a>
+  <a href="../../docs/official-resources.md"><strong>Browse primary resources</strong></a>
 </div>
 
 ## Contributing
@@ -145,19 +145,19 @@ Good contributions are **syllabus-aligned**, **legally shareable**, and
 | Add a local file or link | Verify that the path resolves |
 | Add an official paper | Update `PYQ/README.md` and `PYQ/SHA256SUMS` |
 
-Read the [repository agent guide](docs/agent.md) before making substantial
+Read the [repository agent guide](../../docs/agent.md) before making substantial
 changes.
 
 ## Project Direction
 
 <table>
   <tr>
-    <td><a href="docs/implementation_plan.md"><strong>Implementation plan</strong></a><br>Current delivery phases and planned notebooks.</td>
-    <td><a href="docs/future_directions.md"><strong>Future directions</strong></a><br>Minimal roadmap for reliability, coverage, and navigation.</td>
+    <td><a href="../../docs/implementation_plan.md"><strong>Implementation plan</strong></a><br>Current delivery phases and planned notebooks.</td>
+    <td><a href="../../docs/future_directions.md"><strong>Future directions</strong></a><br>Minimal roadmap for reliability, coverage, and navigation.</td>
   </tr>
   <tr>
-    <td><a href="docs/official-resources.md"><strong>Official research</strong></a><br>Exam facts, paper analysis, and primary learning sources.</td>
-    <td><a href="docs/stale-links.md"><strong>Stale-link audit</strong></a><br>Known link problems and replacement guidance.</td>
+    <td><a href="../../docs/official-resources.md"><strong>Official research</strong></a><br>Exam facts, paper analysis, and primary learning sources.</td>
+    <td><a href="../../docs/stale-links.md"><strong>Stale-link audit</strong></a><br>Known link problems and replacement guidance.</td>
   </tr>
 </table>
 
