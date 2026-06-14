@@ -71,8 +71,8 @@ deploys it through GitHub Pages.
 Repository administrators must set the Pages publishing source to **GitHub
 Actions** once. The expected project URL is:
 
-<https://ds-ai-gate.github.io/dsai-gate/>
+<https://kunaldargan.github.io/dsai-gate/>
 
-This project URL is derived from the GitHub organization `DS-AI-GATE` and
-repository name `dsai-gate`. A root organization Pages URL would require a
-separate repository named `DS-AI-GATE.github.io`.
+This project URL is derived from the GitHub owner `Kunaldargan` and repository
+name `dsai-gate`. A root user Pages URL would require a separate repository
+named `Kunaldargan.github.io`.

@@ -6,7 +6,7 @@ import unittest
 
 from webapp.app import create_app
 from webapp.build import build
-from webapp.content import MarkdownCurriculumRenderer, SubjectConfig
+from webapp.content import MarkdownCurriculumRenderer, PAGES_URL, SubjectConfig
 
 
 class WebappTests(unittest.TestCase):
@@ -21,6 +21,7 @@ class WebappTests(unittest.TestCase):
         self.assertIn(b'id="overall-map"', response.data)
         self.assertIn(b'id="overall-map-tab"', response.data)
         self.assertIn(b"mermaid@11.4.1", response.data)
+        self.assertIn(PAGES_URL.encode(), response.data)
 
     def test_api(self):
         response = self.client.get("/api/syllabus")
