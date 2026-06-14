@@ -4,7 +4,7 @@ with open("webapp/test/README-redesign.md", "r") as f:
     content = f.read()
 
 replacements = {
-    "docs/assets/dsai-gate-hero.svg": "../assets/dsai-gate-hero.svg",
+    "docs/assets/dsai-gate-hero.svg": "../../docs/assets/dsai-gate-hero.svg",
     "PYQ/README.md": "../../PYQ/README.md",
     "notebooks/README.md": "../../notebooks/README.md",
     "LICENSE": "../../LICENSE",

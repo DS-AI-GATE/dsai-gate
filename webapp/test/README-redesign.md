@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="../assets/dsai-gate-hero.svg" alt="DSAI-GATE: learn, practice, revise" width="100%">
+  <img src="../../docs/assets/dsai-gate-hero.svg" alt="DSAI-GATE: learn, practice, revise" width="100%">
 
   <br>
 
