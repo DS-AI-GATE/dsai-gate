@@ -2,3 +2,6 @@
 .link-check/
 __pycache__/
 *.py[cod]
+.DS_Store
+_site/
+__pycache__/
