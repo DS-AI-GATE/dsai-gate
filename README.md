@@ -7,8 +7,8 @@
 A community-maintained collection of syllabus-aligned resources and practice
 material for the GATE Data Science and Artificial Intelligence paper.
 
-**Explore the syllabus:** [Interactive explorer](https://kunaldargan.github.io/dsai-gate/)
-· [Overall memory map](https://kunaldargan.github.io/dsai-gate/#map)
+**Explore the syllabus:** [Interactive explorer](https://ds-ai-gate.github.io/dsai-gate/)
+· [Overall memory map](https://ds-ai-gate.github.io/dsai-gate/#map)
 
 > ## We are still in work in progress phase, Stay tuned !!
 > Looking for solid-contributors checkout : [contributors-guide](https://github.com/Kunaldargan/dsai-gate/wiki/CONTRIBUTORS-GUIDE)
@@ -58,8 +58,8 @@ Created the GitHub Pages deployment workflow at [.github/workflows/pages.yml](.g
 - Deploys automatically after merging to `main`.
 - Rebuilds when topics, notebooks, resources, PYQs, or webapp files change.
 - Uses current GitHub Actions versions.
-- Publishes to: https://kunaldargan.github.io/dsai-gate/
-- Provides the map directly at: https://kunaldargan.github.io/dsai-gate/#map
+- Publishes to: https://ds-ai-gate.github.io/dsai-gate/
+- Provides the map directly at: https://ds-ai-gate.github.io/dsai-gate/#map
 - Adds deployment status and app links to README.
 
 Verified workflow YAML, tests, and static export. In repository Settings → Pages, set **Source** to **GitHub Actions** once.
