@@ -20,6 +20,10 @@ class WebappTests(unittest.TestCase):
         self.assertIn(b'id="resource-map"', response.data)
         self.assertIn(b'id="overall-map"', response.data)
         self.assertIn(b'id="overall-map-tab"', response.data)
+        self.assertIn(b'id="open-memory-map"', response.data)
+        self.assertIn(b'id="map-zoom-in"', response.data)
+        self.assertIn(b'id="map-add-node"', response.data)
+        self.assertIn(b"Shift + N notes", response.data)
         self.assertIn(b"mermaid@11.4.1", response.data)
         self.assertIn(PAGES_URL.encode(), response.data)
 
@@ -52,7 +56,19 @@ class WebappTests(unittest.TestCase):
                 (output / "static" / "app.js").read_bytes(),
             )
             self.assertIn(
-                b"overallMapDefinition",
+                b"renderRadialOverallMap",
+                (output / "static" / "app.js").read_bytes(),
+            )
+            self.assertIn(
+                b"enableMapInteractions",
+                (output / "static" / "app.js").read_bytes(),
+            )
+            self.assertIn(
+                b"customMapNodesKey",
+                (output / "static" / "app.js").read_bytes(),
+            )
+            self.assertIn(
+                b"deleteSelectedCustomNode",
                 (output / "static" / "app.js").read_bytes(),
             )
 
