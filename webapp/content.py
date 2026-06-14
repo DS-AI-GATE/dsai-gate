@@ -7,8 +7,8 @@ import re
 from typing import Optional
 
 
-REPOSITORY_URL = "https://github.com/Kunaldargan/dsai-gate"
-PAGES_URL = "https://kunaldargan.github.io/dsai-gate/"
+REPOSITORY_URL = "https://github.com/DS-AI-GATE/dsai-gate"
+PAGES_URL = "https://ds-ai-gate.github.io/dsai-gate/"
 
 HEADING = re.compile(r"^(#{1,6})\s+(.*)$")
 LINK = re.compile(r"!?\[([^\]]*)\]\(([^)]+)\)")
