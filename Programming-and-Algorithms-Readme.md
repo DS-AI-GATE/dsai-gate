@@ -58,8 +58,8 @@ Course to deepen your knowledge:
 - **[Harvard CS50 Algorithms python course](https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V)** \
 An introduction to programming using a language called Python. Learn how to read and write code as well as how to test and "debug" it. Designed for students with or without prior programming experience who want to learn Python specifically. \
 Learn about functions, arguments, and return values; variables and types; conditionals and Boolean expressions; and loops. Learn how to handle exceptions, find and fix bugs, and write unit tests; use third-party libraries; validate and extract data with regular expressions; model real-world entities with classes, objects, methods, and properties; and read and write files. Hands-on opportunities for lots of practice. Exercises inspired by real-world programming problems. [Course Website](https://cs50.harvard.edu/python/2022/)
-- **[Programming, Data Structures and Algorithms using Python](https://nptel.ac.in/courses/106106145)**: An NPTEL course by Prof. Madhavan Mukund that covers the programming and algorithms section comprehensively. Assignments are available from the course page.
-  
+**[Programming, Data Structure AND Algorithms using Python](https://nptel.ac.in/courses/106106145)**: A Fantastic Course by Madhav Mukund Sir, which covers the sectional syllabus in its entirety. The *Assignments for this course* can be accessed by clicking on - [Assignment](https://github.com/gasingh/pythonDSA_nptel) . His latest Course can be accessed on Youtube IIT Madras - B.S. Degree Programme  - [youtube](https://www.youtube.com/playlist?list=PLZ2ps__7DhBaDccbZRgiU1sHX2gZrQ-XT)
+
 ---
 
 ## <a name="notes"></a>Notes
