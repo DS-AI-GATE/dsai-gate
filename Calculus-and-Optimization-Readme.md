@@ -32,7 +32,7 @@ flowchart LR
     linkStyle default stroke:#f2cc8f,stroke-width:2px
 ```
 
-Visual-first reference: [3Blue1Brown calculus topics](https://www.3blue1brown.com/topics/calculus).
+Visual intuition reference: [Essence of Calculus](https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown.
 <!-- subject-diagram:end -->
 
 ---

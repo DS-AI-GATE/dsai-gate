@@ -52,7 +52,7 @@ flowchart LR
     F --> G[Maxima and minima]
     G --> H[Single-variable optimization]
 """,
-        "reference": "Visual-first reference: [3Blue1Brown calculus topics](https://www.3blue1brown.com/topics/calculus).",
+        "reference": "Visual intuition reference: [Essence of Calculus](https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown.",
     },
     "Programming-and-Algorithms-Readme.md": {
         "title": "Programming and Algorithms Concept Map",

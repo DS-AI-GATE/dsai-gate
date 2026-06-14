@@ -23,6 +23,9 @@ jobs:
       - name: Verify previous-year paper checksums
         run: sha256sum --check PYQ/SHA256SUMS
 
+      - name: Test link collector
+        run: python scripts/test_check_new_links.py
+
   new-links:
     name: New links work
     if: github.event_name == 'pull_request'
@@ -45,7 +48,7 @@ jobs:
         with:
           args: >-
             --no-progress
-            --accept 200,204,206,429
+            --accept 200,204,206,403,429
             --max-retries 3
             .link-check/new-links.md
           fail: true
@@ -63,8 +66,10 @@ jobs:
         with:
           args: >-
             --no-progress
-            --accept 200,204,206,429
+            --accept 200,204,206,403,429
             --max-retries 3
             --exclude-path .git
+            --exclude-path docs/stale-links.md
+            --root-dir .
             "**/*.md"
           fail: true

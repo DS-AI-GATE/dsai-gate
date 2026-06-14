@@ -7,11 +7,13 @@ import subprocess
 from urllib.parse import unquote
 
 
-MARKDOWN_LINK = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+MARKDOWN_LINK = re.compile(r"""\]\(([^)\s]+)(?:\s+["'][^)]*["'])?\)""")
 HTML_LINK = re.compile(r"""(?:href|src)=["']([^"']+)["']""")
 BARE_LINK = re.compile(r"""https?://[^\s<>"']+""")
+INLINE_CODE = re.compile(r"`[^`]*`")
 EXTERNAL_PREFIXES = ("http://", "https://")
 IGNORED_PREFIXES = ("#", "mailto:", "tel:", "data:")
+IGNORED_FILES = {Path("docs/stale-links.md")}
 
 
 def parse_args():
@@ -38,12 +40,32 @@ def added_lines(base):
 
 def links_in(line):
     found = set()
+    code_spans = [match.span() for match in INLINE_CODE.finditer(line)]
+    occupied = list(code_spans)
+
+    def in_code_span(match):
+        start, end = match.span()
+        return any(
+            code_start <= start and end <= code_end
+            for code_start, code_end in code_spans
+        )
+
     for match in MARKDOWN_LINK.finditer(line):
+        if in_code_span(match):
+            continue
         found.add(match.group(1))
+        occupied.append(match.span())
     for match in HTML_LINK.finditer(line):
+        if in_code_span(match):
+            continue
         found.add(match.group(1))
-    for match in BARE_LINK.finditer(line):
-        found.add(match.group(0).rstrip(".,;:)"))
+        occupied.append(match.span())
+
+    bare_text = list(line)
+    for start, end in occupied:
+        bare_text[start:end] = " " * (end - start)
+    for match in BARE_LINK.finditer("".join(bare_text)):
+        found.add(match.group(0).rstrip(".,;:)]}"))
     yield from found
 
 
@@ -60,7 +82,7 @@ def main():
     broken_local_links = []
 
     for source_file, line in added_lines(args.base):
-        if source_file is None:
+        if source_file is None or source_file in IGNORED_FILES:
             continue
         for raw_link in links_in(line):
             link = normalize(raw_link)

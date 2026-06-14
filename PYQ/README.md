@@ -6,7 +6,7 @@ This directory contains official GATE Data Science and Artificial Intelligence
 | Year | Question paper | Answer key | Official source |
 | --- | --- | --- | --- |
 | 2024 | [`DA.PYQ.2024.pdf`](DA.PYQ.2024.pdf) | [`DA.PYQ.Keys.2024.pdf`](DA.PYQ.Keys.2024.pdf) | [GATE 2024 master papers and keys](https://gate2024.iisc.ac.in/question-papers/) |
-| 2025 | [`DA.PYQ.2025.pdf`](DA.PYQ.2025.pdf) | [`DA.PYQ.Keys.2025.pdf`](DA.PYQ.Keys.2025.pdf) | [GATE 2025 official website](https://gate2025.iitr.ac.in/) |
+| 2025 | [`DA.PYQ.2025.pdf`](DA.PYQ.2025.pdf) | [`DA.PYQ.Keys.2025.pdf`](DA.PYQ.Keys.2025.pdf) | Official GATE 2025 files, preserved locally and verified below |
 | 2026 | [`DA.PYQ.2026.pdf`](DA.PYQ.2026.pdf) | [`DA.PYQ.Keys.2026.pdf`](DA.PYQ.Keys.2026.pdf) | [GATE 2026 master papers and keys](https://gate2026.iitg.ac.in/QPs-answer-keys.html) |
 
 ## File Verification
