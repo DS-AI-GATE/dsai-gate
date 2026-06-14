@@ -2,9 +2,13 @@
 
 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/DS-AI-GATE/dsai-gate/pulls)
+[![Deploy syllabus explorer](https://github.com/DS-AI-GATE/dsai-gate/actions/workflows/pages.yml/badge.svg)](https://github.com/DS-AI-GATE/dsai-gate/actions/workflows/pages.yml)
 
 A community-maintained collection of syllabus-aligned resources and practice
 material for the GATE Data Science and Artificial Intelligence paper.
+
+**Explore the syllabus:** [Interactive explorer](https://ds-ai-gate.github.io/dsai-gate/)
+· [Overall memory map](https://ds-ai-gate.github.io/dsai-gate/#map)
 
 > ## We are still in work in progress phase, Stay tuned !!
 > Looking for solid-contributors checkout : [contributors-guide](https://github.com/DS-AI-GATE/dsai-gate/wiki/CONTRIBUTORS-GUIDE)

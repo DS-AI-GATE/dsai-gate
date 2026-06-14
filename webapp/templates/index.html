@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the GATE Data Science and Artificial Intelligence syllabus through a focused, interactive study map.">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="DSAI-GATE Syllabus Explorer">
+  <meta property="og:description" content="A focused, interactive path through the complete GATE DA syllabus.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ pages_url }}">
+  <link rel="canonical" href="{{ pages_url }}">
+  <title>DSAI-GATE · Syllabus Explorer</title>
+  <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="DSAI-GATE home">
+      <span class="brand-mark">DA</span>
+      <span>
+        <strong>DSAI-GATE</strong>
+        <small>Syllabus explorer</small>
+      </span>
+    </a>
+    <nav class="top-actions" aria-label="Primary">
+      <button class="icon-button mobile-menu" id="menu-toggle" aria-label="Open subject navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <button class="button quiet" id="theme-toggle" aria-label="Toggle color theme">
+        <span aria-hidden="true">◐</span>
+        <span class="button-label">Theme</span>
+      </button>
+      <button class="button quiet" id="fullscreen-toggle" aria-label="Toggle fullscreen">
+        <span aria-hidden="true">⛶</span>
+        <span class="button-label">Fullscreen</span>
+      </button>
+      <button class="button primary" id="present-all">
+        Present <span aria-hidden="true">▶</span>
+      </button>
+      <a class="button primary" href="{{ repository_url }}" target="_blank" rel="noreferrer">
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="app-shell" id="top">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <span class="eyebrow">Curriculum map</span>
+        <button class="icon-button close-menu" id="menu-close" aria-label="Close subject navigation">×</button>
+      </div>
+      <p class="sidebar-copy">Seven subjects. One deliberate path from foundations to intelligent systems.</p>
+
+      <label class="search-control">
+        <span aria-hidden="true">⌕</span>
+        <input id="search-input" type="search" placeholder="Search {{ total_topics }} topics" autocomplete="off">
+        <kbd>/</kbd>
+      </label>
+
+      <div class="subject-nav" id="subject-nav" aria-label="Subjects">
+        {% for subject in subjects %}
+        <button class="subject-nav-item{% if loop.first %} active{% endif %}" data-subject="{{ subject.id }}">
+          <span class="nav-number">{{ subject.number }}</span>
+          <span class="nav-title">{{ subject.short }}</span>
+          <span class="nav-progress" data-progress="{{ subject.id }}">0/{{ subject.topics|length }}</span>
+        </button>
+        {% endfor %}
+      </div>
+
+      <div class="sidebar-progress">
+        <div class="progress-heading">
+          <span>Study progress</span>
+          <strong id="overall-percent">0%</strong>
+        </div>
+        <div class="progress-track"><span id="overall-bar"></span></div>
+        <p><span id="completed-count">0</span> of {{ total_topics }} topics reviewed</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">GATE paper · DA</span>
+          <h1>Explore the complete<br><em>GATE DA syllabus.</em></h1>
+          <p>Move topic by topic, keep track of revision, and jump directly into trusted guides and focused notebooks.</p>
+          <div class="hero-actions">
+            <button class="button primary large" data-scroll-to="curriculum">Explore curriculum <span>↓</span></button>
+            <button class="button quiet large" data-present-start="0">Start presentation <span>▶</span></button>
+            <a class="button quiet large" href="{{ repository_url }}/tree/main/PYQ" target="_blank" rel="noreferrer">Previous papers ↗</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Exam snapshot">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="hero-stat main-stat">
+            <span>100</span>
+            <small>total marks</small>
+          </div>
+          <div class="hero-stat stat-one"><span>7</span><small>subjects</small></div>
+          <div class="hero-stat stat-two"><span>{{ total_resources }}</span><small>resources</small></div>
+          <div class="hero-stat stat-three"><span>3h</span><small>duration</small></div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Study principles">
+        <div><strong>01</strong><span>Learn from primary sources</span></div>
+        <div><strong>02</strong><span>Practice the reasoning</span></div>
+        <div><strong>03</strong><span>Review official papers</span></div>
+      </section>
+
+      <section class="curriculum-section" id="curriculum">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Curriculum</span>
+            <h2>Build your study path</h2>
+          </div>
+          <div class="view-controls" role="group" aria-label="Filter topics">
+            <button class="chip active" data-filter="all">All topics</button>
+            <button class="chip" data-filter="open">To review</button>
+            <button class="chip" data-filter="complete">Reviewed</button>
+          </div>
+        </div>
+
+        <div class="subject-grid" id="subject-grid">
+          {% for subject in subjects %}
+          <article class="subject-card" id="{{ subject.id }}" data-subject-card="{{ subject.id }}" style="--subject-accent: {{ subject.accent }}">
+            <header class="subject-card-head">
+              <div>
+                <span class="subject-number">{{ subject.number }}</span>
+                <span class="topic-count">{{ subject.topics|length }} topics</span>
+              </div>
+              <div class="subject-completion" data-card-progress="{{ subject.id }}">0%</div>
+            </header>
+            <h3>{{ subject.title }}</h3>
+            <p>{{ subject.description }}</p>
+            <div class="subject-meter"><span data-card-bar="{{ subject.id }}"></span></div>
+            <div class="subject-links">
+              <a href="{{ subject.guide }}" target="_blank" rel="noreferrer">Study guide ↗</a>
+              {% if subject.notebook %}
+              <a href="{{ subject.notebook }}" target="_blank" rel="noreferrer">Notebook ↗</a>
+              {% endif %}
+              <button class="text-button" data-present-subject="{{ subject.id }}">Present subject →</button>
+            </div>
+            {% if subject.sections %}
+            <details class="resource-drawer">
+              <summary>Browse {{ subject.sections|length }} resource collections</summary>
+              <div class="resource-sections">
+                {% for section in subject.sections %}
+                <section>
+                  <h4>{{ section.title }} <span>{{ section.count }}</span></h4>
+                  <ul>
+                    {% for resource in section.resources[:5] %}
+                    <li><a href="{{ resource.url }}" target="_blank" rel="noreferrer">{{ resource.title }} ↗</a></li>
+                    {% endfor %}
+                  </ul>
+                </section>
+                {% endfor %}
+              </div>
+            </details>
+            {% endif %}
+            <ol class="topic-list">
+              {% for topic in subject.topics %}
+              <li data-topic-row data-topic-text="{{ topic|lower }}">
+                <label>
+                  <input type="checkbox" data-topic="{{ subject.id }}:{{ loop.index0 }}">
+                  <span class="checkmark"></span>
+                  <span>{{ topic }}</span>
+                </label>
+                <button class="topic-action" data-open-topic="{{ subject.id }}:{{ loop.index0 }}" aria-label="Study {{ topic }}">Study →</button>
+              </li>
+              {% endfor %}
+            </ol>
+          </article>
+          {% endfor %}
+        </div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <strong>No matching topics</strong>
+          <p>Try a broader search or switch the progress filter.</p>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <span class="eyebrow">Next move</span>
+        <h2>Turn the syllabus into a weekly plan.</h2>
+        <p>Use official papers to expose weak areas, then return here to focus your next study block.</p>
+        <div>
+          <a class="button primary large" href="{{ repository_url }}/tree/main/PYQ" target="_blank" rel="noreferrer">Open official papers ↗</a>
+          <a class="button quiet large" href="{{ repository_url }}/tree/main/notebooks" target="_blank" rel="noreferrer">Browse notebooks ↗</a>
+        </div>
+      </section>
+
+      <footer>
+        <div class="brand">
+          <span class="brand-mark">DA</span>
+          <span><strong>DSAI-GATE</strong><small>Community study guide</small></span>
+        </div>
+        <p>Built from the official syllabus. Maintained through pull requests.</p>
+        <a href="{{ repository_url }}/blob/main/docs/agent.md" target="_blank" rel="noreferrer">Contribution guide ↗</a>
+      </footer>
+    </main>
+  </div>
+
+  <section class="presentation" id="presentation" hidden aria-label="Presentation mode">
+    <header class="presentation-toolbar">
+      <div class="brand">
+        <span class="brand-mark">DA</span>
+        <span><strong id="presentation-mode-title">Focus mode</strong><small id="slide-counter">Slide 1</small></span>
+      </div>
+      <div class="presentation-tabs" role="tablist" aria-label="Presentation views">
+        <button class="presentation-tab active" id="focus-tab" role="tab" aria-selected="true" aria-controls="study-slide">Focus</button>
+        <button class="presentation-tab" id="overall-map-tab" role="tab" aria-selected="false" aria-controls="overall-map-panel">Overall map</button>
+      </div>
+      <div class="presentation-actions">
+        <button class="button quiet" id="slide-notes-toggle">Notes</button>
+        <button class="button quiet" id="presentation-fullscreen">Fullscreen</button>
+        <button class="icon-button" id="presentation-close" aria-label="Close presentation">×</button>
+      </div>
+    </header>
+
+    <div class="presentation-stage">
+      <button class="slide-arrow previous" id="slide-previous" aria-label="Previous slide">←</button>
+      <article class="study-slide" id="study-slide" aria-live="polite">
+        <div class="slide-copy">
+          <span class="eyebrow" id="slide-subject">Subject</span>
+          <h2 id="slide-title">Topic</h2>
+          <p id="slide-description"></p>
+          <div class="slide-prompts">
+            <span class="eyebrow">Active recall</span>
+            <ol>
+              <li>Define this concept precisely in your own words.</li>
+              <li>Work through one small example without referring to notes.</li>
+              <li>Write one likely exam trap and explain how you would avoid it.</li>
+            </ol>
+          </div>
+          <div class="resource-map-section" aria-labelledby="resource-map-title">
+            <div class="resource-map-heading">
+              <span class="eyebrow" id="resource-map-title">Resource mind map</span>
+              <span>Curated links from this repository</span>
+            </div>
+            <div class="resource-map" id="resource-map"></div>
+          </div>
+          <div class="slide-links" id="slide-links"></div>
+        </div>
+      </article>
+      <article class="overall-map-panel" id="overall-map-panel" role="tabpanel" aria-labelledby="overall-map-tab" hidden>
+        <div class="overall-map-heading">
+          <div>
+            <span class="eyebrow">Complete syllabus</span>
+            <h2>Overall memory map</h2>
+            <p>Seven subjects and all {{ total_topics }} concepts in one connected view.</p>
+          </div>
+          <div class="map-legend">
+            <span><i class="root-key"></i> GATE DA</span>
+            <span><i class="subject-key"></i> Subject</span>
+            <span><i class="topic-key"></i> Topic</span>
+          </div>
+        </div>
+        <div class="overall-map" id="overall-map"></div>
+      </article>
+      <button class="slide-arrow next" id="slide-next" aria-label="Next slide">→</button>
+    </div>
+
+    <aside class="notes-panel" id="notes-panel" hidden>
+      <div class="notes-heading">
+        <div>
+          <span class="eyebrow">Private study notes</span>
+          <h3 id="notes-title">Topic notes</h3>
+        </div>
+        <button class="icon-button" id="notes-close" aria-label="Close notes">×</button>
+      </div>
+      <textarea id="notes-input" placeholder="Capture a definition, mistake, shortcut, or question to revisit..."></textarea>
+      <div class="notes-footer">
+        <span id="notes-status">Saved locally</span>
+        <button class="button quiet" id="notes-export">Export notes</button>
+      </div>
+    </aside>
+
+    <footer class="presentation-footer">
+      <span>← → navigate</span>
+      <span>N notes</span>
+      <span>F fullscreen</span>
+      <span>Esc exit</span>
+    </footer>
+  </section>
+
+  <script id="syllabus-data" type="application/json">{{ subjects|tojson }}</script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js"></script>
+  <script src="static/app.js"></script>
+</body>
+</html>

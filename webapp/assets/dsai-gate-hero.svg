@@ -1,0 +1,49 @@
+<svg width="1200" height="430" viewBox="0 0 1200 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="background" x1="80" y1="25" x2="1120" y2="405" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="0.52" stop-color="#172554"/>
+      <stop offset="1" stop-color="#083344"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="253" y1="104" x2="391" y2="296" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(978 46) rotate(132.66) scale(405 484)">
+      <stop stop-color="#22D3EE" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" stroke="#A5B4FC" stroke-opacity="0.07"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="430" rx="28" fill="url(#background)"/>
+  <rect width="1200" height="430" rx="28" fill="url(#glow)"/>
+  <rect width="1200" height="430" rx="28" fill="url(#grid)"/>
+  <path d="M0 345C176 274 324 386 502 340C697 290 778 197 1200 273V430H0V345Z" fill="#0F172A" fill-opacity="0.38"/>
+
+  <g>
+    <rect x="190" y="82" width="236" height="236" rx="58" fill="#020617" fill-opacity="0.25"/>
+    <rect x="198" y="90" width="220" height="220" rx="54" fill="#0F172A" stroke="#818CF8" stroke-width="2"/>
+    <path d="M258 156H310C344 156 367 178 367 210C367 242 344 264 310 264H258V156Z" stroke="url(#accent)" stroke-width="18" stroke-linejoin="round"/>
+    <path d="M286 210H374" stroke="url(#accent)" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="374" cy="210" r="13" fill="#22D3EE"/>
+    <circle cx="258" cy="156" r="9" fill="#A5B4FC"/>
+    <circle cx="258" cy="264" r="9" fill="#67E8F9"/>
+  </g>
+
+  <text x="500" y="174" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="70" font-weight="750" letter-spacing="-2">DSAI-GATE</text>
+  <text x="504" y="222" fill="#A5B4FC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="23" font-weight="600" letter-spacing="3">LEARN  ·  PRACTICE  ·  REVISE</text>
+  <text x="504" y="276" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="22">
+    A syllabus-first path for Data Science &amp; AI
+  </text>
+  <rect x="504" y="304" width="184" height="40" rx="20" fill="#312E81"/>
+  <text x="596" y="331" text-anchor="middle" fill="#E0E7FF" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700">GATE PAPER · DA</text>
+  <rect x="702" y="304" width="190" height="40" rx="20" fill="#164E63"/>
+  <text x="797" y="331" text-anchor="middle" fill="#CFFAFE" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700">OPEN STUDY GUIDE</text>
+
+  <circle cx="1080" cy="92" r="5" fill="#67E8F9"/>
+  <circle cx="1120" cy="126" r="3" fill="#A5B4FC"/>
+  <circle cx="1052" cy="151" r="3" fill="#818CF8"/>
+</svg>

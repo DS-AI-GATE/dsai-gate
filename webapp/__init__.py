@@ -1,0 +1,1 @@
+"""DSAI-GATE syllabus explorer."""
