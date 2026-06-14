@@ -91,8 +91,8 @@ Recommended notes and lecture slides:
 - [**Machine Learning Production Myths**](https://www.youtube.com/watch?v=06-AZXmwHjo) (Stanford MLSys Seminar)\
   Debunks common assumptions and highlights real-world MLOps challenges.
 
-- [**Introduction to Machine Learning in Production**](https://docs.google.com/presentation/d/1WTR8zQWJNkL1A7BypyZ-EA3xqTfzhS35Qim8E1E9IdM/edit#slide=id.g95c3b1e661_0_0)\
-  Lecture notes by Chip Huyen covering production workflows and architecture patterns.
+- [**Introduction to Machine Learning in Production**](https://huyenchip.com/mlops/#overview)\
+  Chip Huyen's maintained guide to production workflows and architecture patterns.
 
 ---
 
@@ -116,13 +116,12 @@ Useful reads to gain industry-aligned insights:
 
 ## <a name="practice-problems"></a>Practice Problems
 
-- [**MLOps Interview Questions GitHub Repo**](https://github.com/chiphuyen/mlops-interview-questions)\
-  A collection of technical and design questions to prepare for MLOps-focused roles.
+- [**MLOps Guide**](https://huyenchip.com/mlops/)\
+  A maintained collection of technical, design, and career resources for MLOps.
 
-- [**ML Test Score: A Rubric for Production Readiness**](https://github.com/eugeneyan/ml-test-score)\
+- [**ML Test Score: A Rubric for Production Readiness**](https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/)\
   Evaluate your ML system using this comprehensive test scoring framework from Google.
 
 ---
-
 
 

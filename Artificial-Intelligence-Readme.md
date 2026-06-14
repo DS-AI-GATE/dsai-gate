@@ -15,6 +15,30 @@
  
 Credits : [Stanford CS211](https://stanford-cs221.github.io/summer2023/) - Afshine Amidi and Shervine Amidi published on September 8, 2019
 
+<!-- subject-diagram:start -->
+## Interactive Concept Map
+
+Open the Mermaid diagram viewer on GitHub to pan and zoom through this original
+subject map.
+
+```mermaid
+flowchart LR
+    A[Agents and states] --> B{Reasoning mode}
+    B --> C[Uninformed search]
+    B --> D[Informed search]
+    B --> E[Adversarial search]
+    B --> F[Logic]
+    B --> G[Reasoning under uncertainty]
+    F --> H[Propositional and predicate logic]
+    G --> I[Conditional independence]
+    I --> J[Variable elimination]
+    I --> K[Sampling]
+    classDef default fill:#172033,stroke:#58c4dd,color:#ffffff,stroke-width:2px
+    linkStyle default stroke:#f2cc8f,stroke-width:2px
+```
+
+Diagram style follows a visual-first progression inspired by [3Blue1Brown](https://www.3blue1brown.com/).
+<!-- subject-diagram:end -->
 
 ---
 
@@ -27,7 +51,7 @@ Explore these recommended books to enhance your understanding:
   A comprehensive resource for statistical theory and its applications.
 -->
 
-- [**"Artificial Intelligence: A Modern Approach, 4th Ed"**](http://aima.cs.berkeley.edu/) by  by Stuart Russell and Peter Norvig
+- [**"Artificial Intelligence: A Modern Approach, 4th Ed"**](https://aima.cs.berkeley.edu/) by Stuart Russell and Peter Norvig
   A comprehensive resource for AI theory and its applications.
 ---
 
@@ -74,7 +98,7 @@ Read insightful articles to gain additional insights:
 
 - **Coding Examples** : [**"Python Code for Artificial Intelligence: A Modern Approach, 4th Ed"**](https://github.com/aimacode/aima-python) by  by Stuart Russell and Peter Norvig
  You can use this in conjunction with a course on AI, or for study on your own.
-- [**Practice Exercises : Student Handouts**](http://ai.berkeley.edu/section_handouts.html) **[UC Berkley  CS 188: Artificial Intelligence]** : In the offering of CS188, they have weekly discussion sections in which they review the material covered for that week. Sectional handouts are good practice exercises for students.
+- [**Berkeley CS188 Open Textbook**](https://inst.eecs.berkeley.edu/~cs188/textbook/) covers search, games, logic, and probabilistic inference with worked examples.
 
 ---
 
@@ -95,4 +119,3 @@ Test your knowledge and skills with these practice problems:
 * [Notes](#notes)  
 * [Articles](#articles)  
 * [Practice Problems](#practice-problems)
-

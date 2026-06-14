@@ -1,0 +1,75 @@
+name: Repository checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 4 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  generated-content:
+    name: Generated diagrams are current
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check generated subject diagrams
+        run: python scripts/generate_subject_diagrams.py --check
+
+      - name: Verify previous-year paper checksums
+        run: sha256sum --check PYQ/SHA256SUMS
+
+      - name: Test link collector
+        run: python scripts/test_check_new_links.py
+
+  new-links:
+    name: New links work
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Collect new links and validate local paths
+        run: >-
+          python scripts/check_new_links.py
+          --base "${{ github.event.pull_request.base.sha }}"
+          --output .link-check/new-links.md
+
+      - name: Check new external links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --accept 200,204,206,403,429
+            --max-retries 3
+            .link-check/new-links.md
+          fail: true
+
+  full-link-audit:
+    name: Scheduled full link audit
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check all Markdown links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --accept 200,204,206,403,429
+            --max-retries 3
+            --exclude-path .git
+            --exclude-path docs/stale-links.md
+            --root-dir .
+            "**/*.md"
+          fail: true
