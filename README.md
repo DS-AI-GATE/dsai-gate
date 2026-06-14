@@ -47,7 +47,23 @@ Our repository is meticulously organized to cover the complete syllabus outlined
 
 **Explore the power of open source including featured tutorials, course videos, books, articles, courses, websites, code examples in Python**.\
 ``Theoretical explanations, practice examples, or MCQ exercises, we've got you covered in this all-encompassing guide.``\
-``We aim to present a one stop resource in this Preparation-to-Interviews guide.`` 
+``We aim to present a one stop resource in this Preparation-to-Interviews guide.``
+
+
+**Updates**
+Created the GitHub Pages deployment workflow at [.github/workflows/pages.yml](.github/workflows/pages.yml).
+
+
+- Tests and builds on pull requests.
+- Deploys automatically after merging to `main`.
+- Rebuilds when topics, notebooks, resources, PYQs, or webapp files change.
+- Uses current GitHub Actions versions.
+- Publishes to: https://ds-ai-gate.github.io/dsai-gate/
+- Provides the map directly at: https://ds-ai-gate.github.io/dsai-gate/#map
+- Adds deployment status and app links to README.
+
+Verified workflow YAML, tests, and static export. In repository Settings → Pages, set **Source** to **GitHub Actions** once.
+
   
 📁 **Repository Structure**
 
