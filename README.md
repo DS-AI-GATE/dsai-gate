@@ -140,6 +140,10 @@ Your knowledge or years of industry experience is invaluable. Claim your spot no
 3. If your content is ready, submit a pull request or open an issue to indicate your contribution.
 4. Collaborate with the community to enhance and refine the content.
 
+All repository changes, including maintainer changes, must be submitted and
+merged through a pull request. See the [repository agent guide](docs/agent.md)
+for the required workflow.
+
 For any questions or clarifications, feel free to [reach out](https://github.com/DS-AI-GATE/dsai-gate/issues/3)!
 
 Join our [Discord Server](https://discord.com/invite/N5Wgn9ygDF) for real-time interactions with fellow contributors.

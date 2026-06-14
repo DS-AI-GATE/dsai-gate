@@ -40,6 +40,28 @@ Before changing educational content:
 When adding an official previous-year paper, update `PYQ/README.md` and
 `PYQ/SHA256SUMS`.
 
+## Pull Request Policy
+
+Every repository change must be proposed and merged through a pull request.
+Direct pushes or commits to the default branch are not permitted, including
+changes made by maintainers and automated agents.
+
+For every change:
+
+1. Create or use a dedicated branch.
+2. Keep the pull request focused on one related set of changes.
+3. Describe the purpose, affected syllabus topics, sources, and validation.
+4. Wait for required automated checks and reviewer approvals.
+5. Merge only after all blocking feedback is resolved.
+
+Urgent fixes must still use a pull request. When normal review cannot happen
+before an emergency merge, document the reason in the pull request and request
+follow-up review immediately afterward.
+
+Repository administrators should enforce this policy with branch protection
+or a ruleset that requires pull requests and passing status checks before
+changes can reach the default branch.
+
 ## Notebook Standards
 
 Every notebook should:
