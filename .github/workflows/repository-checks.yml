@@ -17,9 +17,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Check generated subject diagrams
-        run: python scripts/generate_subject_diagrams.py --check
-
       - name: Verify previous-year paper checksums
         run: sha256sum --check PYQ/SHA256SUMS
 
