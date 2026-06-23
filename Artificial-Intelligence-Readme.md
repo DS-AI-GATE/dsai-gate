@@ -15,31 +15,6 @@
  
 Credits : [Stanford CS211](https://stanford-cs221.github.io/summer2023/) - Afshine Amidi and Shervine Amidi published on September 8, 2019
 
-<!-- subject-diagram:start -->
-## Interactive Concept Map
-
-Open the Mermaid diagram viewer on GitHub to pan and zoom through this original
-subject map.
-
-```mermaid
-flowchart LR
-    A[Agents and states] --> B{Reasoning mode}
-    B --> C[Uninformed search]
-    B --> D[Informed search]
-    B --> E[Adversarial search]
-    B --> F[Logic]
-    B --> G[Reasoning under uncertainty]
-    F --> H[Propositional and predicate logic]
-    G --> I[Conditional independence]
-    I --> J[Variable elimination]
-    I --> K[Sampling]
-    classDef default fill:#172033,stroke:#58c4dd,color:#ffffff,stroke-width:2px
-    linkStyle default stroke:#f2cc8f,stroke-width:2px
-```
-
-Diagram style follows a visual-first progression inspired by [3Blue1Brown](https://www.3blue1brown.com/).
-<!-- subject-diagram:end -->
-
 ---
 
 ## <a name="books"></a>Books

@@ -7,28 +7,6 @@
 * [Articles](#articles)  
 * [Practice Problems](#practice-problems)
 
-<!-- subject-diagram:start -->
-## Interactive Concept Map
-
-Open the Mermaid diagram viewer on GitHub to pan and zoom through this original
-subject map.
-
-```mermaid
-flowchart LR
-    A[ER model] --> B[Relational model]
-    B --> C[Relational algebra and tuple calculus]
-    C --> D[SQL and integrity constraints]
-    D --> E[Functional dependencies]
-    E --> F[Normalization]
-    D --> G[File organization and indexing]
-    G --> H[Data transformations]
-    H --> I[Warehousing and OLAP]
-    classDef default fill:#172033,stroke:#58c4dd,color:#ffffff,stroke-width:2px
-    linkStyle default stroke:#f2cc8f,stroke-width:2px
-```
-
-Diagram style follows a visual-first progression inspired by [3Blue1Brown](https://www.3blue1brown.com/).
-<!-- subject-diagram:end -->
 
 ---
 

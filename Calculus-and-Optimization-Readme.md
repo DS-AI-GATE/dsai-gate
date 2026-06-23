@@ -13,28 +13,6 @@
 [<img src="Data/Calculus-and-Optimization/Calculus.png">](Data/Calculus-and-Optimization/calculus_cheat_sheet_all.pdf)
 >[Download Full Pdf](Data/Calculus-and-Optimization/calculus_cheat_sheet_all.pdf)
 
-<!-- subject-diagram:start -->
-## Interactive Concept Map
-
-Open the Mermaid diagram viewer on GitHub to pan and zoom through this original
-subject map.
-
-```mermaid
-flowchart LR
-    A[Functions] --> B[Limits]
-    B --> C[Continuity]
-    C --> D[Derivatives]
-    D --> E[Taylor approximation]
-    D --> F[Critical points]
-    F --> G[Maxima and minima]
-    G --> H[Single-variable optimization]
-    classDef default fill:#172033,stroke:#58c4dd,color:#ffffff,stroke-width:2px
-    linkStyle default stroke:#f2cc8f,stroke-width:2px
-```
-
-Visual intuition reference: [Essence of Calculus](https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown.
-<!-- subject-diagram:end -->
-
 ---
 
 ## <a name="books"></a>Books
