@@ -39,29 +39,6 @@ Course to deepen your knowledge:
 - [**"OCW MIT : Linear Algebra by Gilbert Strang"**](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/video_galleries/video-lectures/) : Linear Algebra Course MIT
 - [**"Linear Algebra Course at Khan Acadeyy"**](https://www.khanacademy.org/math/linear-algebra) : Khan Academy Course
 
-<!-- subject-diagram:start -->
-## Interactive Concept Map
-
-Open the Mermaid diagram viewer on GitHub to pan and zoom through this original
-subject map.
-
-```mermaid
-flowchart LR
-    A[Vectors] --> B[Span and subspaces]
-    B --> C[Linear independence]
-    C --> D[Matrices and linear maps]
-    D --> E[Rank and nullity]
-    D --> F[Eigenvalues and eigenvectors]
-    D --> G[Orthogonal projections]
-    F --> H[Diagonalization and SVD]
-    G --> I[Least squares and PCA]
-    H --> I
-    classDef default fill:#172033,stroke:#58c4dd,color:#ffffff,stroke-width:2px
-    linkStyle default stroke:#f2cc8f,stroke-width:2px
-```
-
-Visual intuition reference: [Essence of Linear Algebra](https://youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B) by 3Blue1Brown.
-<!-- subject-diagram:end -->
 
 ---
 

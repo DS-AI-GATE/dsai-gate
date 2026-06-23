@@ -14,30 +14,6 @@
  
 Credits : [Stanford Cheatsheets: Machine Learning, AI, Probability Statistics, Deep Learning](https://stanford.edu/~shervine/teaching/) - Afshine Amidi and Shervine Amidi published on September 8, 2019
 
-<!-- subject-diagram:start -->
-## Interactive Concept Map
-
-Open the Mermaid diagram viewer on GitHub to pan and zoom through this original
-subject map.
-
-```mermaid
-flowchart LR
-    A[Data and features] --> B{Learning task}
-    B -->|Supervised| C[Regression]
-    B -->|Supervised| D[Classification]
-    B -->|Unsupervised| E[Clustering]
-    B -->|Unsupervised| F[Dimensionality reduction]
-    C --> G[Loss and regularization]
-    D --> G
-    G --> H[Bias-variance and validation]
-    E --> I[k-means and hierarchical methods]
-    F --> J[PCA]
-    classDef default fill:#172033,stroke:#58c4dd,color:#ffffff,stroke-width:2px
-    linkStyle default stroke:#f2cc8f,stroke-width:2px
-```
-
-Diagram style follows a visual-first progression inspired by [3Blue1Brown](https://www.3blue1brown.com/).
-<!-- subject-diagram:end -->
 
 ---
 

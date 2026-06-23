@@ -8,29 +8,6 @@
 * [Articles](#articles)  
 * [Practice Problems](#practice-problems)
 
-<!-- subject-diagram:start -->
-## Interactive Concept Map
-
-Open the Mermaid diagram viewer on GitHub to pan and zoom through this original
-subject map.
-
-```mermaid
-flowchart LR
-    A[Python semantics] --> B[Data structures]
-    B --> C[Stacks, queues, and lists]
-    B --> D[Trees and hash tables]
-    C --> E[Searching and sorting]
-    D --> F[Graph traversal]
-    E --> G[Divide and conquer]
-    F --> H[Shortest paths]
-    G --> I[Complexity analysis]
-    H --> I
-    classDef default fill:#172033,stroke:#58c4dd,color:#ffffff,stroke-width:2px
-    linkStyle default stroke:#f2cc8f,stroke-width:2px
-```
-
-Diagram style follows a visual-first progression inspired by [3Blue1Brown](https://www.3blue1brown.com/).
-<!-- subject-diagram:end -->
 
 ---
 
