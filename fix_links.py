@@ -1,6 +1,6 @@
 import re
 
-with open("webapp/test/README-redesign.md", "r") as f:
+with open("webapp/test/README-redesign.md", "r", encoding = "utf-8") as f:
     content = f.read()
 
 replacements = {
@@ -31,5 +31,5 @@ for old, new in replacements.items():
     escaped_old = old.replace(".", r"\.")
     content = re.sub(r'\]\(' + escaped_old + r'\)', r'](' + new + ')', content)
 
-with open("webapp/test/README-redesign.md", "w") as f:
+with open("webapp/test/README-redesign.md", "w", encoding = "utf-8") as f:
     f.write(content)
