@@ -11,6 +11,7 @@ material for the GATE Data Science and Artificial Intelligence paper.
 · [Overall memory map](https://ds-ai-gate.github.io/dsai-gate/#map)
 
 > ## We are still in work in progress phase, Stay tuned !!
+>
 > Looking for solid-contributors checkout : [contributors-guide](https://github.com/Kunaldargan/dsai-gate/wiki/CONTRIBUTORS-GUIDE)
 
 <!---
@@ -31,28 +32,24 @@ Comments and Notes:
      Find more People from Collabration
      Slides .... (Preferable Standard) -->
 
-
-
 🚀 **About the Repository**
- 
+
 **Discover the ultimate GATE (Graduate Aptitude Test in Engineering) Resource: All-in-One curated for Data Science and Artificial Intelligence (DSAI)** 🌟 🌟 🌟 🌟 🌟 \
 This repository is designed to collaborate and share resources for preparation, including study materials, online courses, and code examples that cover the DSAI Gate syllabus.
 
 📚 **Syllabus Coverage**
 
-**Syllabus:**  [Data Science and Artificial Intelligence Gate ](https://gate2026.iitg.ac.in/doc/GATE2026_Syllabus/DA_2026_Syllabus.pdf) 
-(Released by GATE 2026 organizing institute)
+**Syllabus:** [Data Science and Artificial Intelligence Gate ](https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/DA_GATE2027_Syllabus.pdf)
+(Released by GATE 2027 organizing institute)
 
-Our repository is meticulously organized to cover the complete syllabus outlined for the DSAI section of the GATE exam. From Probability and Statistics to Math, Programming,DSA, DBMS, Machine Learning, and AI, you'll find comprehensive resources that address each topic in detail. 
+Our repository is meticulously organized to cover the complete syllabus outlined for the DSAI section of the GATE exam. From Probability and Statistics to Math, Programming,DSA, DBMS, Machine Learning, and AI, you'll find comprehensive resources that address each topic in detail.
 
 **Explore the power of open source including featured tutorials, course videos, books, articles, courses, websites, code examples in Python**.\
-``Theoretical explanations, practice examples, or MCQ exercises, we've got you covered in this all-encompassing guide.``\
-``We aim to present a one stop resource in this Preparation-to-Interviews guide.``
-
+`Theoretical explanations, practice examples, or MCQ exercises, we've got you covered in this all-encompassing guide.`\
+`We aim to present a one stop resource in this Preparation-to-Interviews guide.`
 
 **Updates**
 Created the GitHub Pages deployment workflow at [.github/workflows/pages.yml](.github/workflows/pages.yml).
-
 
 - Tests and builds on pull requests.
 - Deploys automatically after merging to `main`.
@@ -64,7 +61,6 @@ Created the GitHub Pages deployment workflow at [.github/workflows/pages.yml](.g
 
 Verified workflow YAML, tests, and static export. In repository Settings → Pages, set **Source** to **GitHub Actions** once.
 
-  
 📁 **Repository Structure**
 
 To ensure a smooth and efficient learning experience, we've structured the repository with the following sections:
@@ -115,43 +111,41 @@ To ensure a smooth and efficient learning experience, we've structured the repos
   <!-- More rows for different topics -->
 </table>
 
-
-
 🌟 **How to Use This Repository**
 
-1. **Navigation**     : Use the Repository Structure to navigate to different topics and find the resources you need in Subsection-ReadMe for example Probability-Statistics-Readme.md.
+1. **Navigation** : Use the Repository Structure to navigate to different topics and find the resources you need in Subsection-ReadMe for example Probability-Statistics-Readme.md.
 2. **Study Materials**: In each Subsection-ReadMe dive into detailed explanations, examples, and theoretical content for each topic by opening notes.
-3. **Code Snippets**  : Explore code snippets and implementations to understand practical applications.
-4. **Practice**       : Engage with MCQ exercises, quizzes, and practice problems to reinforce your understanding inside subsections.
+3. **Code Snippets** : Explore code snippets and implementations to understand practical applications.
+4. **Practice** : Engage with MCQ exercises, quizzes, and practice problems to reinforce your understanding inside subsections.
 
 ```
   Each Subsection-Readme is organised in the following format:
-  [Table of Contents] 
+  [Table of Contents]
   * Books
   * NPTEL and Courses
   * Notes
-  * Articles 
+  * Articles
   * Programming : Examples and tutorial such as Kaggle for ML, GFG for Python and Algo
   * Practice Problems
-  * Interview 
+  * Interview
 
 ```
+
 🤝 **Contributions**
 
 **A Warm Invitation to Support and Share: Star the Repo and Spread the Word**
 
-Please consider starring 🌟 the repo and sharing it with others who might be interested. 
+Please consider starring 🌟 the repo and sharing it with others who might be interested.
 This repository is a collaborative effort, and we welcome contributions from the community. If you find any errors, have additional resources to share, or want to improve existing content, feel free to contribute through pull requests.
 
 ---
-🚀  Looking for contributors
+
+🚀 Looking for contributors
 
 Calling Data Science & AI folks!
 
 Join the team as official contributor for DSAI-GATE prep resource. Elevate your expertise by contributing to this repository. \
 Your knowledge or years of industry experience is invaluable. Claim your spot now: Contribute to DSAI-GATE. Let's shape the future of GATE prep together! 💼📚 #DSAI #GATE
-
-
 
 ### How to Contribute
 
@@ -166,9 +160,10 @@ for the required workflow.
 
 For any questions or clarifications, feel free to [reach out](https://github.com/Kunaldargan/dsai-gate/issues/3)!
 
-Join our [Discord Server](https://discord.com/invite/N5Wgn9ygDF) for real-time interactions with fellow contributors.
----
+## Join our [Discord Server](https://discord.com/invite/N5Wgn9ygDF) for real-time interactions with fellow contributors.
+
 ### Contributors
+
 <table>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -204,8 +199,7 @@ Join our [Discord Server](https://discord.com/invite/N5Wgn9ygDF) for real-time i
 
 ---
 
-Let's make DSAI preparation an enriching and collaborative journey together! 🚀 
-
+Let's make DSAI preparation an enriching and collaborative journey together! 🚀
 
 🔗 **Connect with Us**
 
@@ -216,15 +210,15 @@ Stay connected with us for updates, announcements, and discussions
 | [agent guide](docs/agent.md)
 | [stale-link audit](docs/stale-links.md)
 
-
 <!---
  - Add jump links structure to individual markdown readme
- - 
+ -
 -->
 
 ---
-  
+
 ## GATE Data Science and AI Syllabus
+
 <div class="table-responsive">
 
 <table class="table table-bordered table-striped" cellspacing="0" cellpadding="5">
@@ -250,27 +244,27 @@ Stay connected with us for updates, announcements, and discussions
 
 <td>
 
-*   Counting (Permutations and Combinations)
-*   Probability Axioms
-*   Sample Space
-*   Events
-*   Independent Events
-*   Mutually Exclusive Events
-*   Marginal, Conditional, and Joint Probability
-*   Bayes' Theorem
-*   Conditional Expectation and Variance
-*   Mean, Median, Mode, and Standard Deviation
-*   Correlation and Covariance
-*   Random Variables
-*   Discrete Random Variables and Probability Mass Functions (Uniform, Bernoulli, Binomial Distribution)
-*   Continuous Random Variables and Probability Distribution Functions (Uniform, Exponential, Poisson, Normal, Standard Normal, t-Distribution, Chi-Squared Distributions)
-*   Cumulative Distribution Function
-*   Conditional Probability Density Function
-*   Central Limit Theorem
-*   Confidence Interval
-*   z-Test
-*   t-Test
-*   Chi-Squared Test
+- Counting (Permutations and Combinations)
+- Probability Axioms
+- Sample Space
+- Events
+- Independent Events
+- Mutually Exclusive Events
+- Marginal, Conditional, and Joint Probability
+- Bayes' Theorem
+- Conditional Expectation and Variance
+- Mean, Median, Mode, and Standard Deviation
+- Correlation and Covariance
+- Random Variables
+- Discrete Random Variables and Probability Mass Functions (Uniform, Bernoulli, Binomial Distribution)
+- Continuous Random Variables and Probability Distribution Functions (Uniform, Exponential, Poisson, Normal, Standard Normal, t-Distribution, Chi-Squared Distributions)
+- Cumulative Distribution Function
+- Conditional Probability Density Function
+- Central Limit Theorem
+- Confidence Interval
+- z-Test
+- t-Test
+- Chi-Squared Test
 
 </td>
 
@@ -282,24 +276,24 @@ Stay connected with us for updates, announcements, and discussions
 
 <td>
 
-*   Vector Space
-*   Subspaces
-*   Linear Dependence and Independence of Vectors
-*   Matrices
-*   Projection Matrix
-*   Orthogonal Matrix
-*   Idempotent Matrix
-*   Partition Matrix and Their Properties
-*   Quadratic Forms
-*   Systems of Linear Equations and Solutions
-*   Gaussian Elimination
-*   Eigenvalues and Eigenvectors
-*   Determinant
-*   Rank
-*   Nullity
-*   Projections
-*   LU Decomposition
-*   Singular Value Decomposition
+- Vector Space
+- Subspaces
+- Linear Dependence and Independence of Vectors
+- Matrices
+- Projection Matrix
+- Orthogonal Matrix
+- Idempotent Matrix
+- Partition Matrix and Their Properties
+- Quadratic Forms
+- Systems of Linear Equations and Solutions
+- Gaussian Elimination
+- Eigenvalues and Eigenvectors
+- Determinant
+- Rank
+- Nullity
+- Projections
+- LU Decomposition
+- Singular Value Decomposition
 
 </td>
 
@@ -311,12 +305,12 @@ Stay connected with us for updates, announcements, and discussions
 
 <td>
 
-*   Functions of a Single Variable
-*   Limit
-*   Continuity and Differentiability
-*   Taylor Series
-*   Maxima and Minima
-*   Optimization Involving a Single Variable
+- Functions of a Single Variable
+- Limit
+- Continuity and Differentiability
+- Taylor Series
+- Maxima and Minima
+- Optimization Involving a Single Variable
 
 </td>
 
@@ -328,13 +322,13 @@ Stay connected with us for updates, announcements, and discussions
 
 <td>
 
-*   Programming in Python
-*   Basic Data Structures: Stacks, Queues, Linked Lists, Trees, and Hash Tables
-*   Search Algorithms: Linear Search and Binary Search
-*   Basic Sorting Algorithms: Selection Sort, Bubble Sort, Insertion Sort
-*   Divide and Conquer Techniques: Mergesort, Quicksort
-*   Introduction to Graph Theory
-*   Basic Graph Algorithms: Traversals and the Shortest Path
+- Programming in Python
+- Basic Data Structures: Stacks, Queues, Linked Lists, Trees, and Hash Tables
+- Search Algorithms: Linear Search and Binary Search
+- Basic Sorting Algorithms: Selection Sort, Bubble Sort, Insertion Sort
+- Divide and Conquer Techniques: Mergesort, Quicksort
+- Introduction to Graph Theory
+- Basic Graph Algorithms: Traversals and the Shortest Path
 
 </td>
 
@@ -346,18 +340,18 @@ Stay connected with us for updates, announcements, and discussions
 
 <td>
 
-*   ER-Model (Entity-Relationship Model)
-*   Relational Model: Relational Algebra, Tuple Calculus
-*   SQL (Structured Query Language)
-*   Integrity Constraints
-*   Normal Form
-*   File Organization
-*   Indexing
-*   Data Types
-*   Data Transformation: Normalization, Discretization, Sampling, and Compression
-*   Data Warehouse Modeling: Schema for Multidimensional Data Models
-*   Concept Hierarchies
-*   Measures: Categorization and Computations
+- ER-Model (Entity-Relationship Model)
+- Relational Model: Relational Algebra, Tuple Calculus
+- SQL (Structured Query Language)
+- Integrity Constraints
+- Normal Form
+- File Organization
+- Indexing
+- Data Types
+- Data Transformation: Normalization, Discretization, Sampling, and Compression
+- Data Warehouse Modeling: Schema for Multidimensional Data Models
+- Concept Hierarchies
+- Measures: Categorization and Computations
 
 </td>
 
@@ -369,26 +363,26 @@ Stay connected with us for updates, announcements, and discussions
 
 <td>Supervised Learning:
 
-*   Regression and Classification Problems
-*   Simple Linear Regression
-*   Multiple Linear Regression
-*   Ridge Regression
-*   Logistic Regression
-*   k-Nearest Neighbors
-*   Naive Bayes Classifier
-*   Linear Discriminant Analysis
-*   Support Vector Machine
-*   Decision Trees
-*   Bias-Variance Trade-off
-*   Cross-validation Methods: Leave-One-Out (LOO) Cross-validation, k-Folds Cross-validation
-*   Multi-layer Perceptron
-*   Feed-forward Neural Network
-*   Unsupervised Learning:
-*   Clustering Algorithms
-*   k-Means and k-Medoid Clustering
-*   Hierarchical Clustering
-*   Dimensionality Reduction
-*   Principal Component Analysis (PCA)
+- Regression and Classification Problems
+- Simple Linear Regression
+- Multiple Linear Regression
+- Ridge Regression
+- Logistic Regression
+- k-Nearest Neighbors
+- Naive Bayes Classifier
+- Linear Discriminant Analysis
+- Support Vector Machine
+- Decision Trees
+- Bias-Variance Trade-off
+- Cross-validation Methods: Leave-One-Out (LOO) Cross-validation, k-Folds Cross-validation
+- Multi-layer Perceptron
+- Feed-forward Neural Network
+- Unsupervised Learning:
+- Clustering Algorithms
+- k-Means and k-Medoid Clustering
+- Hierarchical Clustering
+- Dimensionality Reduction
+- Principal Component Analysis (PCA)
 
 </td>
 
@@ -400,12 +394,12 @@ Stay connected with us for updates, announcements, and discussions
 
 <td>
 
-*   Search: Informed Search, Uninformed Search, Adversarial Search
-*   Logic: Propositional Logic, Predicate Logic
-*   Reasoning under Uncertainty Topics:
-*   Conditional Independence Representation
-*   Exact Inference through Variable Elimination
-*   Approximate Inference through Sampling
+- Search: Informed Search, Uninformed Search, Adversarial Search
+- Logic: Propositional Logic, Predicate Logic
+- Reasoning under Uncertainty Topics:
+- Conditional Independence Representation
+- Exact Inference through Variable Elimination
+- Approximate Inference through Sampling
 
 </td>
 
@@ -414,7 +408,6 @@ Stay connected with us for updates, announcements, and discussions
 </tbody>
 
 </table>
-
 
 <!-- More content for other sections -->
 
@@ -492,8 +485,8 @@ Check out the complete GATE DA Exam Pattern in the table outlined below.
 
 <td>
 
-*   General Aptitude: 15 Marks
-*   Data Science and AI Subject Questions: 85 Mark
+- General Aptitude: 15 Marks
+- Data Science and AI Subject Questions: 85 Mark
 
 </td>
 
@@ -505,9 +498,9 @@ Check out the complete GATE DA Exam Pattern in the table outlined below.
 
 <td>
 
-*   For a 1-mark MCQ, an incorrect answer will result in a deduction of 1/3 mark.
-*   For a 2-mark MCQ, an incorrect answer will lead to a deduction of 2/3 marks.
-*   There is no penalty for incorrect responses to MSQ or NAT questions.
+- For a 1-mark MCQ, an incorrect answer will result in a deduction of 1/3 mark.
+- For a 2-mark MCQ, an incorrect answer will lead to a deduction of 2/3 marks.
+- There is no penalty for incorrect responses to MSQ or NAT questions.
 
 </td>
 
@@ -518,11 +511,13 @@ Check out the complete GATE DA Exam Pattern in the table outlined below.
 </table>
 
 ---
+
 ### Useful Collections
 
 - [Achint Chaudhary's concise gist of resouces](https://gist.github.com/chaudharyachint08/481a4fbb5e699340fb8849d1cacdcdf9)
 - [Official previous-year papers and answer keys](PYQ/README.md)
 - [Recent AI Questions](https://gateoverflow.in/tag/gate-ds-ai-2024)
+
 ---
 
 ### Previous Year Papers
@@ -530,30 +525,33 @@ Check out the complete GATE DA Exam Pattern in the table outlined below.
 Access previous year GATE Data Science and AI question papers and their answer keys:
 
 **2024:**
+
 - [GATE DA 2024 Question Paper](PYQ/DA.PYQ.2024.pdf)
 - [GATE DA 2024 Answer Key](PYQ/DA.PYQ.Keys.2024.pdf)
 
 **2025:**
+
 - [GATE DA 2025 Question Paper](PYQ/DA.PYQ.2025.pdf)
 - [GATE DA 2025 Answer Key](PYQ/DA.PYQ.Keys.2025.pdf)
 
 **2026:**
+
 - [GATE DA 2026 Question Paper](PYQ/DA.PYQ.2026.pdf)
 - [GATE DA 2026 Answer Key](PYQ/DA.PYQ.Keys.2026.pdf)
 
 ---
 
 ### Sample Paper
+
 IISC released a DS/AI sample paper on their website. It's expected the questions in the main exams would be on similar lines [Sample Paper](https://gate2024.iisc.ac.in/wp-content/uploads/2023/11/GATE2024DASampleQuestionPaperFinal.pdf)
 
-
-### Tasks 
+### Tasks
 
 - [x] Public repo and Landing page
 - [x] Example structure for contributions in topic notes : (Probability-Statistics-Readme.md)
 - [ ] Coding example notebooks in colab for ML
 
-<!-- 
+<!--
 - [x] Assignee for Probability-Statistics : Kunal
 - [ ] Reviewer for Probability-Statistics
 - [ ] Assignee for Linear-Algebra
@@ -568,5 +566,5 @@ IISC released a DS/AI sample paper on their website. It's expected the questions
 - [ ] Reviewer for Artificial-Intelligence
 
  -->
-  
+
 Start your DSAI-GATE preparation journey today with the DSAI-GATE repository. Let's ace the GATE exam together🌟
