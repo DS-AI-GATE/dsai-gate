@@ -20,6 +20,7 @@ MERMAID_EDGE = re.compile(
 )
 HTML_TAG = re.compile(r"<[^>]+>")
 WORD = re.compile(r"[a-z0-9]+")
+SYLLABUS_TOPIC = re.compile(r"^\s*-\s+(.+?)\s*$", re.MULTILINE)
 STOP_WORDS = {
     "and", "the", "for", "from", "with", "into", "course", "notes", "introduction",
     "data", "learning", "machine", "artificial", "probability", "statistics",
@@ -94,6 +95,17 @@ SUBJECT_CONFIGS = [
     ),
 ]
 
+TOPIC_ALIASES = {
+    ("Probability-Statistics-Readme.md", "Probability Axioms"): "Probability axioms",
+    ("Probability-Statistics-Readme.md", "Marginal, Conditional, and Joint Probability"): "Conditional probability",
+}
+
+FALLBACK_TOPIC_RELATIONS = {
+    "Probability-Statistics-Readme.md": {
+        "Conditional probability": ["Probability axioms"],
+    },
+}
+
 class MarkdownCurriculumRenderer:
     """Discover and convert Markdown guides into app-ready curriculum data."""
 
@@ -124,6 +136,8 @@ class MarkdownCurriculumRenderer:
         text = path.read_text(encoding="utf-8")
         title = self._title(text) or config.short
         topics, related_topics = self._topic_graph(text)
+        if not topics:
+            topics, related_topics = self._syllabus_topic_graph(config.source)
         sections = self._sections(text, path)
         resources = self._resource_catalog(text, path, sections)
 
@@ -179,6 +193,46 @@ class MarkdownCurriculumRenderer:
                 related[left].append(right)
             if right in related and left and left not in related[right]:
                 related[right].append(left)
+        return topics, related
+
+    def _syllabus_topic_graph(self, source):
+        """Use the repository syllabus table when a guide has no Mermaid map."""
+        syllabus_path = self.root / "README.md"
+        if not syllabus_path.is_file():
+            return [], {}
+
+        text = syllabus_path.read_text(encoding="utf-8")
+        matches = re.finditer(
+            rf'<a\s+href="{re.escape(source)}">.*?</tr>',
+            text,
+            re.DOTALL,
+        )
+        match = next(
+            (candidate for candidate in matches if SYLLABUS_TOPIC.search(candidate.group(0))),
+            None,
+        )
+        if not match:
+            return [], {}
+
+        topics = []
+        for raw_topic in SYLLABUS_TOPIC.findall(match.group(0)):
+            topic = self._clean_text(raw_topic)
+            topic = TOPIC_ALIASES.get((source, topic), topic)
+            if topic and topic not in topics:
+                topics.append(topic)
+
+        related = {topic: [] for topic in topics}
+        for left, right in zip(topics, topics[1:]):
+            related[left].append(right)
+            related[right].append(left)
+        for topic, neighbors in FALLBACK_TOPIC_RELATIONS.get(source, {}).items():
+            if topic not in related:
+                continue
+            for neighbor in neighbors:
+                if neighbor in related and neighbor not in related[topic]:
+                    related[topic].append(neighbor)
+                if topic not in related.get(neighbor, []):
+                    related[neighbor].append(topic)
         return topics, related
 
     def _resource_catalog(self, text, source_path, sections):
