@@ -35,7 +35,11 @@ class WebappTests(unittest.TestCase):
         self.assertNotIn("papers", payload)
         self.assertGreater(payload["total_topics"], 40)
         self.assertGreater(payload["total_resources"], 40)
-        topic_map = payload["subjects"][0]["topic_maps"][2]
+        topic_map = next(
+            topic_map
+            for topic_map in payload["subjects"][0]["topic_maps"]
+            if topic_map["topic"] == "Conditional probability"
+        )
         self.assertEqual(topic_map["topic"], "Conditional probability")
         self.assertIn("Probability axioms", topic_map["related"])
         self.assertTrue(
