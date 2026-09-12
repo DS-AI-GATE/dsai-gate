@@ -23,19 +23,17 @@ Credits : Joe Blitzstein [stat110](https://twitter.com/stat110) - Professor of S
 
 Explore these recommended books to enhance your understanding of Probability and Statistics:
 
-- [**"Introduction to Probability"**](https://drive.google.com/file/d/1OQPTKFpc6aLWZoBOto3e7kk5jvBBZxNc/view?usp=sharing) by Joe Blitzstein and Jessica Hwang - Stat110 course book;
-  An introductory textbook that covers a wide range of probability concepts.
+- [**"Introduction to Probability"**](http://probabilitybook.net/) by Joe Blitzstein and Jessica Hwang  
+  Official book site with free online access, lecture companion materials, and practice sets for [Harvard's Stat 110 course](https://projects.iq.harvard.edu/stat110/).
 
-- [**"A First Course in Probability"**](Topic_Resources/Books/A-First-Course-in-Probability.pdf) by Sheldon Ross
-Most appropriate book for Graduate level and Gate preparation
+- [**"A First Course in Probability"**](https://www.pearson.com/en-us/subject-catalog/p/first-course-in-probability-a/P200000003544/9780134753119) by Sheldon Ross  
+  Standard reference for counting, axioms, conditional probability, distributions, and limit theorems.
   
-- [**"All of Statistics: A Concise Course in Statistical Inference"**](https://egrcc.github.io/docs/math/all-of-statistics.pdf) by  Larry Wasserman 
-  A comprehensive resource for statistical theory and its applications.
+- [**"All of Statistics: A Concise Course in Statistical Inference"**](https://link.springer.com/book/10.1007/978-0-387-21736-9) by Larry Wasserman  
+  Authoritative text covering probability, point estimation, confidence intervals, and hypothesis testing.
   
-- [**"Introduction to probability, statistics, and random processes"**](https://probabilitycourse.com/) by  H. Pishro-Nik
-It is an open access peer-reviewed textbook intended for undergraduate as well as first-year graduate level courses on the subject. This probability textbook can be used by both students and practitioners in engineering and mathematics
-
-
+- [**"Introduction to probability, statistics, and random processes"**](https://probabilitycourse.com/) by H. Pishro-Nik  
+  Open access peer-reviewed textbook covering discrete and continuous random variables, joint distributions, Central Limit Theorem, and statistical inference.
 
 ---
 
@@ -43,20 +41,23 @@ It is an open access peer-reviewed textbook intended for undergraduate as well a
 
 Course to deepen your knowledge of Probability and Statistics:
 
-- **[Probability for Computer Science, IIT Kanpur](https://nptel.ac.in/courses/106104233)**
-   by Prof. Nitin Saxena IIT K,This is a crash course to introduce the concept of probability formally; and exhibit its applications in computer science, combinatorics, and algorithms. **Excellent Assignments with MCQs**
+- **[Probability for Computer Science, IIT Kanpur](https://nptel.ac.in/courses/106104233)**  
+   by Prof. Nitin Saxena (IIT Kanpur). Introduction to formal probability with applications in computer science and algorithms. Includes assignments with MCQs.
   
-- **[Stat110 (Probability)](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo)**
-   taught at Harvard University by Joe Blitzstein: Lecture videos, review materials, and over 250 practice problems with detailed solutions are provided. This course is an introduction to probability as a language and set of tools for understanding statistics, science, risk, and randomness.
+- **[Stat110 (Probability)](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo)**  
+   taught at Harvard University by Joe Blitzstein: Lecture videos, review materials, and over 250 practice problems with detailed solutions.
 
-- **[Statistics and Probability | Khan Academy](https://www.khanacademy.org/math/statistics-probability)**
-The course looks vast, but upon deeper inspection, it seems like a mashup of undergraduate probability, including random variables and statistics. The probability portion is very similar to the engineering mathematics syllabus of the gate; the statistics part is a bit of addition that needs to be studied and contains primarily hypothesis testing.
+- **[MIT OCW 18.05: Introduction to Probability and Statistics](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/)**  
+   Covers both probability and statistical inference: confidence intervals, z-tests, t-tests, and chi-squared tests directly aligned with the GATE DA syllabus.
 
-- **[Electrical - Probability Foundation for Electrical Engineers](https://www.youtube.com/playlist?list=PLbMVogVj5nJQqGHrpAloTec_lOKsG-foc)**
-Probability Foundation for Electrical Engineers by Dr. Krishna Jagannathan,Department of Electrical Engineering,IIT Madras.
+- **[Statistics and Probability | Khan Academy](https://www.khanacademy.org/math/statistics-probability)**  
+   Comprehensive coverage of random variables, distributions, sampling distributions, and significance tests.
 
-- **[MIT RES.6-012 Introduction to Probability, Spring 2018](https://www.youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6)**
- Instructor: John Tsitsiklis, Patrick Jaillet; The tools of probability theory, and of the related field of statistical inference, are the keys for being able to analyze and make sense of data. These tools underlie important advances in many fields, from the basic sciences to engineering and management.
+- **[Probability Foundation for Electrical Engineers, IIT Madras](https://www.youtube.com/playlist?list=PLbMVogVj5nJQqGHrpAloTec_lOKsG-foc)**  
+   by Dr. Krishna Jagannathan (IIT Madras). Rigorous treatment of sample spaces, conditional probability, and random variables.
+
+- **[MIT RES.6-012 Introduction to Probability, Spring 2018](https://www.youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6)**  
+   Instructors: John Tsitsiklis, Patrick Jaillet. Fundamental tools of probability theory and statistical inference.
 
 ---
 
@@ -64,11 +65,12 @@ Probability Foundation for Electrical Engineers by Dr. Krishna Jagannathan,Depar
 
 Review these comprehensive notes to reinforce your grasp of Probability and Statistics:
 
-- **[Probability Review](Topic_Resources/PDFs/prob.pdf)**
-  An guide that explains different types of probability distributions and covers pre-requisites for ML.
-  From COL774: Machine Learning (IIT D) by Prof. [Parag Singla](https://www.cse.iitd.ac.in/~parags/teaching.html)
-- **[Multivariate Gaussians Review](Topic_Resources/PDFs/gaussians.pdf)**
-  From COL774: Machine Learning (IIT D) by Prof. [Parag Singla](https://www.cse.iitd.ac.in/~parags/teaching.html)
+- **[Conditional Probability and Bayes Theorem Notebook](notebooks/probability/conditional_probability_and_bayes.ipynb)**  
+  Executable notebook calculating posterior probability from prevalence, sensitivity, and false-positive rates with GATE-style practice.
+- **[Probability Review](Topic_Resources/PDFs/prob.pdf)**  
+  Guide that explains different types of probability distributions and covers prerequisites for ML from COL774 (IIT Delhi) by Prof. [Parag Singla](https://www.cse.iitd.ac.in/~parags/teaching.html).
+- **[Multivariate Gaussians Review](Topic_Resources/PDFs/gaussians.pdf)**  
+  Review from COL774: Machine Learning (IIT Delhi) by Prof. [Parag Singla](https://www.cse.iitd.ac.in/~parags/teaching.html).
   
 ---
 ## <a name="concept-visualisation"></a>Concept Visualisation

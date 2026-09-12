@@ -7,10 +7,14 @@ concepts. They use deterministic data and include GATE-style practice.
 | --- | --- | --- |
 | Probability and statistics | [`probability/conditional_probability_and_bayes.ipynb`](probability/conditional_probability_and_bayes.ipynb) | Conditional probability, Bayes theorem, diagnostic tests |
 | Linear algebra | [`linear_algebra/projections_and_pca.ipynb`](linear_algebra/projections_and_pca.ipynb) | Projection matrices, eigenvectors, PCA |
+| Calculus and optimization | [`calculus/single_variable_optimization.ipynb`](calculus/single_variable_optimization.ipynb) | Derivatives, critical points, Taylor series, 1D optimization |
 | Programming and algorithms | [`algorithms/binary_search_and_complexity.ipynb`](algorithms/binary_search_and_complexity.ipynb) | Binary search, loop tracing, logarithmic complexity |
+| Database management | [`databases/relational_algebra_and_sql.ipynb`](databases/relational_algebra_and_sql.ipynb) | Relational algebra operators, SQLite queries, integrity constraints |
 | Machine learning | [`machine_learning/linear_regression_from_scratch.ipynb`](machine_learning/linear_regression_from_scratch.ipynb) | Least squares, normal equation, gradient descent |
 | Machine learning | [`machine_learning/logistic_classification.ipynb`](machine_learning/logistic_classification.ipynb) | Sigmoid, logistic loss, classification |
 | Machine learning | [`machine_learning/kmeans_from_scratch.ipynb`](machine_learning/kmeans_from_scratch.ipynb) | Assignment and centroid-update steps |
+| Machine learning | [`machine_learning/hierarchical_clustering.ipynb`](machine_learning/hierarchical_clustering.ipynb) | Agglomerative clustering, single/complete linkage, dendrogram merges |
+| Artificial intelligence | [`ai/search_and_uncertainty.ipynb`](ai/search_and_uncertainty.ipynb) | A* heuristic search, minimax game tree, variable elimination |
 
 ## Collaborator Notebooks
 

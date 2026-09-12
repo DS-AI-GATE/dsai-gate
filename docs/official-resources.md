@@ -1,27 +1,26 @@
 # Official GATE DA Research And Resources
 
-Last verified: 2026-06-11
+Last verified: 2026-09-12
 
 This page favors official GATE pages and primary educational sources. A resource
 being useful does not mean every chapter is in the DA syllabus; follow the
 syllabus mapping below.
 
-## Current Exam Facts
+## Current Exam Facts (GATE 2027)
 
-- The latest published syllabus is the
-  [official GATE 2026 DA syllabus](https://gate2026.iitg.ac.in/doc/GATE2026_Syllabus/DA_2026_Syllabus.pdf).
-- DA has 15 marks of General Aptitude and 85 marks of subject questions.
-- Questions are MCQ, MSQ, and NAT. MCQs have negative marking; MSQs and NATs
-  do not.
-- IIT Guwahati has published the
-  [2026 DA master paper](https://gate2026.iitg.ac.in/doc/download/2026/QPs/DA.pdf)
-  and [answer key](https://gate2026.iitg.ac.in/doc/download/2026/Keys/DA_Keys.pdf).
-- In the 2026 DA subject section, the official key identifies 23 MCQs, 14 MSQs,
-  and 18 NATs.
+- The official syllabus for GATE DA 2027 is the
+  [official GATE 2027 DA syllabus](https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/DA_GATE2027_Syllabus.pdf)
+  published by the organizing institute, IIT Madras ([local copy](../Data/DA_GATE2027_Syllabus.pdf)).
+- The official General Aptitude syllabus is the
+  [official GATE 2027 GA syllabus](https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/GA_GATE2027_Syllabus.pdf)
+  published by IIT Madras ([local copy](../Data/General-Aptitude/GA_GATE2027_Syllabus.pdf)).
+- DA consists of 15 marks of General Aptitude and 85 marks of subject questions.
+- Question types are MCQ, MSQ, and NAT. MCQs carry negative marking (1/3 deduction for 1-mark, 2/3 for 2-mark); MSQs and NATs have no negative marking.
+- Official master papers and answer keys from previous years (2024 by IISc Bangalore, 2025 by IIT Roorkee, and 2026 by IIT Guwahati) serve as the primary benchmarking standard for GATE DA 2027 preparation.
 
-## What The Latest Paper Emphasizes
+## What Previous Papers Emphasize
 
-The official 2026 paper samples all seven syllabus areas. It repeatedly requires
+The official 2024-2026 papers sample all seven syllabus areas. They repeatedly require
 multi-step reasoning: translating a model into parameter counts, deriving
 probabilities, tracing algorithms, checking logical statements, and evaluating
 database constraints or queries.
@@ -42,8 +41,8 @@ guarantee.
 
 ## Official GATE Practice
 
+- [GATE 2027 official portal (IIT Madras)](https://gate2027.iitm.ac.in/)
 - [GATE 2026 DA master paper and answer key index](https://gate2026.iitg.ac.in/QPs-answer-keys.html)
-- [GATE 2026 DA mock-test interface](https://gate2026.iitg.ac.in/mock-test-links.html)
 - [GATE 2024 DA sample paper](https://gate2024.iisc.ac.in/wp-content/uploads/2023/11/GATE2024DASampleQuestionPaperFinal.pdf)
 - [Repository copies of official 2024-2026 papers and keys](../PYQ/README.md)
 

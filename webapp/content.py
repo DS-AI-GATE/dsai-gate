@@ -62,6 +62,7 @@ SUBJECT_CONFIGS = [
         "Calculus",
         "Understand change, approximation, and the mechanics of optimization.",
         "#f59e0b",
+        "notebooks/calculus/single_variable_optimization.ipynb",
     ),
     SubjectConfig(
         "Programming-and-Algorithms-Readme.md",
@@ -77,6 +78,7 @@ SUBJECT_CONFIGS = [
         "Databases",
         "Model, query, organize, and analyze structured data systems.",
         "#f97316",
+        "notebooks/databases/relational_algebra_and_sql.ipynb",
     ),
     SubjectConfig(
         "Machine-Learning-Readme.md",
@@ -92,6 +94,7 @@ SUBJECT_CONFIGS = [
         "Artificial Intelligence",
         "Explore search, logic, uncertainty, and computational reasoning.",
         "#6366f1",
+        "notebooks/ai/search_and_uncertainty.ipynb",
     ),
 ]
 

@@ -54,7 +54,10 @@ by Prof. Rohan Paul. The course covers the foundational principles of artificial
 
 Review these comprehensive notes to reinforce your grasp :
 
-- Nice mini course in AI with Python : **[CS50's Introduction to Artificial Intelligence with Python 2023 ](https://www.youtube.com/playlist?list=PLhQjrBD2T381PopUTYtMSstgk-hsTGkVm)**
+- **[AI Search and Reasoning Under Uncertainty Notebook](notebooks/ai/search_and_uncertainty.ipynb)**  
+  Executable notebook covering informed search (A*), adversarial search (Minimax), Bayesian network variable elimination, and sampling with GATE-style practice.
+
+- Nice mini course in AI with Python : **[CS50's Introduction to Artificial Intelligence with Python 2023](https://www.youtube.com/playlist?list=PLhQjrBD2T381PopUTYtMSstgk-hsTGkVm)**
 This course explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation.
 
 - Prof Vasant Honavar Course Handouts for **Principles of Artificial Intelligence**:
@@ -63,7 +66,6 @@ This course explores the concepts and algorithms at the foundation of modern art
    - [Handout3](/Data/Artificial-Intelligence/handout3.pdf); Heuristic Problem Solvers
    - [Handout4](/Data/Artificial-Intelligence/handout4.pdf); Constraint Satisfaction and Randomized Search \
    [Course Website](https://faculty.ist.psu.edu/vhonavar/Courses/ai/studyguide.html)
-
 
 ---
 

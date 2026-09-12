@@ -1,29 +1,29 @@
 # DSAI-GATE Implementation Plan
 
-Last reviewed: 2026-06-11
+Last reviewed: 2026-09-12
 
 ## Goal
 
-Modernize the repository around the official GATE 2026 DA syllabus and the
-official 2024-2026 question papers, while improving reliability and adding
-focused, executable learning material.
+Prepare and modernize the repository specifically for GATE DA 2027 (organized
+by IIT Madras) using the official 2027 DA and GA syllabi, with the official
+2024-2026 question papers serving as the core benchmarking standard.
 
 ## Evidence Base
 
-- [Official GATE 2026 DA syllabus](https://gate2026.iitg.ac.in/doc/GATE2026_Syllabus/DA_2026_Syllabus.pdf)
-- [Official GATE 2026 paper pattern](https://gate2026.iitg.ac.in/question-paper-pattern.html)
-- [Official GATE 2026 DA master paper](https://gate2026.iitg.ac.in/doc/download/2026/QPs/DA.pdf)
-- [Official GATE 2026 DA answer key](https://gate2026.iitg.ac.in/doc/download/2026/Keys/DA_Keys.pdf)
-- Local official papers and keys in `PYQ/` for 2024-2026
+- [Official GATE 2027 DA syllabus](https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/DA_GATE2027_Syllabus.pdf) (IIT Madras)
+- [Official GATE 2027 GA syllabus](https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/GA_GATE2027_Syllabus.pdf) (IIT Madras)
+- [Official GATE 2027 portal](https://gate2027.iitm.ac.in/)
+- Local official papers and keys in `PYQ/` for 2024, 2025, and 2026
+- Local syllabus copies in `Data/DA_GATE2027_Syllabus.pdf` and `Data/General-Aptitude/GA_GATE2027_Syllabus.pdf`
 
 The syllabus remains organized into seven subject areas: probability and
 statistics, linear algebra, calculus and optimization, programming/data
 structures/algorithms, database management and warehousing, machine learning,
 and artificial intelligence.
 
-The 2026 DA subject section contains 23 MCQs, 14 MSQs, and 18 NATs. This mix
-supports adding practice that tests reasoning and calculation, not only
-single-answer recall.
+The official papers (2024-2026) combine MCQs, MSQs, and NATs across all seven areas.
+This mix requires practice that tests multi-step mathematical derivation, algorithm
+tracing, and systems reasoning rather than simple single-answer recall.
 
 ## Phase 1: Reliability And Documentation
 
