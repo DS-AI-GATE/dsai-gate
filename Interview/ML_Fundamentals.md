@@ -1,5 +1,8 @@
 # 📘 Machine Learning – Topic-Wise Guide
 
+> [!NOTE]
+> **Post-GATE Interview & Practical ML Guide (Enrichment)**: This collection includes industry practices, advanced ensembles (GBDT, Random Forest), deep learning architectures (BERT, Word2vec), and data sampling (SMOTE). While valuable for research and technical interviews, these extend beyond the official written GATE DA 2027 syllabus.
+
 ### 📚 Resources
 
 Reference : https://github.com/khangich/machine-learning-interview/tree/master

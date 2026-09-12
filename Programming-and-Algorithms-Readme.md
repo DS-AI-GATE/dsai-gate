@@ -64,16 +64,16 @@ Read insightful articles to gain additional insights:
 
 ## <a name="practice-problems"></a>Practice Problems
 
-Test your knowledge and skills with these practice problems:
+Test your knowledge and skills with these GATE-focused practice problems:
 
-   * [Programming in Python](https://www.hackerrank.com/domains/python)
-   * [Stack](https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=stacks)
-   * [Queue](https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=queues)
-   * [Linked-List](https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=linked-lists)
-   * [Trees](https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=trees)
-   * [Searching](https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=search)
-   * [Sorting](https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=arrays-and-sorting)
-   * [Graph](https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=graph-theory&filters%5Bdifficulty%5D%5B%5D=easy&filters%5Bdifficulty%5D%5B%5D=medium)
+- **[Previous Years GATE Algorithms Problems (GeeksforGeeks)](https://www.geeksforgeeks.org/tag/gate-cs-algorithms/)**  
+  Curated GATE questions on asymptotic analysis, divide and conquer, searching, sorting, and graph traversals.
+- **[GATE Overflow Algorithms Questions](https://gateoverflow.in/tag-search-page?q=algorithms)**  
+  Community-vetted previous GATE questions with detailed step-by-step discussion and accepted solutions.
+- **[NPTEL Assignment Problems: Programming, Data Structures and Algorithms in Python](https://nptel.ac.in/courses/106106145)**  
+  Weekly conceptual quizzes and programming assignments directly aligned with the Python syllabus.
+- **[Python Scoping and Tracing Practice](https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces)**  
+  Official Python documentation exercises on LEGB scoping, mutable defaults, and closures.
 
 ---
 

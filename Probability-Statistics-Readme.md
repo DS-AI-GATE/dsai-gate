@@ -65,6 +65,11 @@ Course to deepen your knowledge of Probability and Statistics:
 
 Review these comprehensive notes to reinforce your grasp of Probability and Statistics:
 
+> [!NOTE]
+> **Syllabus Classification Note**: The official GATE DA 2027 syllabus document lists Poisson alongside continuous distributions under *"Continuous random variables and probability distribution function, uniform, exponential, Poisson..."*. Mathematically, Poisson is a **discrete** probability distribution modeling non-negative integer count events ($k \in \{0, 1, 2, \dots\}$) with PMF $P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}$. Past GATE DA questions consistently test Poisson as a discrete distribution.
+
+- **[Statistical Inference and Hypothesis Testing Notebook](notebooks/probability/statistical_inference_and_tests.ipynb)**  
+  Executable notebook covering Central Limit Theorem, confidence intervals for the mean, one-sample z-tests and t-tests, and chi-squared goodness-of-fit with GATE-style practice.
 - **[Conditional Probability and Bayes Theorem Notebook](notebooks/probability/conditional_probability_and_bayes.ipynb)**  
   Executable notebook calculating posterior probability from prevalence, sensitivity, and false-positive rates with GATE-style practice.
 - **[Probability Review](Topic_Resources/PDFs/prob.pdf)**  

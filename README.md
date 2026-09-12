@@ -72,6 +72,11 @@ To ensure a smooth and efficient learning experience, we've structured the repos
     <th class="tg-yw4l"><b>Resources</b></th>
   </tr>
   <tr>
+    <td class="tg-yw4l"><a href="#general-aptitude">General Aptitude (GA)</td>
+    <td class="tg-yw4l">Verbal aptitude, quantitative aptitude, analytical reasoning, and spatial aptitude (15 marks)</td>
+    <td class="tg-yw4l"><a href="General-Aptitude-Readme.md">General-Aptitude</a></td>
+  </tr>
+  <tr>
     <td class="tg-yw4l"><a href="#probability-and-statistics">Probability and Statistics</td>
     <td class="tg-yw4l">Probability fundamentals, counting methods, key concepts in hypothesis testing</td>
     <td class="tg-yw4l"><a href="Probability-Statistics-Readme.md">Prob-Stats</a></td>
@@ -209,6 +214,7 @@ Stay connected with us for updates, announcements, and discussions
 | [official resources and paper analysis](docs/official-resources.md)
 | [agent guide](docs/agent.md)
 | [stale-link audit](docs/stale-links.md)
+| [PYQ topic analysis & mapping](PYQ/topic_analysis.md)
 
 <!---
  - Add jump links structure to individual markdown readme

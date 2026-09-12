@@ -44,6 +44,9 @@ Course to deepen your knowledge:
 
 Review these comprehensive notes to reinforce your grasp :
 
+> [!NOTE]
+> **Syllabus Scope Note**: Section 3 of the GATE DA 2027 syllabus is strictly restricted to **Functions of a Single Variable** (limits, continuity, differentiability, Taylor series, maxima and minima, optimization involving a single variable). Multivariable calculus (gradients, Hessians, Lagrange multipliers) is outside Section 3, though gradients appear conceptually in Machine Learning. `Topic_Resources/PDFs/convex-1.pdf` contains multivariable content for advanced ML enrichment.
+
 - [**"Single-Variable Optimization and Taylor Series Notebook"**](notebooks/calculus/single_variable_optimization.ipynb)
   Interactive notebook covering functions of a single variable, limits, Taylor series, and 1D optimization with GATE-style practice.
 - [**"Harvard Calculus Course Notes"**](https://people.math.harvard.edu/~knill/teaching/math1a_2012/handouts.html)  As suggested by Arjun Suresh (Gate Overflow): Sufficient for GATE

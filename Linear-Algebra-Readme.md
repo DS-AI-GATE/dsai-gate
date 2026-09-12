@@ -9,8 +9,8 @@
 
 
 
-[<img src="Data/Linear-Algebra/Linear_Algebra_cheet_sheet.png">](/Data/Linear-Algebra/refresher-algebra-calculus.pdf)
->[Download Full Pdf](/Data/Linear-Algebra/refresher-algebra-calculus.pdf)
+[<img src="Data/Linear-Algebra/Linear_Algebra_cheet_sheet.png">](Data/Linear-Algebra/refresher-algebra-calculus.pdf)
+>[Download Full Pdf](Data/Linear-Algebra/refresher-algebra-calculus.pdf)
 >
 ---
 
@@ -40,14 +40,17 @@ Course to deepen your knowledge:
 
 Review these comprehensive notes to reinforce your grasp :
 
+- **[Partition Matrices and LU Decomposition Notebook](notebooks/linear_algebra/partition_matrices_and_lu.ipynb)**  
+  Interactive notebook covering partition (block) matrix properties, block determinants, Schur complements, LU decomposition, and solving linear systems via forward/back substitution.
+
+- **[Projections and PCA Notebook](notebooks/linear_algebra/projections_and_pca.ipynb)**  
+  Interactive notebook covering projection matrices, orthogonal/idempotent matrices, eigenvalues/eigenvectors, and PCA with GATE-style practice.
+
 - [**Short Notes Linear Algebra by Prof. Gilbert Strang**](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/4d876a9159e32543eb0d73b4d4382f4c_MIT18_06S10ZoomNotes.pdf)
 ZOOMNOTES FOR LINEAR ALGEBRA : GILBERT STRANG Massachusetts Institute of Technology
 
 - **[Linear Algebra Review for Machine Learning](https://www.cse.iitd.ac.in/~parags/teaching/2022/col774/review/linalg.pdf)**
   From COL774: Machine Learning (IIT D) by Prof. [Parag Singla](https://www.cse.iitd.ac.in/~parags/teaching.html)
-
-- **[Projections and PCA Notebook](notebooks/linear_algebra/projections_and_pca.ipynb)**
-  Interactive notebook covering projection matrices, orthogonal/idempotent matrices, eigenvalues/eigenvectors, and PCA with GATE-style practice.
 
 - **[Positive Definite Matrices, Minima, and SVD](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-29-positive-definite-matrices-and-minima/)**
   MIT OCW lecture notes and video on quadratic forms, positive definiteness, and Singular Value Decomposition (SVD).

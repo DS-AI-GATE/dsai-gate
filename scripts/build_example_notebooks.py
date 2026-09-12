@@ -1057,6 +1057,786 @@ def build_all():
         ],
     )
 
+    write_notebook(
+        "notebooks/probability/statistical_inference_and_tests.ipynb",
+        [
+            markdown(
+                """
+                # Statistical Inference, Confidence Intervals, and Hypothesis Testing
+
+                **Syllabus mapping:** Central limit theorem, confidence interval,
+                z-test, t-test, chi-squared test.
+
+                **Objectives:** compute sample statistics; construct confidence intervals
+                for population mean; perform one-sample z-tests and t-tests; compute the
+                chi-squared goodness-of-fit test statistic; interpret p-values and critical regions.
+                """
+            ),
+            markdown(
+                """
+                ## Theoretical Foundations
+
+                ### 1. Confidence Interval for Population Mean
+                When population variance $\\sigma^2$ is known (or sample size $n$ is large via CLT):
+                $$CI_{1-\\alpha} = \\bar{x} \\pm z_{\\alpha/2} \\frac{\\sigma}{\\sqrt{n}}$$
+
+                When $\\sigma$ is unknown and sample size $n$ is small (from a normal population):
+                $$CI_{1-\\alpha} = \\bar{x} \\pm t_{\\alpha/2, n-1} \\frac{s}{\\sqrt{n}}$$
+                where $s = \\sqrt{\\frac{1}{n-1} \\sum_{i=1}^n (x_i - \\bar{x})^2}$ is the sample standard deviation.
+
+                ### 2. Hypothesis Testing
+                - **z-test statistic:** $z = \\frac{\\bar{x} - \\mu_0}{\\sigma / \\sqrt{n}}$
+                - **t-test statistic:** $t = \\frac{\\bar{x} - \\mu_0}{s / \\sqrt{n}}$ with $df = n - 1$
+                - **Chi-squared test for goodness of fit:**
+                  $$\\chi^2 = \\sum_{i=1}^k \\frac{(O_i - E_i)^2}{E_i}$$
+                  where $O_i$ is observed frequency, $E_i$ is expected frequency, with degrees of freedom $df = k - 1 - p$.
+                """
+            ),
+            code(
+                """
+                import numpy as np
+                from scipy import stats
+
+                np.random.seed(42)
+
+                # Sample data: 36 measurements
+                sample = np.array([
+                    51.2, 53.1, 49.8, 54.0, 52.5, 50.9, 53.4, 52.0, 51.8, 53.6,
+                    52.2, 54.1, 51.5, 50.4, 53.8, 52.9, 51.7, 53.2, 52.1, 54.5,
+                    50.8, 52.6, 53.0, 51.9, 54.2, 52.3, 51.1, 53.7, 52.4, 50.6,
+                    53.5, 52.8, 51.6, 54.3, 52.7, 51.4
+                ])
+                n = len(sample)
+                x_bar = np.mean(sample)
+                s = np.std(sample, ddof=1)
+                se = s / np.sqrt(n)
+
+                print(f"Sample size n = {n}")
+                print(f"Sample mean x_bar = {x_bar:.2f}")
+                print(f"Sample std s = {s:.2f}")
+                print(f"Standard Error SE = {se:.4f}")
+
+                # 95% Confidence Interval with t-distribution
+                alpha = 0.05
+                t_crit = stats.t.ppf(1 - alpha / 2, df=n - 1)
+                ci_lower = x_bar - t_crit * se
+                ci_upper = x_bar + t_crit * se
+                print(f"95% CI (t-dist): [{ci_lower:.3f}, {ci_upper:.3f}]")
+
+                # Hypothesis Test: H0: mu = 50 vs H1: mu != 50
+                mu_0 = 50.0
+                t_stat = (x_bar - mu_0) / se
+                p_value = 2 * (1 - stats.t.cdf(abs(t_stat), df=n - 1))
+                print(f"t-statistic = {t_stat:.4f}, p-value = {p_value:.6e}")
+                print("Decision at alpha=0.05:", "Reject H0" if p_value < 0.05 else "Fail to reject H0")
+
+                # Chi-Squared Goodness of Fit Test
+                # Testing if a 6-sided die is fair across 120 rolls
+                observed = np.array([22, 18, 25, 15, 24, 16])
+                expected = np.array([20, 20, 20, 20, 20, 20])
+                chi2_stat = np.sum((observed - expected) ** 2 / expected)
+                chi2_p_val = 1 - stats.chi2.cdf(chi2_stat, df=len(observed) - 1)
+                print(f"\\nChi-squared statistic = {chi2_stat:.4f}, p-value = {chi2_p_val:.4f}")
+                """
+            ),
+            markdown(
+                """
+                ## GATE-Style Practice
+
+                **NAT:** A random sample of $n = 36$ observations from a normal population
+                with known standard deviation $\\sigma = 6$ yields a sample mean $\\bar{x} = 52.5$.
+                To test the hypothesis $H_0: \\mu = 50$ against $H_1: \\mu > 50$, compute the
+                value of the calculated test statistic $z$.
+
+                **MCQ:** In hypothesis testing, which of the following defines a **Type I error**?
+
+                A. Rejecting the null hypothesis $H_0$ when $H_0$ is true.
+                B. Failing to reject $H_0$ when $H_0$ is false.
+                C. Rejecting the alternative hypothesis $H_1$ when $H_1$ is true.
+                D. Accepting $H_0$ when the p-value is less than the significance level $\\alpha$.
+
+                **MSQ:** Which of the following statements regarding Student's $t$-distribution
+                and the standard normal distribution are TRUE?
+
+                A. As the degrees of freedom $df \\to \\infty$, the $t$-distribution converges to the standard normal distribution $\\mathcal{N}(0, 1)$.
+                B. The $t$-distribution is symmetric about zero and bell-shaped, but has fatter (heavier) tails than the standard normal distribution.
+                C. The variance of a $t$-distribution with $k > 2$ degrees of freedom is $\\frac{k}{k-2}$, which is strictly greater than 1.
+                D. When population variance $\\sigma^2$ is known, a $t$-test is preferred over a $z$-test for any sample size $n$.
+                """
+            ),
+            markdown(
+                """
+                ## Solutions
+
+                NAT: **2.5**.
+                $$z = \\frac{\\bar{x} - \\mu_0}{\\sigma / \\sqrt{n}} = \\frac{52.5 - 50}{6 / \\sqrt{36}} = \\frac{2.5}{6 / 6} = \\frac{2.5}{1} = 2.5.$$
+
+                MCQ: **A**. A Type I error occurs when the null hypothesis $H_0$ is rejected
+                even though it is true. The probability of committing a Type I error equals the
+                significance level $\\alpha$.
+
+                MSQ: **A, B, C**.
+                - A is true: CLT and Slutsky's theorem ensure convergence to $\\mathcal{N}(0, 1)$ as $df \\to \\infty$.
+                - B is true: Heavy tails reflect the added uncertainty of estimating $\\sigma$ with $s$.
+                - C is true: $\\text{Var}(T) = \\frac{k}{k-2} > 1$ for $k > 2$.
+                - D is false: When $\\sigma^2$ is known, the $z$-test is the exact test regardless of sample size $n$.
+                """
+            ),
+        ],
+    )
+
+    write_notebook(
+        "notebooks/linear_algebra/partition_matrices_and_lu.ipynb",
+        [
+            markdown(
+                """
+                # Partition Matrices and LU Decomposition
+
+                **Syllabus mapping:** partition matrix and their properties,
+                systems of linear equations and solutions, Gaussian elimination,
+                LU decomposition.
+
+                **Objectives:** understand block matrix multiplication, determinants
+                of block triangular matrices, and Schur complements; compute LU
+                decomposition $A = LU$ and solve linear systems via forward/back substitution.
+                """
+            ),
+            markdown(
+                """
+                ## Theoretical Foundations
+
+                ### 1. Partition (Block) Matrices
+                For conformably partitioned matrices:
+                $$\\begin{bmatrix} A & B \\\\ C & D \\end{bmatrix} \\begin{bmatrix} X \\\\ Y \\end{bmatrix} = \\begin{bmatrix} AX + BY \\\\ CX + DY \\end{bmatrix}$$
+
+                For block triangular matrices:
+                $$\\det \\begin{bmatrix} A & B \\\\ 0 & D \\end{bmatrix} = \\det(A) \\det(D)$$
+
+                When $A$ is invertible, the block inverse is given via the Schur complement $S = D - CA^{-1}B$:
+                $$\\det \\begin{bmatrix} A & B \\\\ C & D \\end{bmatrix} = \\det(A) \\det(D - CA^{-1}B)$$
+
+                ### 2. LU Decomposition
+                Gaussian elimination without row interchanges factors a matrix $A$ into $A = LU$, where:
+                - $L$ is unit lower triangular ($l_{ii} = 1$, $l_{ij} = 0$ for $j > i$).
+                - $U$ is upper triangular ($u_{ij} = 0$ for $i > j$).
+
+                Solving $Ax = b$ becomes two $O(n^2)$ triangular solves:
+                1. Forward substitution: $Ly = b$
+                2. Back substitution: $Ux = y$
+                """
+            ),
+            code(
+                """
+                import numpy as np
+
+                # 1. Partition Matrix Determinant & Multiplication
+                A = np.array([[2.0, 1.0], [1.0, 3.0]])
+                B = np.array([[1.0, 0.0], [2.0, 1.0]])
+                zero_block = np.zeros((2, 2))
+                D = np.array([[4.0, 2.0], [1.0, 2.0]])
+
+                # Construct 4x4 block matrix M = [[A, B], [0, D]]
+                M = np.block([[A, B], [zero_block, D]])
+                det_M = np.linalg.det(M)
+                det_formula = np.linalg.det(A) * np.linalg.det(D)
+
+                print("Block Matrix M:\\n", M)
+                print(f"det(M) directly: {det_M:.4f}")
+                print(f"det(A)*det(D):   {det_formula:.4f}")
+
+                # 2. LU Decomposition from Scratch (Doolittle Algorithm)
+                def lu_factorize(mat):
+                    n = mat.shape[0]
+                    L = np.eye(n)
+                    U = np.zeros((n, n))
+                    for i in range(n):
+                        for j in range(i, n):
+                            U[i, j] = mat[i, j] - sum(L[i, k] * U[k, j] for k in range(i))
+                        for j in range(i + 1, n):
+                            L[j, i] = (mat[j, i] - sum(L[j, k] * U[k, i] for k in range(i))) / U[i, i]
+                    return L, U
+
+                # Solve Ax = b
+                A_sys = np.array([[2.0, 1.0, 1.0],
+                                  [4.0, 1.0, 0.0],
+                                  [-2.0, 2.0, 1.0]])
+                b = np.array([4.0, 5.0, 1.0])
+
+                L_mat, U_mat = lu_factorize(A_sys)
+                print("\\n--- LU Factorization ---")
+                print("L:\\n", L_mat)
+                print("U:\\n", U_mat)
+                print("Verification norm ||A - LU||:", np.linalg.norm(A_sys - L_mat @ U_mat))
+
+                # Forward substitution: Ly = b
+                y = np.zeros_like(b)
+                for i in range(len(b)):
+                    y[i] = b[i] - sum(L_mat[i, k] * y[k] for k in range(i))
+
+                # Back substitution: Ux = y
+                x = np.zeros_like(b)
+                for i in range(len(b) - 1, -1, -1):
+                    x[i] = (y[i] - sum(U_mat[i, k] * x[k] for k in range(i + 1, len(b)))) / U_mat[i, i]
+
+                print(f"Solution x = {x}")
+                print(f"Verification Ax = {A_sys @ x} (expected {b})")
+                """
+            ),
+            markdown(
+                """
+                ## GATE-Style Practice
+
+                **NAT:** Let $M = \\begin{bmatrix} A & B \\\\ 0 & D \\end{bmatrix}$ be a $4 \\times 4$ block
+                upper triangular matrix where $A = \\begin{bmatrix} 2 & 1 \\\\ 1 & 3 \\end{bmatrix}$ and
+                $D = \\begin{bmatrix} 4 & 2 \\\\ 1 & 2 \\end{bmatrix}$. If $B$ is any arbitrary $2 \\times 2$ matrix,
+                find the determinant $\\det(M)$.
+
+                **MCQ:** In the Doolittle LU decomposition $A = LU$ (where $L$ has unit diagonal) of
+                $A = \\begin{bmatrix} 2 & 1 \\\\ 6 & 8 \\end{bmatrix}$, what is the value of entry $u_{22}$ in $U$?
+
+                A. 3
+                B. 5
+                C. 8
+                D. 2
+
+                **MSQ:** Which of the following statements regarding LU decomposition and matrix properties are TRUE?
+
+                A. For any non-singular square matrix $A$, there exists a permutation matrix $P$ such that $PA = LU$.
+                B. If all leading principal submatrices of $A$ are non-singular, then $A$ has a unique decomposition $A = LU$ where $L$ is unit lower triangular.
+                C. Inverting a triangular matrix takes $O(n^3)$ operations.
+                D. The determinant of $A = LU$ equals the product of the diagonal elements of $U$.
+                """
+            ),
+            markdown(
+                """
+                ## Solutions
+
+                NAT: **30**.
+                For a block upper triangular matrix with zero bottom-left block:
+                $$\\det(M) = \\det(A) \\det(D).$$
+                $$\\det(A) = 2(3) - 1(1) = 5.$$
+                $$\\det(D) = 4(2) - 2(1) = 6.$$
+                $$\\det(M) = 5 \\times 6 = 30.$$
+
+                MCQ: **B**.
+                - First row of $U$: $u_{11} = a_{11} = 2$, $u_{12} = a_{12} = 1$.
+                - First column of $L$: $l_{21} = a_{21} / u_{11} = 6 / 2 = 3$.
+                - Second row of $U$: $u_{22} = a_{22} - l_{21} u_{12} = 8 - (3)(1) = 5$.
+
+                MSQ: **A, B, D**.
+                - A is true: Gaussian elimination with partial pivoting always yields $PA = LU$.
+                - B is true: Non-zero pivots ensure no division by zero, yielding a unique Doolittle factorization.
+                - C is false: Forward/back substitution for triangular matrices takes $O(n^2)$ operations.
+                - D is true: $\\det(A) = \\det(L)\\det(U) = 1 \\times \\prod_{i=1}^n u_{ii}$.
+                """
+            ),
+        ],
+    )
+
+    write_notebook(
+        "notebooks/databases/normalization_and_calculus.ipynb",
+        [
+            markdown(
+                """
+                # Database Normalization, Functional Dependencies, and Relational Calculus
+
+                **Syllabus mapping:** relational model: relational algebra, tuple calculus;
+                integrity constraints; normal form.
+
+                **Objectives:** compute attribute closures $X^+$; find all candidate keys;
+                test for 2NF, 3NF, and BCNF violations; evaluate lossless join decomposition;
+                formulate and understand declarative Tuple Relational Calculus (TRC) queries.
+                """
+            ),
+            markdown(
+                """
+                ## Theoretical Foundations
+
+                ### 1. Functional Dependencies and Keys
+                - **Attribute Closure $(X)^+$:** The set of all attributes functionally determined by $X$ under FD set $F$.
+                - **Superkey:** $K$ is a superkey if $(K)^+ = R$.
+                - **Candidate Key:** A minimal superkey (no proper subset of $K$ is a superkey).
+                - **Prime Attribute:** An attribute that is a member of *any* candidate key.
+
+                ### 2. Normal Forms Hierarchy
+                $$BCNF \\subset 3NF \\subset 2NF \\subset 1NF$$
+                - **1NF:** All attribute domains contain only atomic (indivisible) values.
+                - **2NF:** 1NF and **no partial dependency** (no non-prime attribute depends on a proper subset of any candidate key).
+                - **3NF:** For every non-trivial FD $X \\to Y$:
+                  - $X$ is a superkey, **OR**
+                  - $Y$ is a prime attribute.
+                - **BCNF:** For every non-trivial FD $X \\to Y$:
+                  - $X$ **must** be a superkey.
+
+                ### 3. Lossless Join Decomposition
+                A decomposition of $R$ into $(R_1, R_2)$ is **lossless** if and only if:
+                $$(R_1 \\cap R_2) \\to R_1 \\in F^+ \\quad \\text{or} \\quad (R_1 \\cap R_2) \\to R_2 \\in F^+$$
+
+                ### 4. Tuple Relational Calculus (TRC)
+                Declarative query language: $\\{t \\mid P(t)\\}$.
+                - Existential quantifier: $\\exists s \\in R (P(s))$
+                - Universal quantifier: $\\forall s \\in R (P(s))$
+                """
+            ),
+            code(
+                """
+                from itertools import combinations
+
+                # Attribute Closure Algorithm
+                def compute_closure(attributes, fds):
+                    closure = set(attributes)
+                    while True:
+                        updated = False
+                        for lhs, rhs in fds:
+                            if lhs.issubset(closure) and not rhs.issubset(closure):
+                                closure.update(rhs)
+                                updated = True
+                        if not updated:
+                            break
+                    return closure
+
+                # Candidate Keys Finder
+                def find_candidate_keys(relation_attrs, fds):
+                    all_attrs = set(relation_attrs)
+                    candidate_keys = []
+                    for r in range(1, len(all_attrs) + 1):
+                        for subset in combinations(sorted(all_attrs), r):
+                            s = set(subset)
+                            # Minimal check: no existing CK is a subset of s
+                            if any(set(ck).issubset(s) for ck in candidate_keys):
+                                continue
+                            if compute_closure(s, fds) == all_attrs:
+                                candidate_keys.append("".join(sorted(s)))
+                    return candidate_keys
+
+                # Test Relation R(A, B, C, D, E)
+                R_attrs = set("ABCDE")
+                F = [
+                    ({"A"}, {"B", "C"}),
+                    ({"C", "D"}, {"E"}),
+                    ({"B"}, {"D"}),
+                    ({"E"}, {"A"}),
+                ]
+
+                keys = find_candidate_keys(R_attrs, F)
+                print(f"Relation R(A, B, C, D, E)")
+                print(f"Candidate Keys: {keys} (Total: {len(keys)})")
+
+                prime_attrs = set("".join(keys))
+                non_prime = R_attrs - prime_attrs
+                print(f"Prime Attributes: {sorted(prime_attrs)}")
+                print(f"Non-Prime Attributes: {sorted(non_prime)}")
+
+                # Check Normal Forms
+                def check_normal_forms(relation_attrs, fds, keys):
+                    all_attrs = set(relation_attrs)
+                    prime = set("".join(keys))
+                    key_sets = [set(k) for k in keys]
+
+                    is_bcnf, is_3nf, is_2nf = True, True, True
+                    for lhs, rhs in fds:
+                        non_trivial_rhs = rhs - lhs
+                        if not non_trivial_rhs:
+                            continue
+                        lhs_is_superkey = compute_closure(lhs, fds) == all_attrs
+                        rhs_is_prime = non_trivial_rhs.issubset(prime)
+
+                        if not lhs_is_superkey:
+                            is_bcnf = False
+                            if not rhs_is_prime:
+                                is_3nf = False
+                            # 2NF check: partial dependency
+                            for k in key_sets:
+                                if lhs.issubset(k) and lhs != k and not non_trivial_rhs.issubset(prime):
+                                    is_2nf = False
+
+                    return {"2NF": is_2nf, "3NF": is_3nf, "BCNF": is_bcnf}
+
+                nf_status = check_normal_forms(R_attrs, F, keys)
+                print("Normal Form Status:", nf_status)
+
+                # Lossless Join Test for Decomposition R1(A, B, C), R2(C, D, E)
+                R1, R2 = set("ABC"), set("CDE")
+                common = R1.intersection(R2)
+                closure_common = compute_closure(common, F)
+                is_lossless = R1.issubset(closure_common) or R2.issubset(closure_common)
+                print(f"Decomposition (ABC, CDE) Common: {common}, Closure: {closure_common}")
+                print(f"Is Lossless Join? {is_lossless}")
+                """
+            ),
+            markdown(
+                """
+                ## GATE-Style Practice
+
+                **NAT:** Consider a relation schema $R(A, B, C, D, E)$ with functional dependencies
+                $F = \\{A \\to BC, CD \\to E, B \\to D, E \\to A\\}$. What is the total number
+                of **candidate keys** for relation $R$?
+
+                **MCQ:** Which of the following normal form decomposition guarantees is true?
+
+                A. Decomposition into 3NF is always lossless and dependency preserving; decomposition into BCNF is always lossless but may not preserve dependencies.
+                B. Decomposition into BCNF is always dependency preserving, but 3NF is not.
+                C. Every relation in 3NF is also in BCNF.
+                D. A relation with only two attributes can never be in BCNF.
+
+                **MSQ:** Let relation $R(A, B, C, D)$ satisfy functional dependencies
+                $F = \\{AB \\to C, C \\to D, D \\to A\\}$. Which of the following statements are TRUE?
+
+                A. The candidate keys of $R$ are $AB, BC,$ and $BD$.
+                B. Attribute $A$ is a prime attribute.
+                C. The relation $R$ is in 3NF.
+                D. The relation $R$ is in BCNF.
+                """
+            ),
+            markdown(
+                """
+                ## Solutions
+
+                NAT: **4**.
+                The candidate keys are **$A, E, CD,$ and $BC$** (Total: 4).
+                - $A^+ = \\{A, B, C, D, E\\} \\implies A$ is a CK.
+                - $E \\to A \\implies E^+ = \\{A, B, C, D, E\\} \\implies E$ is a CK.
+                - $(CD)^+ = \\{C, D, E, A, B\\} \\implies CD$ is a CK (minimal since $C^+ = \\{C\\}, D^+ = \\{D\\}$).
+                - $(BC)^+$: $B \\to D \\implies BC \\to CD \\to E \\to A \\implies BC$ is a CK.
+
+                MCQ: **A**. 3NF decomposition can always achieve both lossless join and dependency
+                preservation simultaneously (via synthesis algorithm). BCNF decomposition guarantees
+                lossless join, but some dependencies may be lost.
+
+                MSQ: **A, B, C**.
+                - Candidate keys:
+                  - $(AB)^+ = \\{A, B, C, D\\} \\implies AB$ is a CK.
+                  - $(BC)^+ = \\{B, C, D, A\\} \\implies BC$ is a CK.
+                  - $(BD)^+ = \\{B, D, A, C\\} \\implies BD$ is a CK.
+                  So A is true.
+                - Prime attributes are all members of candidate keys: $\\{A, B, C, D\\}$. All attributes are prime!
+                  Since all attributes are prime, every FD $X \\to Y$ has prime RHS, satisfying the 3NF condition.
+                  So B and C are true.
+                - D is false: In $C \\to D$, $C$ is not a superkey, violating BCNF.
+                """
+            ),
+        ],
+    )
+
+    write_notebook(
+        "notebooks/machine_learning/decision_trees_and_svm.ipynb",
+        [
+            markdown(
+                """
+                # Decision Trees, Support Vector Machines, and Neural Network Parameters
+
+                **Syllabus mapping:** decision trees, support vector machine,
+                bias-variance trade-off, multi-layer perceptron, feed-forward neural network.
+
+                **Objectives:** compute Entropy, Information Gain, and Gini Impurity for
+                decision tree splits; understand maximal margin hyperplanes and support vectors
+                in SVM; calculate trainable parameter counts in multi-layer perceptrons.
+                """
+            ),
+            markdown(
+                """
+                ## Theoretical Foundations
+
+                ### 1. Decision Tree Splitting Metrics
+                For dataset $S$ with class proportions $p_1, p_2, \\dots, p_C$:
+                - **Entropy:** $H(S) = -\\sum_{i=1}^C p_i \\log_2(p_i)$
+                - **Information Gain:** $IG(S, A) = H(S) - \\sum_{v \\in \\text{Values}(A)} \\frac{|S_v|}{|S|} H(S_v)$
+                - **Gini Impurity:** $\\text{Gini}(S) = 1 - \\sum_{i=1}^C p_i^2$
+
+                ### 2. Support Vector Machines (Linear Separable Case)
+                The separating hyperplane is $\\mathbf{w}^T \\mathbf{x} + b = 0$.
+                - Canonical form: $y_i (\\mathbf{w}^T \\mathbf{x}_i + b) \\ge 1$
+                - **Margin Width:** $\\gamma = \\frac{2}{\\|\\mathbf{w}\\|}$
+                - **Optimization Problem:** $\\min_{\\mathbf{w}, b} \\frac{1}{2} \\|\\mathbf{w}\\|^2$ subject to $y_i(\\mathbf{w}^T \\mathbf{x}_i + b) \\ge 1$.
+                - Data points satisfying $y_i(\\mathbf{w}^T \\mathbf{x}_i + b) = 1$ are the **support vectors**.
+
+                ### 3. Multi-Layer Perceptron (MLP) Parameter Counting
+                For a fully connected feed-forward layer with $n_{in}$ inputs and $n_{out}$ neurons:
+                - Weight matrix: $n_{in} \\times n_{out}$ parameters.
+                - Bias vector: $n_{out}$ parameters.
+                - Total parameters per layer: $n_{in} \\times n_{out} + n_{out} = (n_{in} + 1) \\times n_{out}$.
+                """
+            ),
+            code(
+                """
+                import numpy as np
+
+                # 1. Decision Tree Entropy & Information Gain
+                def entropy(labels):
+                    _, counts = np.unique(labels, return_counts=True)
+                    probs = counts / len(labels)
+                    return -np.sum(probs * np.log2(probs + 1e-12))
+
+                def gini_impurity(labels):
+                    _, counts = np.unique(labels, return_counts=True)
+                    probs = counts / len(labels)
+                    return 1.0 - np.sum(probs ** 2)
+
+                # Sample data: 14 instances (9 Yes, 5 No)
+                parent_labels = np.array([1]*9 + [0]*5)
+                h_parent = entropy(parent_labels)
+                gini_parent = gini_impurity(parent_labels)
+
+                print(f"Parent Entropy: {h_parent:.4f}")
+                print(f"Parent Gini:    {gini_parent:.4f}")
+
+                # Feature A split: Left (6 Yes, 2 No), Right (3 Yes, 3 No)
+                left_labels = np.array([1]*6 + [0]*2)
+                right_labels = np.array([1]*3 + [0]*3)
+                n_total = len(parent_labels)
+
+                h_left = entropy(left_labels)
+                h_right = entropy(right_labels)
+                weighted_entropy = (len(left_labels)/n_total)*h_left + (len(right_labels)/n_total)*h_right
+                info_gain = h_parent - weighted_entropy
+
+                print(f"Weighted Child Entropy: {weighted_entropy:.4f}")
+                print(f"Information Gain:       {info_gain:.4f}")
+
+                # 2. Linear SVM Margin Computation
+                # Hyperplane: 3*x1 + 4*x2 - 2 = 0 => w = [3, 4], b = -2
+                w = np.array([3.0, 4.0])
+                w_norm = np.linalg.norm(w)
+                margin_width = 2.0 / w_norm
+                print(f"\\nSVM weight norm ||w||: {w_norm:.2f}")
+                print(f"SVM Margin Width 2/||w||: {margin_width:.4f}")
+
+                # 3. Neural Network Parameter Counter
+                def count_mlp_params(layer_sizes):
+                    total = 0
+                    for i in range(len(layer_sizes) - 1):
+                        weights = layer_sizes[i] * layer_sizes[i+1]
+                        biases = layer_sizes[i+1]
+                        layer_total = weights + biases
+                        print(f"Layer {i+1} ({layer_sizes[i]} -> {layer_sizes[i+1]}): {weights} weights + {biases} biases = {layer_total}")
+                        total += layer_total
+                    return total
+
+                architecture = [10, 20, 15, 3]
+                print(f"\\nMLP Architecture: {architecture}")
+                total_params = count_mlp_params(architecture)
+                print(f"Total Trainable Parameters: {total_params}")
+                """
+            ),
+            markdown(
+                """
+                ## GATE-Style Practice
+
+                **NAT:** A fully connected Feedforward Neural Network has an input layer of
+                10 neurons, a first hidden layer of 20 neurons, a second hidden layer of
+                15 neurons, and an output layer of 3 neurons. Every neuron in the hidden
+                and output layers includes a bias term. Calculate the **total number of
+                trainable parameters** (weights plus biases) in this network.
+
+                **MCQ:** In a binary classification problem using a linear Support Vector
+                Machine, the optimal separating hyperplane is given by $3x_1 + 4x_2 - 5 = 0$,
+                with canonical margin boundaries $3x_1 + 4x_2 - 5 = +1$ and $3x_1 + 4x_2 - 5 = -1$.
+                What is the margin width of this classifier?
+
+                A. 0.2
+                B. 0.4
+                C. 0.5
+                D. 2.0
+
+                **MSQ:** Which of the following statements regarding Decision Trees and SVMs are TRUE?
+
+                A. In Decision Trees, the Gini impurity of a perfectly pure node is 0.
+                B. Increasing the depth of a decision tree typically decreases its bias and increases its variance.
+                C. In a linear SVM, removing a non-support vector training point does not alter the optimal decision boundary.
+                D. Decision tree training is sensitive to monotonic transformations of individual features and requires feature scaling.
+                """
+            ),
+            markdown(
+                """
+                ## Solutions
+
+                NAT: **583**.
+                - Layer 1 (Input to Hidden 1): $10 \\times 20$ weights $+ 20$ biases $= 200 + 20 = 220$.
+                - Layer 2 (Hidden 1 to Hidden 2): $20 \\times 15$ weights $+ 15$ biases $= 300 + 15 = 315$.
+                - Layer 3 (Hidden 2 to Output): $15 \\times 3$ weights $+ 3$ biases $= 45 + 3 = 48$.
+                - Total trainable parameters: $220 + 315 + 48 = 583$.
+
+                MCQ: **B**.
+                The normal vector is $\\mathbf{w} = [3, 4]^T$.
+                The Euclidean norm is $\\|\\mathbf{w}\\| = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5$.
+                The margin width is:
+                $$\\gamma = \\frac{2}{\\|\\mathbf{w}\\|} = \\frac{2}{5} = 0.4.$$
+
+                MSQ: **A, B, C**.
+                - A is true: $\\text{Gini} = 1 - 1^2 = 0$ for a pure node.
+                - B is true: Deeper trees fit training data more closely (lower bias, higher risk of overfitting/variance).
+                - C is true: The SVM boundary is determined exclusively by the support vectors on the margin.
+                - D is false: Decision trees only use threshold order comparisons and are invariant to strictly monotonic feature scaling.
+                """
+            ),
+        ],
+    )
+
+    write_notebook(
+        "notebooks/ai/logic_and_alpha_beta.ipynb",
+        [
+            markdown(
+                """
+                # Propositional Logic, Resolution Refutation, and Alpha-Beta Pruning
+
+                **Syllabus mapping:** search: adversarial; logic: propositional, predicate.
+
+                **Objectives:** construct and evaluate truth tables; determine satisfiability,
+                validity, and logical entailment; implement Minimax with Alpha-Beta pruning
+                and trace pruned branch counts.
+                """
+            ),
+            markdown(
+                """
+                ## Theoretical Foundations
+
+                ### 1. Propositional Logic
+                - **Validity (Tautology):** A sentence is valid if it is true in **all** models (e.g. $P \\lor \\neg P$).
+                - **Satisfiability:** A sentence is satisfiable if it is true in **at least one** model.
+                - **Entailment:** $\\alpha \\models \\beta$ iff in every model where $\\alpha$ is true, $\\beta$ is also true.
+                - **Proof by Resolution Refutation:**
+                  $$\\alpha \\models \\beta \\iff \\alpha \\land \\neg \\beta \\text{ is unsatisfiable (derives empty clause } \\Box).$$
+
+                ### 2. Alpha-Beta Pruning in Adversarial Search
+                Minimax explores all $O(b^d)$ game tree nodes. Alpha-Beta pruning maintains two bounds:
+                - $\\alpha$: The best (highest) value found so far by any choice along the path for MAX. Initialized to $-\\infty$.
+                - $\\beta$: The best (lowest) value found so far by any choice along the path for MIN. Initialized to $+\\infty$.
+
+                **Pruning Condition:**
+                Whenever $\\alpha \\ge \\beta$, the remaining children of the current node can be pruned because the opponent would never allow play to reach this state.
+                - **Best-case complexity:** $O(b^{d/2})$, doubling the searchable search depth.
+                """
+            ),
+            code(
+                """
+                from itertools import product
+
+                # 1. Propositional Logic Truth Table Evaluator
+                def evaluate_implication(p, q):
+                    return (not p) or q
+
+                def evaluate_biconditional(p, q):
+                    return p == q
+
+                # Test tautology: (P -> Q) or (Q -> P)
+                models = list(product([True, False], repeat=2))
+                is_tautology = True
+                print("Model (P, Q) | (P -> Q) | (Q -> P) | (P -> Q) or (Q -> P)")
+                print("-" * 55)
+                for p, q in models:
+                    p_imp_q = evaluate_implication(p, q)
+                    q_imp_p = evaluate_implication(q, p)
+                    result = p_imp_q or q_imp_p
+                    if not result:
+                        is_tautology = False
+                    print(f"{str(p):<5} {str(q):<5} | {str(p_imp_q):<9} | {str(q_imp_p):<9} | {str(result)}")
+
+                print(f"\\nFormula is a TAUTOLOGY: {is_tautology}")
+
+                # 2. Minimax with Alpha-Beta Pruning Implementation
+                def alphabeta_trace(node, depth, is_max, alpha, beta, path="Root"):
+                    if isinstance(node, (int, float)):
+                        print(f"  Leaf {path}: value = {node} [alpha={alpha}, beta={beta}]")
+                        return node, 0
+
+                    pruned_count = 0
+                    if is_max:
+                        val = -float('inf')
+                        for i, child in enumerate(node):
+                            child_path = f"{path}->C{i+1}"
+                            child_val, p = alphabeta_trace(child, depth + 1, False, alpha, beta, child_path)
+                            pruned_count += p
+                            val = max(val, child_val)
+                            alpha = max(alpha, val)
+                            if beta <= alpha:
+                                remaining = len(node) - (i + 1)
+                                pruned_count += remaining
+                                print(f"  ** PRUNED at {path}: beta ({beta}) <= alpha ({alpha}), skipped {remaining} branch(es) **")
+                                break
+                        return val, pruned_count
+                    else:
+                        val = float('inf')
+                        for i, child in enumerate(node):
+                            child_path = f"{path}->C{i+1}"
+                            child_val, p = alphabeta_trace(child, depth + 1, True, alpha, beta, child_path)
+                            pruned_count += p
+                            val = min(val, child_val)
+                            beta = min(beta, val)
+                            if beta <= alpha:
+                                remaining = len(node) - (i + 1)
+                                pruned_count += remaining
+                                print(f"  ** PRUNED at {path}: beta ({beta}) <= alpha ({alpha}), skipped {remaining} branch(es) **")
+                                break
+                        return val, pruned_count
+
+                # Tree: Root (MAX) with two MIN children A: [3, 5], B: [2, 9]
+                game_tree = [[3, 5], [2, 9]]
+                print("\\n--- Tracing Alpha-Beta Pruning ---")
+                root_val, pruned = alphabeta_trace(game_tree, 0, True, -float('inf'), float('inf'))
+                print(f"\\nRoot Minimax Value: {root_val}")
+                print(f"Total Pruned Subtrees/Leaves: {pruned}")
+                """
+            ),
+            markdown(
+                """
+                ## GATE-Style Practice
+
+                **NAT:** Consider a two-player zero-sum game tree with MAX at the root.
+                The root has two MIN children, $A$ and $B$. Child $A$ has two leaf children
+                with values $3$ and $5$ (evaluated from left to right). Child $B$ has two
+                leaf children with values $2$ and $9$ (evaluated from left to right).
+                Using Alpha-Beta pruning with standard left-to-right evaluation, how many
+                leaf nodes are **pruned** (not evaluated)?
+
+                **MCQ:** Which of the following propositional logic formulas is a **tautology**
+                (valid in all models)?
+
+                A. $(P \\to Q) \\to P$
+                B. $(P \\to Q) \\lor (Q \\to P)$
+                C. $(P \\land Q) \\to (P \\land \\neg Q)$
+                D. $(P \\lor Q) \\to (P \\land Q)$
+
+                **MSQ:** Which of the following statements regarding Alpha-Beta pruning are TRUE?
+
+                A. Alpha-Beta pruning always returns the exact same minimax value at the root as standard Minimax search.
+                B. In the best-case move ordering, Alpha-Beta pruning reduces the effective branching factor from $b$ to $\\sqrt{b}$.
+                C. At a MAX node, the value of $\\alpha$ can only increase or remain unchanged.
+                D. If $\\alpha \\ge \\beta$ at any node, searching further children of that node cannot alter the minimax decision of the parent.
+                """
+            ),
+            markdown(
+                """
+                ## Solutions
+
+                NAT: **1**.
+                1. Child $A$ (MIN node):
+                   - Left leaf: evaluates to 3. MIN bound becomes $\\min(\\infty, 3) = 3$.
+                   - Right leaf: evaluates to 5. MIN bound becomes $\\min(3, 5) = 3$.
+                   - Child $A$ returns value 3 to Root (MAX).
+                2. Root (MAX node):
+                   - Sets $\\alpha = \\max(-\\infty, 3) = 3$.
+                3. Child $B$ (MIN node, with $\\alpha = 3, \\beta = \\infty$):
+                   - Left leaf: evaluates to 2. MIN bound becomes $\\beta = \\min(\\infty, 2) = 2$.
+                   - Pruning condition checked: $\\beta \\le \\alpha$ ($2 \\le 3$).
+                   - **Cutoff triggered!** The right leaf (value 9) is pruned.
+                Total leaves pruned: **1**.
+
+                MCQ: **B**.
+                - $(P \\to Q) \\lor (Q \\to P) \\equiv (\\neg P \\lor Q) \\lor (\\neg Q \\lor P) \\equiv (\\neg P \\lor P) \\lor (Q \\lor \\neg Q) \\equiv \\text{True} \\lor \\text{True} \\equiv \\text{True}$.
+                This statement is unconditionally true in every boolean model.
+
+                MSQ: **A, B, C, D**.
+                All four statements are foundational theorems in adversarial search:
+                - A: Pruning is sound and optimal; it discards only branches provably irrelevant to the root decision.
+                - B: Best-case time complexity is $O(b^{d/2})$, which corresponds to branching factor $\\sqrt{b}$.
+                - C: MAX only pushes the lower bound $\\alpha$ upward.
+                - D: $\\alpha \\ge \\beta$ guarantees the ancestor already has a better or equal guaranteed alternative.
+                """
+            ),
+        ],
+    )
+
 
 if __name__ == "__main__":
     build_all()
+

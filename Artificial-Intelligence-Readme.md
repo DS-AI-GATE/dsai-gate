@@ -10,8 +10,8 @@
 
 ### The only Artificial-Intelligence cheatsheet that you''ll ever need
 
-[<img src="Data/Artificial-Intelligence/AI_Cheat_Sheet.png">](/Data/Artificial-Intelligence/All_cheat_sheet.pdf)
-> [Download Full Pdf](/Data/Artificial-Intelligence/All_cheat_sheet.pdf)
+[<img src="Data/Artificial-Intelligence/AI_Cheat_Sheet.png">](Data/Artificial-Intelligence/All_cheat_sheet.pdf)
+> [Download Full Pdf](Data/Artificial-Intelligence/All_cheat_sheet.pdf)
  
 Credits : [Stanford CS211](https://stanford-cs221.github.io/summer2023/) - Afshine Amidi and Shervine Amidi published on September 8, 2019
 
@@ -54,6 +54,9 @@ by Prof. Rohan Paul. The course covers the foundational principles of artificial
 
 Review these comprehensive notes to reinforce your grasp :
 
+- **[Propositional Logic, Resolution Refutation, and Alpha-Beta Pruning Notebook](notebooks/ai/logic_and_alpha_beta.ipynb)**  
+  Executable notebook covering truth table evaluation, satisfiability, resolution refutation, and Minimax with Alpha-Beta pruning tracking exact cutoff branch counts.
+
 - **[AI Search and Reasoning Under Uncertainty Notebook](notebooks/ai/search_and_uncertainty.ipynb)**  
   Executable notebook covering informed search (A*), adversarial search (Minimax), Bayesian network variable elimination, and sampling with GATE-style practice.
 
@@ -61,10 +64,10 @@ Review these comprehensive notes to reinforce your grasp :
 This course explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation.
 
 - Prof Vasant Honavar Course Handouts for **Principles of Artificial Intelligence**:
-   - [Handout1](/Data/Artificial-Intelligence/handout1.pdf); Artificial Intelligence: An Overview ∗
-   - [Handout2](/Data/Artificial-Intelligence/handout2.pdf); Principles of Artificial Intelligence Goal-Based Agents
-   - [Handout3](/Data/Artificial-Intelligence/handout3.pdf); Heuristic Problem Solvers
-   - [Handout4](/Data/Artificial-Intelligence/handout4.pdf); Constraint Satisfaction and Randomized Search \
+   - [Handout1](Data/Artificial-Intelligence/handout1.pdf); Artificial Intelligence: An Overview ∗
+   - [Handout2](Data/Artificial-Intelligence/handout2.pdf); Principles of Artificial Intelligence Goal-Based Agents
+   - [Handout3](Data/Artificial-Intelligence/handout3.pdf); Heuristic Problem Solvers
+   - [Handout4](Data/Artificial-Intelligence/handout4.pdf); Constraint Satisfaction and Randomized Search \
    [Course Website](https://faculty.ist.psu.edu/vhonavar/Courses/ai/studyguide.html)
 
 ---
@@ -83,9 +86,9 @@ Read insightful articles to gain additional insights:
 
 Test your knowledge and skills with these practice problems:
 
-- [**Previous Year Quesitons: CS188 Berkley**](https://tbp.berkeley.edu/courses/cs/188/) by Prof Peter Abeel
-- Previous year UGC NET CSE Questions - AI Topic
-- [**Practice Exercises: Previous year questions CS 188 with solutions to validate theoretical understanding**](https://inst.eecs.berkeley.edu/~cs188/fa18/final_exam_prep.html)
+- **[Previous Year Questions: CS188 Berkeley](https://tbp.berkeley.edu/courses/cs/188/)** by Prof Peter Abbeel
+- **[GATE Overflow Artificial Intelligence Questions](https://gateoverflow.in/tag-search-page?q=artificial-intelligence)** Community-vetted GATE questions with full derivations.
+- **[Practice Exercises: Previous year questions CS 188 with solutions to validate theoretical understanding](https://inst.eecs.berkeley.edu/~cs188/fa18/final_exam_prep.html)**
 
 ---
 

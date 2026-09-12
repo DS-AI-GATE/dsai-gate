@@ -41,6 +41,8 @@ Course to deepen your knowledge:
 
 Review these comprehensive notes to reinforce your grasp:
 
+- **[Normalization, Functional Dependencies, and Relational Calculus Notebook](notebooks/databases/normalization_and_calculus.ipynb)**  
+  Interactive notebook computing attribute closures, candidate keys, 2NF/3NF/BCNF testing, lossless join verification, and Tuple Relational Calculus (TRC) queries.
 - **[Relational Algebra, SQL, and Integrity Constraints Notebook](notebooks/databases/relational_algebra_and_sql.ipynb)**  
   Interactive notebook testing selection, projection, joins, set differences, and integrity constraints with GATE-style practice.
 - Database Management Systems by MIT: **[6.830 Database Systems](https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/pages/lecture-notes/)** The Notes are pretty comprehensive and include the syllabus for DBMS asked in the GATE Exam.
@@ -62,7 +64,8 @@ Read insightful articles to gain additional insights:
 ## <a name="practice-problems"></a>Practice Problems
 
 Test your knowledge and skills with these practice problems:
-- **[Gate CSE PYQ on DBMS](https://practicepaper.in/gate-cse/database-management-system)**
+- **[GATE Overflow DBMS Questions](https://gateoverflow.in/tag-search-page?q=database-management-system)** Vetted past GATE questions with accepted step-by-step solutions.
+- **[NPTEL DBMS Assignment Questions (IIT Kharagpur)](https://nptel.ac.in/courses/106105175)** Assignments covering relational model, SQL, normalization, and indexing.
 - **[SQL Practice](https://github.com/wangruinju/SQL_Resources/blob/master/Stanford%20SQL%20practice/SQL%20exercise.Rmd)** A standard GitHub repo containing good variety of questions on SQL Query
 - **[Stanford CS145: Introduction to Databases](https://web.stanford.edu/class/cs145/)** for database course material and exercises.
   

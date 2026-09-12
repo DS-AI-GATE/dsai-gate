@@ -9,12 +9,15 @@
 
 ---
 
+> [!NOTE]
+> **Post-GATE Interview Enrichment (Non-Syllabus)**: The MLOps resources, production pipelines, deployment frameworks (Docker, Kubernetes, Prefect, MLflow), and architectures in this guide are curated for postgraduate interviews and industry readiness. They are not part of the written GATE DA 2027 examination syllabus.
+
 > Credits: Based on resources curated by [Chip Huyen](https://huyenchip.com/mlops/) | 
 ***https://huyenchip.com/mlops/***
 
-MLOPs Roadmap:https://roadmap.sh/mlops
+MLOPs Roadmap: https://roadmap.sh/mlops
 
-![MLOps Roadmap](https://github.com/DS-AI-GATE/dsai-gate/blob/main/Data/Interview/MLOPs/mlops_page-0001.jpg)
+![MLOps Roadmap](../Data/Interview/MLOPs/mlops_page-0001.jpg)
 
 ## <a name="books"></a>Books
 

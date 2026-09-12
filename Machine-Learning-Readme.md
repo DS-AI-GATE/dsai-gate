@@ -9,8 +9,8 @@
 
 
 
-[<img src="/Data/Machine-Learning/Machine_Learning_Cheatsheet.png">](/Data/Machine-Learning/super-cheatsheet-machine-learning.pdf)
-> [Download Full Pdf](/Data/Artificial-Intelligence/All_cheat_sheet.pdf)
+[<img src="Data/Machine-Learning/Machine_Learning_Cheatsheet.png">](Data/Machine-Learning/super-cheatsheet-machine-learning.pdf)
+> [Download Full Pdf](Data/Artificial-Intelligence/All_cheat_sheet.pdf)
  
 Credits : [Stanford Cheatsheets: Machine Learning, AI, Probability Statistics, Deep Learning](https://stanford.edu/~shervine/teaching/) - Afshine Amidi and Shervine Amidi published on September 8, 2019
 
@@ -56,7 +56,7 @@ This is an introductory course in machine learning (ML) that covers the basic th
 Review these comprehensive notes to reinforce your grasp:
 
 - **[Stanford CS229 Lecture Notes](https://cs229.stanford.edu/main_notes.pdf)** sufficient to cover entire syllabus of Machine Learning \
-Repository contains the pdf notes :[download_here](/Data/Machine-Learning/main_notes.pdf)
+Repository contains the pdf notes :[download_here](Data/Machine-Learning/main_notes.pdf)
 - **[CMU Machine Learning Notes](https://www.cs.cmu.edu/~hn1/documents/machine-learning/notes.pdf)** by Huy Nguyen, PhD Student, Human-Computer Interaction Institute, Carnegie Mellon University \
 
 ---
@@ -70,6 +70,7 @@ Python 3 code to reproduce the figures in the books [Probabilistic Machine Learn
 
 **Repository Examples**
 
+- [Decision trees, SVM, and Neural Network parameters](notebooks/machine_learning/decision_trees_and_svm.ipynb)
 - [Linear regression from scratch](notebooks/machine_learning/linear_regression_from_scratch.ipynb)
 - [Logistic classification](notebooks/machine_learning/logistic_classification.ipynb)
 - [K-means from scratch](notebooks/machine_learning/kmeans_from_scratch.ipynb)
@@ -88,15 +89,17 @@ Test your knowledge and skills with these practice problems:
 - **[Berkley CS 189 Machine Learning Previous Year Questions and Solutions](https://tbp.berkeley.edu/courses/cs/189/)**
 - **[Learning from Data Homework Caltech: MCQ Questions and Solutions](https://home.work.caltech.edu/homeworks.html)**
 
+> [!NOTE]
+> **University-Level Enrichment Material (Non-Syllabus)**: The following UPenn CIS 520 examination papers provide challenging theoretical practice, but include graduate topics (e.g. Spectral Clustering, RKHS, advanced boosting) that extend beyond the official GATE DA 2027 syllabus.
 
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2017 Final](/Data/Machine-Learning/final2017_solutions.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2018 Final](/Data/Machine-Learning/final2018_solutions.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2019 Final](/Data/Machine-Learning/final2019_solutions.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2022 Final](/Data/Machine-Learning/final2022.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2018 MidTerm](/Data/Machine-Learning/midterm2018_solutions.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2019 MidTerm](/Data/Machine-Learning/midterm2019_solutions.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2022 MidTerm](/Data/Machine-Learning/midterm2022_solutions.pdf)
-- [Regression problems from IIT Dharwad EE 405: Patter Recognition and Machine Learning](/Data/Machine-Learning/python-practice-problems/regression)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2017 Final](Data/Machine-Learning/final2017_solutions.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2018 Final](Data/Machine-Learning/final2018_solutions.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2019 Final](Data/Machine-Learning/final2019_solutions.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2022 Final](Data/Machine-Learning/final2022.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2018 MidTerm](Data/Machine-Learning/midterm2018_solutions.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2019 MidTerm](Data/Machine-Learning/midterm2019_solutions.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2022 MidTerm](Data/Machine-Learning/midterm2022_solutions.pdf)
+- [Regression problems from IIT Dharwad EE 405: Pattern Recognition and Machine Learning](Data/Machine-Learning/python-practice-problems/regression)
 
 ---
 
