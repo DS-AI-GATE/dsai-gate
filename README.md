@@ -39,12 +39,12 @@ This repository is designed to collaborate and share resources for preparation, 
 
 📚 **Syllabus Coverage**
 
-**Syllabus:** [Data Science and Artificial Intelligence Gate ](https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/DA_GATE2027_Syllabus.pdf)
-(Released by GATE 2027 organizing institute)
+- **Official GATE DA 2027 Syllabus:** [Data Science and Artificial Intelligence (DA)](https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/DA_GATE2027_Syllabus.pdf) (Released by GATE 2027 organizing institute, IIT Madras · [Local copy](Data/DA_GATE2027_Syllabus.pdf))
+- **Official GATE 2027 General Aptitude Syllabus:** [General Aptitude (GA)](https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/GA_GATE2027_Syllabus.pdf) (Released by IIT Madras · [Local copy](Data/General-Aptitude/GA_GATE2027_Syllabus.pdf))
 
-Our repository is meticulously organized to cover the complete syllabus outlined for the DSAI section of the GATE exam. From Probability and Statistics to Math, Programming,DSA, DBMS, Machine Learning, and AI, you'll find comprehensive resources that address each topic in detail.
+Our repository is meticulously organized to cover the complete syllabus outlined for the DSAI section of the GATE 2027 exam. From Probability and Statistics to Math, Programming, DSA, DBMS, Machine Learning, and AI, you'll find comprehensive resources that address each topic in detail.
 
-**Explore the power of open source including featured tutorials, course videos, books, articles, courses, websites, code examples in Python**.\
+**Explore the power of open source including featured tutorials, course videos, books, articles, courses, websites, and code examples in Python**.\
 `Theoretical explanations, practice examples, or MCQ exercises, we've got you covered in this all-encompassing guide.`\
 `We aim to present a one stop resource in this Preparation-to-Interviews guide.`
 
@@ -70,6 +70,11 @@ To ensure a smooth and efficient learning experience, we've structured the repos
     <th class="tg-yw4l"><b>Topic</b></th>
     <th class="tg-yw4l"><b>Description</b></th>
     <th class="tg-yw4l"><b>Resources</b></th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><a href="#general-aptitude">General Aptitude (GA)</td>
+    <td class="tg-yw4l">Verbal aptitude, quantitative aptitude, analytical reasoning, and spatial aptitude (15 marks)</td>
+    <td class="tg-yw4l"><a href="General-Aptitude-Readme.md">General-Aptitude</a></td>
   </tr>
   <tr>
     <td class="tg-yw4l"><a href="#probability-and-statistics">Probability and Statistics</td>
@@ -209,6 +214,7 @@ Stay connected with us for updates, announcements, and discussions
 | [official resources and paper analysis](docs/official-resources.md)
 | [agent guide](docs/agent.md)
 | [stale-link audit](docs/stale-links.md)
+| [PYQ topic analysis & mapping](PYQ/topic_analysis.md)
 
 <!---
  - Add jump links structure to individual markdown readme
@@ -361,7 +367,9 @@ Stay connected with us for updates, announcements, and discussions
 
 <td><h3 id="machine-learning"><a href="Machine-Learning-Readme.md">Machine Learning</h3></td>
 
-<td>Supervised Learning:
+<td>
+
+**Supervised Learning:**
 
 - Regression and Classification Problems
 - Simple Linear Regression
@@ -377,12 +385,12 @@ Stay connected with us for updates, announcements, and discussions
 - Cross-validation Methods: Leave-One-Out (LOO) Cross-validation, k-Folds Cross-validation
 - Multi-layer Perceptron
 - Feed-forward Neural Network
-- Unsupervised Learning:
-- Clustering Algorithms
-- k-Means and k-Medoid Clustering
-- Hierarchical Clustering
-- Dimensionality Reduction
-- Principal Component Analysis (PCA)
+
+**Unsupervised Learning:**
+
+- Clustering Algorithms: k-Means and k-Medoid
+- Hierarchical Clustering (Top-down, Bottom-up: Single-linkage, Multiple-linkage)
+- Dimensionality Reduction: Principal Component Analysis (PCA)
 
 </td>
 
@@ -396,7 +404,9 @@ Stay connected with us for updates, announcements, and discussions
 
 - Search: Informed Search, Uninformed Search, Adversarial Search
 - Logic: Propositional Logic, Predicate Logic
-- Reasoning under Uncertainty Topics:
+
+**Reasoning under Uncertainty:**
+
 - Conditional Independence Representation
 - Exact Inference through Variable Elimination
 - Approximate Inference through Sampling
@@ -413,9 +423,9 @@ Stay connected with us for updates, announcements, and discussions
 
 ---
 
-## <a name="GATE_2024_Data_3">GATE Data Science and AI Exam Pattern</a>
+## <a name="GATE_2027_DA_Exam_Pattern">GATE Data Science and AI Exam Pattern (GATE 2027)</a>
 
-The GATE Data Science and AI exam pattern will carry a total of 100 marks. The paper will be divided into two sections, General Aptitude and Data Science and AI Subject Questions, worth 15 and 85 marks, respectively.
+The GATE Data Science and AI exam pattern carries a total of 100 marks. The paper is divided into two sections: General Aptitude (15 marks) and Data Science and AI Subject Questions (85 marks), organized by IIT Madras for GATE 2027.
 
 Check out the complete GATE DA Exam Pattern in the table outlined below.
 

@@ -44,7 +44,7 @@
       <button class="button primary" id="present-all">
         Present <span aria-hidden="true">▶</span>
       </button>
-      <a class="button primary" href="{{ repository_url }}" target="_blank" rel="noreferrer">
+      <a class="button primary" href="{{ repository_url }}/tree/{{ branch }}" target="_blank" rel="noreferrer">
         GitHub <span aria-hidden="true">↗</span>
       </a>
     </nav>
@@ -93,7 +93,7 @@
           <div class="hero-actions">
             <button class="button primary large" data-scroll-to="curriculum">Explore curriculum <span>↓</span></button>
             <button class="button quiet large" data-present-start="0">Start presentation <span>▶</span></button>
-            <a class="button quiet large" href="{{ repository_url }}/tree/main/PYQ" target="_blank" rel="noreferrer">Previous papers ↗</a>
+            <a class="button quiet large" href="{{ repository_url }}/tree/{{ branch }}/PYQ" target="_blank" rel="noreferrer">Previous papers ↗</a>
           </div>
         </div>
         <div class="hero-panel" aria-label="Exam snapshot">
@@ -192,8 +192,8 @@
         <h2>Turn the syllabus into a weekly plan.</h2>
         <p>Use official papers to expose weak areas, then return here to focus your next study block.</p>
         <div>
-          <a class="button primary large" href="{{ repository_url }}/tree/main/PYQ" target="_blank" rel="noreferrer">Open official papers ↗</a>
-          <a class="button quiet large" href="{{ repository_url }}/tree/main/notebooks" target="_blank" rel="noreferrer">Browse notebooks ↗</a>
+          <a class="button primary large" href="{{ repository_url }}/tree/{{ branch }}/PYQ" target="_blank" rel="noreferrer">Open official papers ↗</a>
+          <a class="button quiet large" href="{{ repository_url }}/tree/{{ branch }}/notebooks" target="_blank" rel="noreferrer">Browse notebooks ↗</a>
         </div>
       </section>
 
@@ -203,7 +203,7 @@
           <span><strong>DSAI-GATE</strong><small>Community study guide</small></span>
         </div>
         <p>Built from the official syllabus. Maintained through pull requests.</p>
-        <a href="{{ repository_url }}/blob/main/docs/agent.md" target="_blank" rel="noreferrer">Contribution guide ↗</a>
+        <a href="{{ repository_url }}/blob/{{ branch }}/docs/agent.md" target="_blank" rel="noreferrer">Contribution guide ↗</a>
       </footer>
     </main>
   </div>

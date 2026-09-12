@@ -9,8 +9,8 @@
 
 
 
-[<img src="/Data/Machine-Learning/Machine_Learning_Cheatsheet.png">](/Data/Machine-Learning/super-cheatsheet-machine-learning.pdf)
-> [Download Full Pdf](/Data/Artificial-Intelligence/All_cheat_sheet.pdf)
+[<img src="Data/Machine-Learning/Machine_Learning_Cheatsheet.png">](Data/Machine-Learning/super-cheatsheet-machine-learning.pdf)
+> [Download Full Pdf](Data/Artificial-Intelligence/All_cheat_sheet.pdf)
  
 Credits : [Stanford Cheatsheets: Machine Learning, AI, Probability Statistics, Deep Learning](https://stanford.edu/~shervine/teaching/) - Afshine Amidi and Shervine Amidi published on September 8, 2019
 
@@ -29,9 +29,10 @@ Explore these recommended books to enhance your understanding:
 - [**Probabilistic Machine Learning: An Introduction**](https://probml.github.io/pml-book/book1.html) by Kevin P. Murphy\
   The author's official page includes the licensed draft, exercises, and code.
 
- - [**Learning from Data**](https://openeclass.panteion.gr/modules/document/file.php/PMS152/LEARNING/Abu-Mostafa%20Yaser%20S.%2C%20Malik%20Magdon-Ismail%2C%20Hsuan-Tien%20Lin%20%282012%29%20--%20Learning%20From%20Data_%20A%20short%20course.pdf) course book for IIT D undergraduate level ML course
+- [**Learning from Data**](https://amlbook.com/) by Yaser S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin\
+  Official book site with course problems, e-chapters, and Caltech online lecture companions.
 
-- [**Machine Learning Book**](http://www.cs.cmu.edu/~tom/mlbook.html) by  Tom M. Mitchell (CMU)\
+- [**Machine Learning Book**](http://www.cs.cmu.edu/~tom/mlbook.html) by Tom M. Mitchell (CMU)\
   A classical book for Machine Learning.
 ---
 
@@ -39,25 +40,24 @@ Explore these recommended books to enhance your understanding:
 
 Course to deepen your knowledge:
 
-- [**"Introduction to Machine Learning IIT Delhi"**](https://www.cse.iitd.ac.in/~parags/teaching/col774/) by  Prof [Parag Singla((IIT-D)](https://www.cse.iitd.ac.in/~parags/)
+- [**"Machine Learning Course, IIT Delhi"**](https://www.cse.iitd.ac.in/~parags/teaching.html) by Prof. [Parag Singla (IIT Delhi)](https://www.cse.iitd.ac.in/~parags/)\
   A comprehensive resource for ML theory, excellent coverage from GATE and Interviews perspective.
 
-- [**"Stanford CS229: Machine Learning Full Course taught by Andrew Ng"**](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&ab_channel=StanfordOnline) by  Prof Andrew NG (Stanford) \
+- [**"Stanford CS229: Machine Learning Full Course taught by Andrew Ng"**](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&ab_channel=StanfordOnline) by Prof Andrew Ng (Stanford) \
 This course provides a broad introduction to machine learning and statistical pattern recognition. Topics include: supervised learning (generative/discriminative learning, parametric/non-parametric learning, neural networks, support vector machines); unsupervised learning (clustering, dimensionality reduction, kernel methods); learning theory (bias/variance tradeoffs, practical advice);
 
-- [**Learning from Data: Caltech course Lectures**](https://home.work.caltech.edu/telecourse.html) \
-This is an introductory course in machine learning (ML) that covers the basic theory, algorithms, and applications. ML is a key technology in Big Data, and in many financial, medical, commercial, and scientific applications. || **[NTU MOOC : Learning from Data](https://www.csie.ntu.edu.tw/~htlin/mooc/)**
+- [**Learning from Data: Caltech Course Lectures**](https://home.work.caltech.edu/telecourse.html) \
+This is an introductory course in machine learning (ML) that covers the basic theory, algorithms, and applications. ML is a key technology in Big Data, and in many financial, medical, commercial, and scientific applications.
 
 ---
-
 
 ## <a name="notes"></a>Notes
 
 Review these comprehensive notes to reinforce your grasp:
 
 - **[Stanford CS229 Lecture Notes](https://cs229.stanford.edu/main_notes.pdf)** sufficient to cover entire syllabus of Machine Learning \
-Repository contains the pdf notes :[download_here](/Data/Machine-Learning/main_notes.pdf)
-- **[CMU Machine Learning Notes](https://www.cs.cmu.edu/~hn1/documents/machine-learning/notes.pdf)** by Huy NguyenPhD Student, Human-Computer Interaction Institute, Carnegie Mellon University \
+Repository contains the pdf notes :[download_here](Data/Machine-Learning/main_notes.pdf)
+- **[CMU Machine Learning Notes](https://www.cs.cmu.edu/~hn1/documents/machine-learning/notes.pdf)** by Huy Nguyen, PhD Student, Human-Computer Interaction Institute, Carnegie Mellon University \
 
 ---
 
@@ -70,9 +70,11 @@ Python 3 code to reproduce the figures in the books [Probabilistic Machine Learn
 
 **Repository Examples**
 
+- [Decision trees, SVM, and Neural Network parameters](notebooks/machine_learning/decision_trees_and_svm.ipynb)
 - [Linear regression from scratch](notebooks/machine_learning/linear_regression_from_scratch.ipynb)
 - [Logistic classification](notebooks/machine_learning/logistic_classification.ipynb)
 - [K-means from scratch](notebooks/machine_learning/kmeans_from_scratch.ipynb)
+- [Hierarchical clustering (Single & Multiple Linkage)](notebooks/machine_learning/hierarchical_clustering.ipynb)
 
 The example sequence is informed by collaborator
 [Swakath's PRML assignment repository](https://github.com/swakath/PRML), with
@@ -87,15 +89,17 @@ Test your knowledge and skills with these practice problems:
 - **[Berkley CS 189 Machine Learning Previous Year Questions and Solutions](https://tbp.berkeley.edu/courses/cs/189/)**
 - **[Learning from Data Homework Caltech: MCQ Questions and Solutions](https://home.work.caltech.edu/homeworks.html)**
 
+> [!NOTE]
+> **University-Level Enrichment Material (Non-Syllabus)**: The following UPenn CIS 520 examination papers provide challenging theoretical practice, but include graduate topics (e.g. Spectral Clustering, RKHS, advanced boosting) that extend beyond the official GATE DA 2027 syllabus.
 
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2017 Final](/Data/Machine-Learning/final2017_solutions.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2018 Final](/Data/Machine-Learning/final2018_solutions.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2019 Final](/Data/Machine-Learning/final2019_solutions.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2022 Final](/Data/Machine-Learning/final2022.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2018 MidTerm](/Data/Machine-Learning/midterm2018_solutions.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2019 MidTerm](/Data/Machine-Learning/midterm2019_solutions.pdf)
-- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2022 MidTerm](/Data/Machine-Learning/midterm2022_solutions.pdf)
-- [Regression problems from IIT Dharwad EE 405: Patter Recognition and Machine Learning](/Data/Machine-Learning/python-practice-problems/regression)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2017 Final](Data/Machine-Learning/final2017_solutions.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2018 Final](Data/Machine-Learning/final2018_solutions.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2019 Final](Data/Machine-Learning/final2019_solutions.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2022 Final](Data/Machine-Learning/final2022.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2018 MidTerm](Data/Machine-Learning/midterm2018_solutions.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2019 MidTerm](Data/Machine-Learning/midterm2019_solutions.pdf)
+- [UNIVERSITY of PENNSYLVANIA CIS 520: Machine Learning; MCQ 2022 MidTerm](Data/Machine-Learning/midterm2022_solutions.pdf)
+- [Regression problems from IIT Dharwad EE 405: Pattern Recognition and Machine Learning](Data/Machine-Learning/python-practice-problems/regression)
 
 ---
 

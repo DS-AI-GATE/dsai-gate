@@ -1,13 +1,15 @@
 """Flask development server for the DSAI-GATE syllabus explorer."""
 
 from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from flask import Flask, jsonify, render_template
 
 from webapp.content import MarkdownCurriculumRenderer, PAGES_URL, REPOSITORY_URL
-
-
-ROOT = Path(__file__).resolve().parents[1]
 
 
 def create_app(renderer=None):
@@ -20,7 +22,6 @@ def create_app(renderer=None):
         return render_template(
             "index.html",
             **curriculum,
-            repository_url=REPOSITORY_URL,
             pages_url=PAGES_URL,
         )
 

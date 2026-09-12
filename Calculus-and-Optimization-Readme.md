@@ -23,8 +23,8 @@ Explore these recommended books to enhance your understanding :
 - [**"All of Statistics: A Concise Course in Statistical Inference"**](https://egrcc.github.io/docs/math/all-of-statistics.pdf) by  Larry Wasserman 
   A comprehensive resource for statistical theory and its applications.
 -->
-- [**"Calculus Online Textbook"**](https://ocw.mit.edu/ans7870/resources/Strang/Edited/Calculus/Calculus.pdf) by  Prof. Gilbert Strang (MIT)
-Corresponding course page [**Calculus Course MIT**](https://ocw.mit.edu/courses/res-18-001-calculus-online-textbook-spring-2005/pages/textbook/)
+- [**"Calculus Online Textbook"**](https://ocw.mit.edu/courses/res-18-001-calculus-online-textbook-spring-2005/) by Prof. Gilbert Strang (MIT)  
+  Corresponding course resource covering limits, differentiation, integration, and series approximations.
 
 - [**"Convex Optimization"**](https://web.stanford.edu/~boyd/cvxbook/) by Stephen Boyd and Lieven Vandenberghe
   
@@ -34,9 +34,9 @@ Corresponding course page [**Calculus Course MIT**](https://ocw.mit.edu/courses/
 
 Course to deepen your knowledge:
 
-- [**"IITM NPTEL Course: Data Science for Engineers"**](https://www.youtube.com/watch?v=LpamajnMpZY&ab_channel=NPTEL-NOCIITM)  Single Variablle Optimization for Data Science
-- [**" NPTEL Course:Optimization for Machine Learning"**](https://www.youtube.com/playlist?list=PLyqSpQzTE6M-pmLzCoMu_ANU6atEFyyJl) Optimisation for Machine Learning: Theory and Implementation (Hindi)
-
+- [**"MIT OCW 18.01SC: Single Variable Calculus"**](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/): In-depth coverage of limits, continuity, differentiability, Taylor polynomials, and optimization.
+- [**"IITM NPTEL Course: Data Science for Engineers"**](https://www.youtube.com/watch?v=LpamajnMpZY&ab_channel=NPTEL-NOCIITM)  Single Variable Optimization for Data Science
+- [**"NPTEL Course: Optimization for Machine Learning"**](https://www.youtube.com/playlist?list=PLyqSpQzTE6M-pmLzCoMu_ANU6atEFyyJl) Optimization for Machine Learning: Theory and Implementation (Hindi)
 
 ---
 
@@ -44,11 +44,13 @@ Course to deepen your knowledge:
 
 Review these comprehensive notes to reinforce your grasp :
 
+> [!NOTE]
+> **Syllabus Scope Note**: Section 3 of the GATE DA 2027 syllabus is strictly restricted to **Functions of a Single Variable** (limits, continuity, differentiability, Taylor series, maxima and minima, optimization involving a single variable). Multivariable calculus (gradients, Hessians, Lagrange multipliers) is outside Section 3, though gradients appear conceptually in Machine Learning. `Topic_Resources/PDFs/convex-1.pdf` contains multivariable content for advanced ML enrichment.
 
-
-- [**"Harvard Calculus Course Notes "**](https://people.math.harvard.edu/~knill/teaching/math1a_2012/handouts.html)  As suggested by Arjun Suresh (Gate Overflow): Sufficient for GATE
+- [**"Single-Variable Optimization and Taylor Series Notebook"**](notebooks/calculus/single_variable_optimization.ipynb)
+  Interactive notebook covering functions of a single variable, limits, Taylor series, and 1D optimization with GATE-style practice.
+- [**"Harvard Calculus Course Notes"**](https://people.math.harvard.edu/~knill/teaching/math1a_2012/handouts.html)  As suggested by Arjun Suresh (Gate Overflow): Sufficient for GATE
 - [**"Optimization Notes COL774 IIT DELHI"**](Topic_Resources/PDFs/convex-1.pdf) By Prof. Parag Singla IIT DELHI - COL774 Course
-
 
 ---
 
@@ -56,7 +58,7 @@ Review these comprehensive notes to reinforce your grasp :
 
 Read insightful articles to gain additional insights:
 
-[**"Khan Academy Caculus"**](https://www.khanacademy.org/math/calculus-all-old) 
+- [**"Khan Academy Calculus"**](https://www.khanacademy.org/math/calculus-all-old) 
   A comprehensive resource for calculus theory and its applications.
   
 ---
@@ -69,7 +71,7 @@ Test your knowledge and skills with these practice problems:
 
 - [**Paul's Online Notes Practice Problems - Optimization**](https://tutorial.math.lamar.edu/problems/calci/optimization.aspx) simple Optimization problems with solutions.
 - [**Paul's Online Notes Practice Problems - Calculus**](https://tutorial.math.lamar.edu/Problems/CalcI/CalcI.aspx) Calculus problems with solutions.
-- [**Khan Academy Caculus Problems**](https://www.khanacademy.org/math/ap-calculus-ab)
+- [**Khan Academy Calculus Problems**](https://www.khanacademy.org/math/ap-calculus-ab)
 ---
 
 #### <a name="table-of-contents"></a>Table of Contents

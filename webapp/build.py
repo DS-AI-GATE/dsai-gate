@@ -4,12 +4,16 @@ from argparse import ArgumentParser
 from pathlib import Path
 import json
 import shutil
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from webapp.app import create_app
 from webapp.content import MarkdownCurriculumRenderer
 
 
-ROOT = Path(__file__).resolve().parents[1]
 WEBAPP = ROOT / "webapp"
 
 

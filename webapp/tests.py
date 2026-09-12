@@ -35,6 +35,7 @@ class WebappTests(unittest.TestCase):
         self.assertNotIn("papers", payload)
         self.assertGreater(payload["total_topics"], 40)
         self.assertGreater(payload["total_resources"], 40)
+        self.assertTrue(all(subject["notebook"] for subject in payload["subjects"]))
         topic_map = next(
             topic_map
             for topic_map in payload["subjects"][0]["topic_maps"]

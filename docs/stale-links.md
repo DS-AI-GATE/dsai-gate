@@ -19,7 +19,14 @@ unstable, or visibly outdated. Automated checks should extend this list.
 | `http://noiselab.ucsd.edu/ECE228/Murphy_Machine_Learning.pdf` | Third-party book mirror returns 404 | Replace with Kevin Murphy's official Probabilistic Machine Learning page |
 | `https://archive.nptel.ac.in/courses/106/106/106106145/` | Legacy archive path returns 404 | Replace with the current NPTEL course page |
 | `https://github.com/chiphuyen/mlops-interview-questions` | Repository is unavailable | Replace with Chip Huyen's maintained MLOps guide |
-| `https://github.com/eugeneyan/ml-test-score` | Repository is unavailable | Replace with the official Google Research publication page |
+| `https://www.cin.ufpe.br/~jrsl/Books/Linear%20Algebra%20Done%20Right%20-%20Sheldon%20Axler.pdf` | Unauthorized third-party PDF mirror | Replace with Sheldon Axler's official open-access site `https://linear.axler.net/` |
+| `https://drive.google.com/file/d/1OQPTKFpc6aLWZoBOto3e7kk5jvBBZxNc/view?usp=sharing` | Personal Google Drive PDF mirror | Replace with official open-access book site `http://probabilitybook.net/` |
+| `https://egrcc.github.io/docs/math/all-of-statistics.pdf` | Unauthorized third-party PDF mirror | Replace with official Springer publisher page `https://link.springer.com/book/10.1007/978-0-387-21736-9` |
+| `https://github.com/aforarup/interview/.../Algorithm%20Design%20by%20Jon%20Kleinberg,%20Eva%20Tardos.pdf` | Unauthorized third-party PDF mirror | Replace with official Pearson publisher page `https://www.pearson.com/en-us/subject-catalog/p/algorithm-design/P200000003264/9780321295354` |
+| `https://openeclass.panteion.gr/.../Learning%20From%20Data...pdf` | Unauthorized third-party PDF mirror | Replace with official book landing page `https://amlbook.com/` |
+| `https://www.sku.ac.ir/.../Data-Mining-Concepts-and-Techniques-Han.pdf` | Unauthorized third-party PDF mirror | Replace with official author page `https://www.cs.illinois.edu/~hanj/bk3/` |
+| `https://www.cse.iitd.ac.in/~parags/teaching/col774/` | 404 Not Found semester-specific path | Replace with stable teaching landing page `https://www.cse.iitd.ac.in/~parags/teaching.html` |
+| `https://ocw.mit.edu/ans7870/resources/Strang/Edited/Calculus/Calculus.pdf` | 301 Permanent Redirect | Replace with canonical course URL `https://ocw.mit.edu/courses/res-18-001-calculus-online-textbook-spring-2005/` |
 
 ## HTTPS Upgrades
 
