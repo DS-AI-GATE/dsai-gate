@@ -22,7 +22,6 @@ def create_app(renderer=None):
         return render_template(
             "index.html",
             **curriculum,
-            repository_url=REPOSITORY_URL,
             pages_url=PAGES_URL,
         )
 

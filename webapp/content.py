@@ -3,12 +3,55 @@
 from dataclasses import dataclass
 from pathlib import Path
 import html
+import os
 import re
+import subprocess
 from typing import Optional
 
 
-REPOSITORY_URL = "https://github.com/DS-AI-GATE/dsai-gate"
-PAGES_URL = "https://ds-ai-gate.github.io/dsai-gate/"
+def get_default_repository_url():
+    if "REPOSITORY_URL" in os.environ:
+        return os.environ["REPOSITORY_URL"].rstrip("/")
+    try:
+        url = subprocess.check_output(
+            ["git", "remote", "get-url", "origin"],
+            stderr=subprocess.DEVNULL,
+            text=True,
+        ).strip()
+        if url.endswith(".git"):
+            url = url[:-4]
+        if url.startswith("git@github.com:"):
+            url = "https://github.com/" + url[len("git@github.com:"):]
+        if url:
+            return url
+    except Exception:
+        pass
+    return "https://github.com/Nimeshchandhra/dsai-gate"
+
+
+def get_default_branch():
+    if "BRANCH" in os.environ:
+        return os.environ["BRANCH"].strip()
+    if "CF_PAGES_BRANCH" in os.environ:
+        return os.environ["CF_PAGES_BRANCH"].strip()
+    if "GITHUB_REF_NAME" in os.environ:
+        return os.environ["GITHUB_REF_NAME"].strip()
+    try:
+        branch = subprocess.check_output(
+            ["git", "branch", "--show-current"],
+            stderr=subprocess.DEVNULL,
+            text=True,
+        ).strip()
+        if branch:
+            return branch
+    except Exception:
+        pass
+    return "prepare-gate-da-2027"
+
+
+REPOSITORY_URL = get_default_repository_url()
+DEFAULT_BRANCH = get_default_branch()
+PAGES_URL = os.environ.get("PAGES_URL", "https://gate-da.pages.dev/")
 
 HEADING = re.compile(r"^(#{1,6})\s+(.*)$")
 LINK = re.compile(r"!?\[([^\]]*)\]\(([^)]+)\)")
@@ -114,10 +157,11 @@ class MarkdownCurriculumRenderer:
 
     ignored_sections = {"interactive concept map", "table of contents"}
 
-    def __init__(self, root, configs=None, repository_url=REPOSITORY_URL):
+    def __init__(self, root, configs=None, repository_url=None, branch=None):
         self.root = Path(root).resolve()
         self.configs = configs or SUBJECT_CONFIGS
-        self.repository_url = repository_url.rstrip("/")
+        self.repository_url = (repository_url or REPOSITORY_URL).rstrip("/")
+        self.branch = (branch or DEFAULT_BRANCH).strip()
 
     def render(self):
         subjects = [
@@ -132,6 +176,8 @@ class MarkdownCurriculumRenderer:
                 for subject in subjects
                 for section in subject["sections"]
             ),
+            "repository_url": self.repository_url,
+            "branch": self.branch,
         }
 
     def render_subject(self, config, number):
@@ -392,16 +438,32 @@ class MarkdownCurriculumRenderer:
 
     def _resolve_link(self, target, source_path):
         target = target.strip().strip("<>").split(" ", 1)[0]
+        upstream_blob = "https://github.com/DS-AI-GATE/dsai-gate/blob/main/"
+        upstream_tree = "https://github.com/DS-AI-GATE/dsai-gate/tree/main/"
+        if target.startswith(upstream_blob):
+            return self._repository_link(target[len(upstream_blob):])
+        if target.startswith(upstream_tree):
+            return self._repository_link(target[len(upstream_tree):])
+        if target == "https://github.com/DS-AI-GATE/dsai-gate":
+            return f"{self.repository_url}/tree/{self.branch}"
+
         if target.startswith(("http://", "https://", "#", "mailto:")):
             return target
         if target.startswith("/"):
             relative = target.lstrip("/")
         else:
-            relative = (source_path.parent / target).relative_to(self.root).as_posix()
+            try:
+                relative = (source_path.parent / target).resolve().relative_to(self.root).as_posix()
+            except ValueError:
+                relative = (source_path.parent / target).as_posix()
         return self._repository_link(relative)
 
     def _repository_link(self, relative):
-        return f"{self.repository_url}/blob/main/{relative}" if relative else ""
+        if not relative:
+            return ""
+        path = self.root / relative
+        action = "tree" if path.is_dir() else "blob"
+        return f"{self.repository_url}/{action}/{self.branch}/{relative}"
 
     @staticmethod
     def _clean_text(value):

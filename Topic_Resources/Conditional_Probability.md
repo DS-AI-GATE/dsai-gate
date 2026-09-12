@@ -17,7 +17,7 @@ Comprehensive coverage of conditional probability with examples.
 https://probability.oer.math.uconn.edu/wp-content/uploads/sites/2187/2018/01/prob3160ch4.pdf
 * [Conditional Probability Video Lecture](https://www.youtube.com/watch?v=IT_NpA1PpOg&ab_channel=AmitGoyal)
 * **Cheatsheet:** Comprehensive Probability and Statistics cheatsheet by Joe Blitzstein (Harvard).
-* **Notes & Examples:** Detailed explanations and practice problems available in the [Probability-Statistics-Readme.md](https://github.com/DS-AI-GATE/dsai-gate/blob/main/Probability-Statistics-Readme.md).
+* **Notes & Examples:** Detailed explanations and practice problems available in the [Probability-Statistics-Readme.md](../Probability-Statistics-Readme.md).
 
 
 

@@ -21,10 +21,10 @@
 
 ### 📚 Resources
 
-* **Notes & Examples:** In-depth explanations with examples in the [Probability-Statistics-Readme.md](https://github.com/DS-AI-GATE/dsai-gate/blob/main/Probability-Statistics-Readme.md).
+* **Notes & Examples:** In-depth explanations with examples in the [Probability-Statistics-Readme.md](../Probability-Statistics-Readme.md).
 * **Practice Problems:** Exercises to apply concepts of different distributions.
 
 ---
 
-For a comprehensive study, refer to the [Probability-Statistics-Readme.md](https://github.com/DS-AI-GATE/dsai-gate/blob/main/Probability-Statistics-Readme.md) in the DS-AI-GATE repository. It includes theoretical explanations, code snippets, and practice problems tailored for GATE DSAI preparation.
+For a comprehensive study, refer to the [Probability-Statistics-Readme.md](../Probability-Statistics-Readme.md). It includes theoretical explanations, code snippets, and practice problems tailored for GATE DSAI preparation.
 
